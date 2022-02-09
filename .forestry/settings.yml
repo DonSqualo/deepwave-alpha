@@ -31,7 +31,7 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: yaml
-upload_dir: static/images
+upload_dir: images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
