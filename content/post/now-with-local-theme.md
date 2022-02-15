@@ -1,7 +1,7 @@
 ---
 timeToRead: 1
 authors: []
-title: "Now! with local theme \U0001F3C4‍♂️"
+title: "Now! with local theme \U0001F3C4‍♂️ and cloudinary images \U0001F324"
 excerpt: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
   an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -11,7 +11,9 @@ excerpt: Lorem Ipsum is simply dummy text of the printing and typesetting indust
   with desktop publishing software like Aldus PageMaker including versions of Lorem
   Ipsum.
 date: 2022-02-08T23:00:00.000+00:00
-hero: "/images/hero-wave.jpeg"
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644410348/cld-sample.jpg
 
 ---
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+![](https://res.cloudinary.com/deepwave-org/image/upload/v1644410339/samples/food/spices.jpg)
