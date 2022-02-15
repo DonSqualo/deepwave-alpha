@@ -1,14 +1,13 @@
 ---
 title: Why we built a company before building a product
 date: 2019-04-30
-hero: /images/hero-6.jpg
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912849/hugo-theme-novela/hero-6_gf8woz.jpg
 excerpt: this is my excerpt
 timeToRead: 3
 authors:
-  - Thiago Costa
+- Thiago Costa
 
 ---
-
 Hello, world! This is a demo post for `hugo-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
 
 In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
