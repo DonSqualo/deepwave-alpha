@@ -1,7 +1,7 @@
 ---
 title: How Figma changed the way we design at Narative
 date: 2018-04-27
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912849/hugo-theme-novela/hero-5_aa41gn.jpg
+hero: v1644912849/hugo-theme-novela/hero-5_aa41gn.jpg
 excerpt: To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer.
 timeToRead: 8
 authors:

@@ -1,13 +1,13 @@
-{{/* 
+{{/*
 	Structure SEO Data for a given page
 	+ print tags
 	+ print jsonld
-	
+
 	@author The New Dynamic
-	
+
 	@access public
 
-	@context Page 
+	@context Page
 
 	@example - Go Template
 		{{ partial "seo/tags" . }}
@@ -15,12 +15,12 @@
   TODO:
     - [ ] Improve type test on "events", `article` seems very opinated.
 		- [ ] Find a reasonable default image when `site.Params.default_image` is not set.
-		- [ ] Twitter can sport "author" handle on top of the site's. Devise a test for author? 
+		- [ ] Twitter can sport "author" handle on top of the site's. Devise a test for author?
 		- [ ] Maybe consider another approach to set the twitter_card (summary, etc...)
-		- [ ] Not sure about image size. Following https://docs.imgix.com/best-practices/improving-seo-traffic, we have a 
+		- [ ] Not sure about image size. Following https://docs.imgix.com/best-practices/improving-seo-traffic, we have a
 			square of 800x800 */}}
 
- 
+
 {{/*------------------------------
 	BUILDING SCRATCH SEO OBJECT
 	------------------------------ */}}
@@ -40,9 +40,9 @@
 {{- $.Scratch.SetInMap "seo" "updated_time" (.Lastmod.Format "2006-01-02T15:04:05-07:00") -}}
 {{- end -}}
 
- 
+
 {{/* Description
-	---------------------------- 
+	----------------------------
 	We use the following order of precedence
 	1. SEO Description, then, if not found,
 	2. Description, then if not found,
@@ -65,9 +65,9 @@
 {{- end -}}
 
 {{- $.Scratch.SetInMap "seo" "description" $description -}}
- 
+
 {{/* Title
-  ---------------------------- 
+  ----------------------------
 	We use the following logic
 	1. Every pages: `{.Title} | {.Site.Title}`
 	2. Homepage: , only {.Site.Title} */}}
@@ -120,7 +120,7 @@
 {{- end -}}
 
 
-{{- $.Scratch.SetInMap "seo" "image" ($img | absURL) -}}
+{{- $.Scratch.SetInMap "seo" "image" $img -}}
 
 {{/* Type
 	---------------------------- */}}

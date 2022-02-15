@@ -1,8 +1,8 @@
 <section class="section narrow">
     <div class="author-hero">
-        {{ with .Params.avatar }}
+        {{ if .Params.avatar }}
             <div class="author-hero-image">
-                <img src="{{ . }}" />
+                <img src="{{ .Site.Params.cloudinary_url }}/{{ .Params.avatar }}" />
             </div>
         {{ end }}
         <h1 class="author-heading">{{ .Title }}</h1>

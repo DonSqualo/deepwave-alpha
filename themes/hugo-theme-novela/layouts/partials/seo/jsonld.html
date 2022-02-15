@@ -1,24 +1,24 @@
-{{/* 
+{{/*
 	Print JSONLd script tag
-	
+
 	@author The New Dynamic
-	
+
 	@access private
 
-	@context map [page (Page), seo (Map)] 
+	@context map [page (Page), seo (Map)]
 
 	Result to achieve:
-	{ 
+	{
 		[x] "@context": "http://schema.org",
 		[x] "@type": "Article",
 		[x] "headline": "Extra! Extra! Read alla bout it",
 		[ ] "alternativeHeadline": "This article is also about robots and stuff",
 		[x] "image": "http://example.com/image.jpg",
-		[ ] "author": "Patrick Coombe", 
+		[ ] "author": "Patrick Coombe",
 		[ ] "award": "Best article ever written",
-		[ ] "editor": "Craig Mount", 
-		[ ] "genre": "search engine optimization", 
-		[ ] "keywords": "seo sales b2b", 
+		[ ] "editor": "Craig Mount",
+		[ ] "genre": "search engine optimization",
+		[ ] "keywords": "seo sales b2b",
 		[x] "wordcount": "1120",
 		[ ] "publisher": "Book Publisher Inc",
 		[x] "url": "http://www.example.com",
@@ -35,7 +35,7 @@
 {{- $s.SetInMap "seo" "@context"  "https://schema.org" -}}
 {{- $s.SetInMap "seo" "@type"  .seo.type -}}
 {{- $s.SetInMap "seo" "headline" .page.Title -}}
-{{- $s.SetInMap "seo" "image" .seo.image -}}
+{{- $s.SetInMap "seo" "image" (path.Join .page.Site.Params.cloudinary_url .seo.image) -}}
 {{- $s.SetInMap "seo" "wordcount"  (.page.WordCount | string) -}}
 {{- $s.SetInMap "seo" "url"  .page.Permalink -}}
 {{- $s.SetInMap "seo" "datePublished" .seo.published_time -}}

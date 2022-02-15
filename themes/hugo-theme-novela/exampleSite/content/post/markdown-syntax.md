@@ -1,7 +1,7 @@
 ---
 title: Markdown Syntax Guide
 date: 2019-03-11
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912848/hugo-theme-novela/hero-2_o0micf.jpg
+hero: v1644912848/hugo-theme-novela/hero-2_o0micf.jpg
 excerpt: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
 authors:
   - Hugo Authors

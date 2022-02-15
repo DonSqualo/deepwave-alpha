@@ -1,7 +1,7 @@
 ---
 title: Understanding the Gatsby lifecycle and how it impacts yout developer experience
 date: 2018-04-29
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912848/hugo-theme-novela/hero-2_o0micf.jpg
+hero: v1644912848/hugo-theme-novela/hero-2_o0micf.jpg
 excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
 timeToRead: 4
 authors:

@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Content
@@ -34,7 +34,7 @@ sections:
 upload_dir: ''
 public_path: https://res.cloudinary.com/deepwave-org/image/upload
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:

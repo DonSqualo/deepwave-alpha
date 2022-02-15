@@ -1,7 +1,7 @@
 ---
 title: Placeholder Text
 date: 2019-03-09
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912847/hugo-theme-novela/hero-4_cykfyp.jpg
+hero: v1644912847/hugo-theme-novela/hero-4_cykfyp.jpg
 excerpt: Lorem Ipsum Dolor Si Amet
 authors:
   - Hugo Authors

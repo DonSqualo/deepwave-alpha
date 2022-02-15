@@ -1,7 +1,7 @@
 ---
 title: Why we built a company before building a product
 date: 2019-04-30
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912849/hugo-theme-novela/hero-6_gf8woz.jpg
+hero: v1644912849/hugo-theme-novela/hero-6_gf8woz.jpg
 excerpt: this is my excerpt
 timeToRead: 3
 authors:

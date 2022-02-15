@@ -1,7 +1,7 @@
 ---
 title: Why we built a company before building a platform
 date: 2018-04-30
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912849/hugo-theme-novela/hero-6_gf8woz.jpg
+hero: v1644912849/hugo-theme-novela/hero-6_gf8woz.jpg
 excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
   apps in the U.S, along with Uber, Lyft.
 timeToRead: 3

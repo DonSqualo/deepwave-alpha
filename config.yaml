@@ -3,6 +3,8 @@ languageCode: "en-us"
 title: "Hugo Novela"
 pygmentsstyle: 'monokai'
 metaDataFormat: yaml
+params:
+  cloudinary_url: https://res.cloudinary.com/deepwave-org/image/upload
 
 # Theme settings
 theme: hugo-theme-novela

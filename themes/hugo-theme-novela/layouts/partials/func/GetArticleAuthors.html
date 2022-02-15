@@ -28,8 +28,8 @@
         {{ $name = . }}
         {{ $firstname = index (split . " ") 0 }}
       {{ end }}
-      {{ with .Params.avatar }}
-        {{ $avatar = . }}
+      {{ if .Params.avatar }}
+        {{ $avatar = .Params.avatar }}
       {{ end }}
       {{ $authors = $authors | append (dict "URL" .RelPermalink "name" $name "firstname" $firstname "avatar" $avatar) }}
     {{ end }}

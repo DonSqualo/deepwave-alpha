@@ -3,10 +3,10 @@
             {{ with .Page }}
                 {{ if .Params.featured }}
                     <a href="{{ .RelPermalink }}" class="bio-link">
-                        {{ with .Params.avatar }}
+                        {{ if .Params.avatar }}
                             <div class="bio-avatar">
                                 <div class="bio-avatar-inner">
-                                    <img class="author-avatar" src="{{ . }}" />
+                                    <img class="author-avatar" src="{{ .Site.Params.cloudinary_url }}/{{ .Params.avatar }}" />
                                 </div>
                             </div>
                         {{ end }}

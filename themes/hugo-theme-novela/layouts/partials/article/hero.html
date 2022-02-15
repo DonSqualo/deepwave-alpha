@@ -10,9 +10,9 @@
                 </div>
             </div>
         </header>
-        {{ with .Page.Params.hero }}
+        {{ if .Page.Params.hero }}
         <div class="article-hero-image" id="ArticleImage__Hero">
-            <img src="{{ . }}">
+            <img src="{{ .Site.Params.cloudinary_url }}/{{ .Page.Params.hero }}">
         </div>
         {{ end }}
     </div>

@@ -3,9 +3,9 @@
       <header class="article-header">
           <h1 class="article-hero-heading">{{ .Page.Params.Title }}</h1>
       </header>
-      {{ with .Params.hero }}
+      {{ if .Params.hero }}
       <div class="article-hero-image" id="ArticleImage__Hero">
-          <img src="{{ . }}">
+          <img src="{{ .Site.Params.cloudinary_url }}/{{ .Params.hero }}">
       </div>
       {{ end }}
   </div>

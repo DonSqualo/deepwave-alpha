@@ -3,7 +3,7 @@ title: Dennis Brotzky
 bio: |
   Written by You. This is where your author bio lives. Share your work, your
   joys and of course, your Twitter handle.
-avatar: https://res.cloudinary.com/deepwave-org/image/upload/v1644912847/hugo-theme-novela/dennis-brotzky_nkploy.jpg
+avatar: v1644912847/hugo-theme-novela/dennis-brotzky_nkploy.jpg
 featured: true
 social:
   - title: unsplash

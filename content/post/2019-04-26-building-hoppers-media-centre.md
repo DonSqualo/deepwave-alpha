@@ -1,7 +1,7 @@
 ---
 title: Why Narative loves Gatsby's approach to websites
 date: 2019-04-26
-hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912848/hugo-theme-novela/hero-3_kkxkls.jpg
+hero: v1644912848/hugo-theme-novela/hero-3_kkxkls.jpg
 excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
   apps in the U.S, along with Uber, Lyft.
 timeToRead: 8
