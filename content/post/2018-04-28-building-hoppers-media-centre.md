@@ -1,7 +1,7 @@
 ---
 title: Why Narative loves Gatsby and Figma
 date: 2018-04-28
-hero: /images/hero-3.jpg
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912848/hugo-theme-novela/hero-3_kkxkls.jpg
 excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel apps in the U.S, along with Uber, Lyft.
 timeToRead: 8
 authors:

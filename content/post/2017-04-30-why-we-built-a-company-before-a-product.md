@@ -1,7 +1,7 @@
 ---
 title: Unser neuer Titel
 date: 2017-04-30
-hero: "/images/hero-6.jpg"
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912849/hugo-theme-novela/hero-6_gf8woz.jpg
 excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
   apps in the U.S, along with Uber, Lyft.
 timeToRead: 3

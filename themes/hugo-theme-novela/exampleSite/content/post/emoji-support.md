@@ -1,7 +1,7 @@
 ---
 title: Emoji Support
 date: 2019-03-05
-hero: "/images/hero-3.jpg"
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912848/hugo-theme-novela/hero-3_kkxkls.jpg
 excerpt: Guide to emoji usage in Hugo
 authors:
   - Hugo Authors

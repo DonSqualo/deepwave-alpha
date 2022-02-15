@@ -1,7 +1,7 @@
 ---
 title: How Figma changed the way we designed Novela
 date: 2019-04-28
-hero: /images/hero-5.jpg
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912849/hugo-theme-novela/hero-5_aa41gn.jpg
 excerpt: To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer.
 timeToRead: 8
 authors:

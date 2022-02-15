@@ -1,7 +1,7 @@
 ---
 title: Building the new Hopper.com in 2018
 date: 2018-04-31
-hero: /images/hero-2.jpg
+hero: https://res.cloudinary.com/deepwave-org/image/upload/v1644912848/hugo-theme-novela/hero-2_o0micf.jpg
 excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel apps in the U.S, along with Uber, Lyft.
 timeToRead: 4
 authors:
