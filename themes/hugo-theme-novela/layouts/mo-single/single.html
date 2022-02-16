@@ -5,6 +5,9 @@
     {{ partial "article/progress" . }}
 
     <article  id="moContent" class="post-content" style="position:relative;">
+        <div>
+            {{ .Page.Params.text_original }}
+        </div>
         {{ .Content }}
     </article>
 
