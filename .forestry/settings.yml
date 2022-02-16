@@ -6,13 +6,6 @@ webhook_url:
 sections:
 - type: heading
   label: Content
-- type: directory
-  path: mo-single
-  label: MO Single
-  create: all
-  match: "**/*"
-  templates:
-  - mo-single
 - type: document
   path: content/_index.md
   label: Home
@@ -23,6 +16,13 @@ sections:
   match: "**/*"
   templates:
   - post
+- type: directory
+  path: mo-single
+  label: MO Single
+  create: all
+  match: "**/*"
+  templates:
+  - mo-single
 - type: heading
   label: Data
 - type: directory
