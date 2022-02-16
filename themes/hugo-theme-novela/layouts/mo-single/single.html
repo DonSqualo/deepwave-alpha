@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="section">
+
+    {{ partial "article/progress" . }}
+
+    <article  id="moContent" class="post-content" style="position:relative;">
+        {{ .Content }}
+    </article>
+
+</section>
+
+{{ $script := resources.Get "js/progressBar.js" }}
+ <script src="{{ $script.RelPermalink }}"></script>
+{{ end }}
