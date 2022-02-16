@@ -3,8 +3,11 @@
 <section class="section">
 
     <article  id="moContent" class="post-content" style="position:relative;">
+        <div style="background-image:url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
+            {{ .Params.text_original }}
+        </div>
         <div>
-            {{ .Page.Params.text_original }}
+            <img src="{{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }}">
         </div>
         {{ .Content }}
     </article>
