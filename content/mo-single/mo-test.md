@@ -1,5 +1,5 @@
 ---
-background_image: 
+background_image: "/v1644912850/hugo-theme-novela/profile-01_xozck9.jpg"
 text_original: All the Lorem Ipsum generators on the Internet tend to repeat predefined
   chunks as necessary, making this the first true generator on the Internet.
 text_translation: It uses a dictionary of over 200 Latin words, combined with a handful

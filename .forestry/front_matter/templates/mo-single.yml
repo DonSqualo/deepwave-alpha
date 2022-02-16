@@ -25,5 +25,3 @@ fields:
     schema:
       format: markdown
   label: Text Translation
-pages:
-- content/mo-single/MO single test via Forestry.md
