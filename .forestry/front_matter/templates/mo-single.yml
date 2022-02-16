@@ -26,4 +26,4 @@ fields:
       format: markdown
   label: Text Translation
 pages:
-- mo-single/MO Test Content via Forestry.md
+- content/mo-single/MO single test via Forestry.md
