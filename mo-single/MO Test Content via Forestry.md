@@ -7,6 +7,5 @@ text_translation: Der Boden der Tiefsee ist die Haut unserer Erde. Sie hält uns
   und spendet unzähligen Arten einen Lebensraum. Während Wissenschaftler:innen gerade
   erst beginnen, die Wichtigkeit der Tiefsee und ihrer Vielfalt für unseren Planeten
   zu verstehen, nimmt die Industrie den Meeresboden zunehmend ins Visier.
-draft: true
 
 ---
