@@ -1,4 +1,27 @@
 ---
 label: MO Single
 hide_body: false
-fields: []
+fields:
+- name: background_image
+  type: file
+  config:
+    maxSize: 1
+  label: Background Image
+- name: text_original
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text Original
+- name: text_translation
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text Translation
