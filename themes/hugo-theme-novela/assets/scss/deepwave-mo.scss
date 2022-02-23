@@ -1,9 +1,12 @@
 #moContent{}
 
+.mo-section{}
+
 .mo-single{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    margin: 3em 0;
 }
 .mo-single > div{
     flex-basis: 50%;
@@ -13,9 +16,16 @@
 
 .mo-original{
     background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .mo-original p{
     padding: 1em;
+    color: white;
 }
 
 .mo-translation{

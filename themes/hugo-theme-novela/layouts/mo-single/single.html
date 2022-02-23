@@ -1,6 +1,6 @@
 {{ define "mo-main" }}
 
-<section class="section">
+<section class="mo-section">
 
     <article  id="moContent" class="mo-single" style="position:relative;">
         <div class="mo-original" style="background-image:url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
@@ -8,7 +8,7 @@
         </div>
         <div class="mo-translation">
             <!-- .Params.text_original -->
-            {{ .Params.text_translation }}
+            <p>{{ .Params.text_translation }}</p>
             
             {{ range .Params.explanations }}
                 <div class="mo-explanation">
