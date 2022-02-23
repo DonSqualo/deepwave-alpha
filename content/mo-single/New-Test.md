@@ -1,5 +1,5 @@
 ---
-background_image: "/v1644912849/hugo-theme-novela/medium_hhsy16.jpg"
+background_image: "/v1645631613/Meeresoffensive/15_Deep_sea_moratorium_anton-chernyavskiy-unsplash_dg9fzi.jpg"
 text_original: Neuer Test
 text_translation: Dieser Text wird übersetzt
 explanations:
