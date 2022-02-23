@@ -8,7 +8,7 @@ params:
 
 # Theme settings
 theme: hugo-theme-novela
-paginate: 6
+paginate: 8
 social:
   twitter: "#"
   github: "#"
