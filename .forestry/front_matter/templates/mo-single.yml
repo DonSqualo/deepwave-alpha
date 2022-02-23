@@ -7,15 +7,6 @@ fields:
   config:
     maxSize: 1
   label: Background Image
-- name: text_original
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Text Original
 - name: text_translation
   type: textarea
   default: ''
