@@ -1,3 +1,26 @@
-#moContent{
-    border: 5px solid blue;
+#moContent{}
+
+.mo-single{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.mo-single > div{
+    flex-basis: 50%;
+    flex-grow: 2;
+    min-width: 500px;
+}
+
+.mo-original{
+    background-color: lightgray;
+}
+.mo-original p{
+    padding: 1em;
+}
+
+.mo-translation{
+    background-color: #eee;
+}
+.mo-translation p{
+    padding: 1em;
 }
