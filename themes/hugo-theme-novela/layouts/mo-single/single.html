@@ -2,14 +2,22 @@
 
 <section class="section">
 
-    <article  id="moContent" class="post-content" style="position:relative;">
-        <div style="background-image:url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
-            {{ .Params.text_original }}
+    <article  id="moContent" class="mo-single post-content" style="position:relative;">
+        <div class="mo-original" style="background-image:url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
+            {{ .Content }}
         </div>
-        <div>
+        <div class="mo-translation">
+            <!-- .Params.text_original -->
+            {{ .Params.text_translation }}
             
+            {{ range .Params.explanations }}
+                <div class="mo-explanation">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .text }}</p>
+                </div>
+            {{ end }}
         </div>
-        {{ .Content }}
+        
     </article>
 
 </section>
