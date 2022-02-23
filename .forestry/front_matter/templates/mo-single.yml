@@ -25,5 +25,27 @@ fields:
     schema:
       format: markdown
   label: Text Translation
+- name: explanations
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Text
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Explanations
 pages:
 - content/mo-single/New-Test.md
