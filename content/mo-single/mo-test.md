@@ -7,6 +7,8 @@ text_translation: It uses a dictionary of over 200 Latin words, combined with a 
   generated Lorem Ipsum is therefore always free from repetition, injected humour,
   or non-characteristic words etc.
 explanations:
+- title: AWZ
+  text: HUfneiwofhoenjcd
 - title: Lorem
   text: Lorem sieht aus wie Latein, ist aber Fülltext.
 - title: Combined Title
