@@ -38,7 +38,7 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: yaml
-upload_dir: https://res.cloudinary.com/deepwave-org/image/upload
+upload_dir: https://cloudinary.com/console/c-7475a468c8b23b7770b57006962749/media_library/folders/bf93a487738909e3fb6838c7e593148d12
 public_path: https://res.cloudinary.com/deepwave-org/image/upload
 front_matter_path: ''
 use_front_matter_path: true
