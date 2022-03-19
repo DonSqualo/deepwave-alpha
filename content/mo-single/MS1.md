@@ -7,7 +7,10 @@ text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nich
   Deutschlands zu nennen.'
 explanations:
 - title: Managementpläne
-  text: ''
+  text: Es reicht nicht aus, Schutzgebiete auf Karten abzustecken, wenn sie letztlich
+    nichts schützen. Managementpläne stellen sicher, dass die Nutzung der Schutzgebiete
+    reguliert wird. Sie beschreiben den Zustand der in diesem Gebiet vorkommenden
+    Tiere, Pflanzen und Ökosysteme und schließen daraus langfristige Entwicklungsziele.
 - title: adaptiv
   text: ''
 - title: effektiv
