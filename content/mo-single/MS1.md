@@ -1,17 +1,21 @@
 ---
 background_image: "/v1645631615/Meeresoffensive/12_natural_restoration_jordan-mcqueen-unsplash_ecgdjf.jpg"
-text_translation: ''
+text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
+  dass die entsprechenden Gebiete tatsächlich geschützt werden. Ausgewiesene “Schutzgebiete”
+  werden noch heute ausgebeutet. Hier wird gefischt, Rohstoffe werden abgebaut und
+  Kabel verlegt - um nur drei von sechzehn Nutzungsformen in “geschützten” Gebieten
+  Deutschlands zu nennen.'
 explanations:
-- title: nutzung
-  text: ''
-- title: 50-prozent
-  text: ''
-- title: effektiv
+- title: Managementpläne
   text: ''
 - title: adaptiv
   text: ''
-- title: managementplan
+- title: effektiv
+  text: ''
+- title: 50%
+  text: ''
+- title: Nullnutzung
   text: ''
 
 ---
-…, dass [Managementpläne]( "managementplan") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives]( "adaptiv"), [effektives]( "effektiv") Management ermöglichen und dabei mindestens [50%]( "50-prozent") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung]( "nutzung") nehmen.
+…, dass [Managementpläne]( "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives]( "adaptiv"), [effektives]( "effektiv") Management ermöglichen und dabei mindestens [50%]( "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung]( "Nullnutzung") nehmen.
