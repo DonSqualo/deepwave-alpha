@@ -81,7 +81,9 @@
     </div>
   </Section>
   <div class="articles-gradient"></div>
-
+{{ range .mo-single }}
+  {{ .Render "single"}}
+{{ end }}
 <!-- html from freieder-->
 <section class="mo-section">
 
