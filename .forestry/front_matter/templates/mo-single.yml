@@ -12,7 +12,7 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
   label: Text Translation
@@ -29,7 +29,7 @@ fields:
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
       schema:
         format: markdown
     label: Text
@@ -39,4 +39,6 @@ fields:
     labelField: 
   label: Explanations
 pages:
+- content/mo-single/MS1.md
 - content/mo-single/New-Test.md
+- content/mo-single/mt3.md

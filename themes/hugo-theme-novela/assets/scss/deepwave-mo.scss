@@ -1,12 +1,24 @@
 #moContent{}
-
 .mo-section{}
+
+/* CSS workaround Novela Theme class .footer-gradient */
+.mo-section + .footer-gradient{
+    background: none;
+}
 
 .mo-single{
     width: 100%;
     min-height: 100vh;
     display: flex;
     margin: 3em 0;
+}
+
+.mo-single p,
+.mo-single h2, .mo-single h3, .mo-single h4{
+    font-family: 'Marriweather';
+}
+.mo-single h2, .mo-single h3, .mo-single h4{
+    font-weight: 700;
 }
 .mo-single > div{
     flex-basis: 50%;
@@ -24,13 +36,25 @@
     justify-content: flex-end;
 }
 .mo-original p{
-    padding: 1em;
     color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 1em;
 }
 
 .mo-translation{
-    background-color: #eee;
-}
-.mo-translation p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1em;
+}
+.mo-translation p{}
+
+.mo-explanation{
+    opacity: 0.4;
+    transition: all 0.4s;
+}
+.mo-explanation.active{
+    opacity: 1;
+    background-color: lightblue;
 }

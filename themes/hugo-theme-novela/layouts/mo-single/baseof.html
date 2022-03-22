@@ -6,6 +6,8 @@
 
     {{ $script := resources.Get "js/initColors.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
+    {{ $script := resources.Get "js/deepwave-mo-custom.js" }}
+    <script src="{{ $script.RelPermalink }}"></script>
 
     <div class="layout-styled">
 
