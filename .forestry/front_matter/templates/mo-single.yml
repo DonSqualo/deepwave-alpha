@@ -49,6 +49,7 @@ fields:
     labelField: 
   label: Explanations
 pages:
+- content/mo-single/MK1.md
 - content/mo-single/MS1.md
 - content/mo-single/MS2.md
 - content/mo-single/MS3.md
