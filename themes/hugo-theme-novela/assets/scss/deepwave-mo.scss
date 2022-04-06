@@ -1,5 +1,11 @@
-#moContent{}
+#moContent{
+    margin: 0;
+}
 .mo-section{}
+
+.mo-section:nth-child(odd) .mo-original{
+    order: 2;
+}
 
 /* CSS workaround Novela Theme class .footer-gradient */
 .mo-section + .footer-gradient{
@@ -83,7 +89,6 @@
 .mo-explanation.active h3 ~ *{
     max-height: 800px;
 }
-
 .mo-explanation.active{
     opacity: 1;
     background-color: lightblue;
