@@ -10,28 +10,57 @@ document.addEventListener('DOMContentLoaded', function(e){
     mos.forEach(function(entry, index){
         console.log('MO No. ' + index)
         
+        
         // Finding all Explanations in each MO Translation
         let explanations = entry.querySelectorAll('.mo-explanation')
-        explanations.forEach(function(entry, index){
-            console.log(entry)
-        })
-        
-        // ## link Explanation to #links in Original
-        
         // Finding all Anchor-Links in each MO Original
         let explanationLinks = entry.querySelectorAll('a[href^="#"]')
+        
+        
+        // Make Explanations clickable
+        explanations.forEach(function(entry, index){
+            //console.log(entry)
+            
+            entry.addEventListener('click', function(e){
+                
+                if(!e.currentTarget.classList.contains('active')){
+                    // remove .active if assigned to another explanation                 
+                    let activeExplanation = document.querySelector('.mo-explanation.active')
+                    if(activeExplanation){ activeExplanation.classList.remove('active') }
+
+                    // remove .active if assigned to another link in original text
+                    let activeLink = document.querySelector('a[href^="#"].active')
+                    if(activeLink){ activeLink.classList.remove('active') }
+                }
+                
+                // activate clicked explanation and link
+                explanationLinks[index].classList.toggle('active')
+                e.currentTarget.classList.toggle('active')
+                
+            })
+        })
+        
+        // Make Links in Original Text clickable
         explanationLinks.forEach(function(entry, index){
 
             entry.addEventListener('click', function(e){
                 e.preventDefault()
                 
-                // ## remove .active if assigned elsewhere 
-                // ## markiere Link im Original (korrespondierend)
-                
-                document.querySelector('.mo-explantaion.active').classList.remove('active')
+                if(!e.currentTarget.classList.contains('active')){
+                    // remove .active if assigned to another explanation                 
+                    let activeExplanation = document.querySelector('.mo-explanation.active')
+                    if(activeExplanation){ activeExplanation.classList.remove('active') }
+
+                    // remove .active if assigned to another link in original text
+                    let activeLink = document.querySelector('a[href^="#"].active')
+                    if(activeLink){ activeLink.classList.remove('active') }
+                }
+                                
+                // activate clicked link and explanation
                 explanations[index].classList.toggle('active')
+                e.currentTarget.classList.toggle('active')
+
             })
-            
         })
         
         

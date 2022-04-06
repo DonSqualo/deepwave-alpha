@@ -15,7 +15,7 @@
 
 .mo-single p,
 .mo-single h2, .mo-single h3, .mo-single h4{
-    font-family: 'Marriweather';
+    font-family: 'Merriweather Sans';
 }
 .mo-single h2, .mo-single h3, .mo-single h4{
     font-weight: 700;
@@ -41,6 +41,16 @@
     font-size: 1.4em;
     padding: 1em;
 }
+.mo-original p a{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+.mo-original a.active{
+    color: lightblue;
+    text-decoration: none;
+}
+
 
 .mo-translation{
     display: flex;
@@ -48,13 +58,38 @@
     justify-content: center;
     padding: 1em;
 }
-.mo-translation p{}
+.mo-translation p{
+    margin: 0 auto;
+}
+.mo-translation h3{
+    font-weight: 700;
+    font-size: 1.4em;
+    margin: 0.2em auto 0;
+    cursor: pointer;
+}
 
 .mo-explanation{
     opacity: 0.4;
     transition: all 0.4s;
 }
+.mo-explanation:first-of-type{
+    margin-top: 3em;
+}
+.mo-explanation h3 ~ *{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.mo-explanation.active h3 ~ *{
+    max-height: 800px;
+}
+
 .mo-explanation.active{
     opacity: 1;
     background-color: lightblue;
+    padding-top: 0.8em;
+    padding-bottom: 1em;
+    margin: 1em;
+    box-shadow: 0px 0px 85px #dedede;
+    border-radius: 0.2em;
 }
