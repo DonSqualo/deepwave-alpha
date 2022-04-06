@@ -16,12 +16,19 @@ document.addEventListener('DOMContentLoaded', function(e){
             console.log(entry)
         })
         
+        // ## link Explanation to #links in Original
+        
         // Finding all Anchor-Links in each MO Original
         let explanationLinks = entry.querySelectorAll('a[href^="#"]')
         explanationLinks.forEach(function(entry, index){
 
             entry.addEventListener('click', function(e){
                 e.preventDefault()
+                
+                // ## remove .active if assigned elsewhere 
+                // ## markiere Link im Original (korrespondierend)
+                
+                document.querySelector('.mo-explantaion.active').classList.remove('active')
                 explanations[index].classList.toggle('active')
             })
             
