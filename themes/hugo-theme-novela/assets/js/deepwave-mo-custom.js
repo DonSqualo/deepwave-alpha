@@ -3,6 +3,11 @@ console.log('deepwave-mo-custom.js init')
 
 document.addEventListener('DOMContentLoaded', function(e){
     
+    handleMOClicks();
+    
+})
+
+function handleMOClicks(){
     // Find all MOs
     let mos = document.querySelectorAll('.mo-single')
     
@@ -59,5 +64,4 @@ document.addEventListener('DOMContentLoaded', function(e){
             })
         })
     })
-    
-})
+}
