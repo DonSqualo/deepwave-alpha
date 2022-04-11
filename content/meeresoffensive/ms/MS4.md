@@ -1,21 +1,21 @@
 ---
-order: 14
+order: "14"
 background_image: ''
 text_translation: ''
 explanations:
-- title: Laerm
-  text: ''
-- title: Naehrstoff
-  text: ''
-- title: Muell
-  text: ''
-- title: Schadstoff
-  text: ''
-- title: kumulativ
+- title: GES
   text: ''
 - title: MSRL
   text: ''
-- title: GES
+- title: kumulativ
+  text: ''
+- title: Schadstoff
+  text: ''
+- title: Muell
+  text: ''
+- title: Naehrstoff
+  text: ''
+- title: Laerm
   text: ''
 draft: true
 
