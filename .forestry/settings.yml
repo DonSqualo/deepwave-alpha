@@ -21,13 +21,6 @@ sections:
   match: "**/*"
   templates:
   - post
-- type: directory
-  path: content/mo-single
-  label: MO Single
-  create: all
-  match: "**/*"
-  templates:
-  - mo-single
 - type: heading
   label: Data
 - type: directory
