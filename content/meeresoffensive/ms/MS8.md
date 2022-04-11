@@ -1,13 +1,13 @@
 ---
-order: 18
+order: "18"
 background_image: ''
 text_translation: ''
 explanations:
-- title: Subventionen
+- title: Fond
   text: ''
 - title: WTO
   text: ''
-- title: Fond
+- title: Subventionen
   text: ''
 draft: true
 
