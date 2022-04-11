@@ -1,9 +1,11 @@
 {{ define "mo-main" }}
 
     <!-- Title und Content from meeresoffensive/_index.md -->
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-
+    <div id="mo-preface">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+    </div>
+    
 
     {{ range .Data.Pages.ByParam "order" }}
         {{ if .IsSection }}
