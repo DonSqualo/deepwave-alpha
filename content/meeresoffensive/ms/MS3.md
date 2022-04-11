@@ -1,6 +1,6 @@
 ---
 order: "13"
-background_image: ''
+background_image: "/v1645631595/Meeresoffensive/3_Meeresraumordnungsplan_moritz-kindler-unsplash_dblkkt.jpg"
 text_translation: ''
 explanations:
 - title: oekosystembasiert
