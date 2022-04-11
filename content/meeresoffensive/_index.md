@@ -2,12 +2,9 @@
 title: Meeresoffensive
 
 ---
-
 Weichen stellen für Mensch und Meer.
 
 Im vergangenen Jahr sind weltweit Millionen Menschen auf die Straße gegangen, um für Umwelt- und Klimaschutz einzustehen. Gemeinsam mit Umwelt-, Verbraucher- und Entwicklungsverbänden fordern sie die Umsetzung von bereits auf vielen Ebenen klar formulierten Zielen für mehr globale Gerechtigkeit. Dem konsequenten Schutz mariner Ökosysteme und ihrer Funktionen kommt dabei eine Schlüsselrolle zu. Denn gesunde Meere sind essentielle Grundlage unser aller Lebensqualität und untrennbar mit Klima, Biodiversität, Wirtschaft und Gesellschaft verbunden.
-
-<!-- more -->
 
 Unser Planet ist blau – die Meere bedecken rund 70 Prozent der Erdoberfläche und ihre Ökosysteme beherbergen eine faszinierende und vielfältige Artenvielfalt. Sie produzieren die Hälfte des Sauerstoffs, den wir atmen. Und sie haben seit 1970 bis zu 30 Prozent des vom Menschen emittierten Kohlenstoffdioxids und 90 Prozent der aus der Klimakrise resultierenden Wärme absorbiert. Für Hunderte Millionen Menschen weltweit haben die Meere eine entscheidende soziale und ökonomische Bedeutung. Insbesondere für ärmere Küstengemeinden, deren Existenz- und Ernährungssicherheit auf den natürlichen marinen Ressourcen fußt, sind intakte Meeresökosysteme lebensnotwendig. Letztlich sind alle Menschen direkt oder indirekt von der Gesundheit der Meere abhängig.
 
