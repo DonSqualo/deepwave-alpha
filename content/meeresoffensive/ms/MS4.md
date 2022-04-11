@@ -1,6 +1,6 @@
 ---
 order: "14"
-background_image: ''
+background_image: "/v1645631614/Meeresoffensive/4_Plastic_pollution_angela-compagnone-unsplash_dzyzwh.jpg"
 text_translation: ''
 explanations:
 - title: GES
