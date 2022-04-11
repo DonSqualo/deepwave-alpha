@@ -48,26 +48,3 @@ fields:
     max: 
     labelField: 
   label: Explanations
-pages:
-- content/mo-single/ME1.md
-- content/mo-single/ME2.md
-- content/mo-single/ME3.md
-- content/mo-single/MK1.md
-- content/mo-single/MK2.md
-- content/mo-single/MK3.md
-- content/mo-single/MK4.md
-- content/mo-single/MP1.md
-- content/mo-single/MP2.md
-- content/mo-single/MP3.md
-- content/mo-single/MP4.md
-- content/mo-single/MS1.md
-- content/mo-single/MS2.md
-- content/mo-single/MS3.md
-- content/mo-single/MS4.md
-- content/mo-single/MS5.md
-- content/mo-single/MS6.md
-- content/mo-single/MS7.md
-- content/mo-single/MS8.md
-- content/mo-single/MT1.md
-- content/mo-single/MT2.md
-- content/mo-single/MT3.md
