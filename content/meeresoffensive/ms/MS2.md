@@ -1,13 +1,13 @@
 ---
-order: 12
+order: "12"
 background_image: ''
 text_translation: ''
 explanations:
-- title: Rechte
+- title: Schutzgebietsnetzwerk
   text: ''
 - title: 30%
   text: ''
-- title: Schutzgebietsnetzwerk
+- title: Rechte
   text: ''
 draft: true
 
