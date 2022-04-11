@@ -110,7 +110,8 @@
 .nav-container{
     position: relative;
     z-index: 100;
-    padding-top: 100px;
+    padding-top: 70px;
+    margin-bottom: 5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -128,7 +129,7 @@
 /*DESKTOP MEDIUM*/
 @media screen and (max-width: 1280px){
     .nav-container{
-        padding-top: 50px;
+        padding-top: 20px;
     }
 }
 
