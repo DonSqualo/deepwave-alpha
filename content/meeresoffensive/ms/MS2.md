@@ -1,6 +1,6 @@
 ---
 order: "12"
-background_image: https://res.cloudinary.com/deepwave-org/image/upload/v1645631599/Meeresoffensive/Ocean_From_Space_Nasa-unsplash_z0znzq.jpg
+background_image: v1645631599/Meeresoffensive/Ocean_From_Space_Nasa-unsplash_z0znzq.jpg
 text_translation: ''
 explanations:
 - title: Schutzgebietsnetzwerk
