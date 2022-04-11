@@ -1,6 +1,6 @@
 ---
-order: 11
-background_image: "/v1645631615/Meeresoffensive/12_natural_restoration_jordan-mcqueen-unsplash_ecgdjf.jpg"
+order: "11"
+background_image: "/v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg"
 text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
   dass die entsprechenden Gebiete tatsächlich geschützt werden. Ausgewiesene “Schutzgebiete”
   werden noch heute ausgebeutet. Hier wird gefischt, Rohstoffe werden abgebaut und
