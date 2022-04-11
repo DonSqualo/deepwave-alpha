@@ -1,17 +1,17 @@
 ---
-order: 13
+order: "13"
 background_image: ''
 text_translation: ''
 explanations:
-- text: ''
-  title: Funktionen
-- title: AWZ
-  text: ''
 - title: oekosystembasiert
   text: ''
 - title: Meeresraumordnungsplaene
   text: ''
+- title: AWZ
+  text: ''
+- text: ''
+  title: Funktionen
 draft: true
 
 ---
-…, dass [ökosystembasierte ](# "oekosystembasiert")[Meeres­raumordnungspläne]( "Meeresraumordnungsplaene") für die deutsche ausschließliche Wirtschaftszone ([AWZ](# "AWZ")) und die europäischen Meere erarbeitet werden, in denen eine Sicherung und Entwicklung der [ökologischen Funktionen](# "Funktionen") der Meere gewährleistet werden.
+…, dass [ökosystembasierte](# "oekosystembasiert") [Meeres­raumordnungspläne]( "Meeresraumordnungsplaene") für die deutsche ausschließliche Wirtschaftszone ([AWZ](# "AWZ")) und die europäischen Meere erarbeitet werden, in denen eine Sicherung und Entwicklung der [ökologischen Funktionen](# "Funktionen") der Meere gewährleistet werden.
