@@ -1,17 +1,17 @@
 ---
-order: 16
+order: "16"
 background_image: ''
 text_translation: ''
 explanations:
-- title: EU
-  text: ''
-- title: MSY
-  text: ''
-- title: Fanggrenzen
+- title: Fischereimanagement
   text: ''
 - title: GFP
   text: ''
-- title: Fischereimanagement
+- title: Fanggrenzen
+  text: ''
+- title: MSY
+  text: ''
+- title: EU
   text: ''
 draft: true
 
