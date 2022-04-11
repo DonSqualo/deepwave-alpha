@@ -3,23 +3,19 @@ console.log('deepwave-mo-custom.js init')
 
 document.addEventListener('DOMContentLoaded', function(e){
     
-    // Finding all MOs
-    
+    // Find all MOs
     let mos = document.querySelectorAll('.mo-single')
     
-    mos.forEach(function(entry, index){
-        console.log('MO No. ' + index)
+    mos.forEach(function(entry, index){        
         
-        
-        // Finding all Explanations in each MO Translation
+        // Find all Explanations in each MO Translation
         let explanations = entry.querySelectorAll('.mo-explanation')
-        // Finding all Anchor-Links in each MO Original
+        // Find all Anchor-Links in each MO Original
         let explanationLinks = entry.querySelectorAll('a[href^="#"]')
         
         
         // Make Explanations clickable
         explanations.forEach(function(entry, index){
-            //console.log(entry)
             
             entry.addEventListener('click', function(e){
                 
@@ -62,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function(e){
 
             })
         })
-        
-        
     })
+    
 })

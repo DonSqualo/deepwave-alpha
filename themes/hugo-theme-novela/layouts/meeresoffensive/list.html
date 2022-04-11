@@ -1,6 +1,6 @@
 {{ define "mo-main" }}
 
-    <!-- Title und Content from _index.md -->
+    <!-- Title und Content from meeresoffensive/_index.md -->
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 
@@ -8,18 +8,18 @@
     {{ range .Data.Pages.ByParam "order" }}
         {{ if .IsSection }}
             <!-- render meeresoffensive/subheader.html -->
-            {{.Render "subheader" }}
+{{ .Render "subheader" }}
         {{ else }}
             <!-- render meeresoffensive/listview.html -->
-            {{ .Render "listview" }}
+{{ .Render "listview" }}
         {{ end }}
         {{ range .Pages }}
             {{ if .IsSection }}
                 <!-- render meeresoffensive/subheader.html -->
-                {{.Render "subheader" }}
+{{ .Render "subheader" }}
             {{ else }}
                 <!-- render meeresoffensive/listview.html -->
-                {{ .Render "listview" }}
+{{ .Render "listview" }}
             {{ end }}
         {{ end }}
     {{ end }}
