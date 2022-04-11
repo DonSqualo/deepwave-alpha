@@ -1,15 +1,15 @@
 ---
-order: 17
+order: "17"
 background_image: ''
 text_translation: ''
 explanations:
-- title: Ueberwachung
-  text: ''
-- title: wirksam
+- title: Fischereikontrollverordnung
   text: ''
 - title: dokumentiert
   text: ''
-- title: Fischereikontrollverordnung
+- title: wirksam
+  text: ''
+- title: Ueberwachung
   text: ''
 draft: true
 
