@@ -17,4 +17,5 @@ social:
   dribbble: "#"
   youtube: "#"
 taxonomies:
+  category: categories
   author: authors

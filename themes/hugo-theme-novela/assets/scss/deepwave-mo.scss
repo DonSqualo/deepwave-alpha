@@ -3,7 +3,7 @@
 }
 .mo-section{}
 
-.mo-section:nth-child(odd) .mo-original{
+.mo-section:nth-child(even) .mo-original{
     order: 2;
 }
 
@@ -98,3 +98,31 @@
     box-shadow: 0px 0px 85px #dedede;
     border-radius: 0.2em;
 }
+
+/* Zwischentitel */
+.mo-subheader{
+    padding: 8vw 2em 2vw;
+    text-align: center;
+}
+.mo-subheader h2{
+    max-width: none;
+    text-align: left;
+    font-size: 4em;
+    font-size: clamp(32px, 4vw, 4em);
+    font-style: italic;
+}
+
+/* DEV RULES */
+.order{
+    position: absolute;
+    left: 3em;
+    top: 3em;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 1em;
+    border-radius: 50%;
+    width: 3.2em;
+    height: 3.2em;
+    text-align: center;
+}
+

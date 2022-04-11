@@ -1,0 +1,44 @@
+<section style="padding:1em; display:flex; justify-content: space-evenly;">
+    
+    <div>
+        <h3> Filinfo </h3>
+        <ul>
+            <li>.File.Path > {{ .File.Path }}  </li>
+            <li>.File.LogicalName > {{ .File.LogicalName }} </li>
+            <li>.File.TranslationBaseName > {{ .File.TranslationBaseName }} </li>
+            <li>.File.ContentBaseName > {{ .File.ContentBaseName }} </li>
+            <li>.File.BaseFileName > {{ .File.BaseFileName }} </li>
+            <li>.File.Ext > {{ .File.Ext }} </li>
+            <li>.File.Lang > {{ .File.Lang }} </li>
+            <li>.File.Dir > {{ .File.Dir }} </li>
+            <li>.File.UniqueID > {{ .File.UniqueID }} </li>
+        </ul>
+        
+    </div>
+    
+    <div>
+        <h3> Page Variables </h3>
+        <ul>
+            <li>.Kind > {{ .Kind }} </li>
+            <li>.Type > {{ .Type }} </li>
+            <li>.Date > {{ .Date }} </li>
+            <li>.Draft > {{ .Draft }} </li>
+            <li>.Permalink > {{ .Permalink }} </li>
+        </ul>
+    </div>
+    
+    <div>
+        <h3> Section Variables </h3>
+        <ul>
+            <li>.CurrentSection > {{ .CurrentSection }} </li>
+            <li>.FirstSection > {{ .CurrentSection }} </li>
+            <li>?  .InSection $anotherPage > {{ .InSection . }}</li>
+            <li>?  .IsAncestor $anotherPage > {{ .IsAncestor . }}</li>
+            <li>?  .IsDescendant $anotherPage > {{ .IsDescendant . }}</li>
+            <li>.Parent > {{ .Parent }} </li>
+            <li>.Section > {{ .Section }} </li>
+            <li>.Sections > {{ .Sections }} </li>
+        </ul>
+    </div>
+    
+</section>
