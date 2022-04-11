@@ -34,9 +34,9 @@
 
 .mo-original{
     background-color: lightgray;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
