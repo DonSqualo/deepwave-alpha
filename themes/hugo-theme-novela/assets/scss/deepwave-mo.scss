@@ -6,6 +6,10 @@
 .mo-section:nth-child(even) .mo-original{
     order: 2;
 }
+/* ScrollMagic Workaround */
+.scrollmagic-pin-spacer:nth-child(even) .mo-section .mo-original{
+    order: 2;
+}
 
 /* CSS workaround Novela Theme class .footer-gradient */
 .mo-section + .footer-gradient{
@@ -29,7 +33,7 @@
 .mo-single > div{
     flex-basis: 50%;
     flex-grow: 2;
-    min-width: 500px;
+    /*min-width: 500px;*/
 }
 
 .mo-original{
@@ -79,6 +83,10 @@
     transition: all 0.4s;
 }
 .mo-section:nth-child(even) .mo-explanation{
+    text-align: right;
+}
+/* ScrollMagic Workaround */
+.scrollmagic-pin-spacer:nth-child(even) .mo-section .mo-explanation{
     text-align: right;
 }
 
