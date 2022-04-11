@@ -78,6 +78,10 @@
     opacity: 0.4;
     transition: all 0.4s;
 }
+.mo-section:nth-child(even) .mo-explanation{
+    text-align: right;
+}
+
 .mo-explanation:first-of-type{
     margin-top: 3em;
 }
