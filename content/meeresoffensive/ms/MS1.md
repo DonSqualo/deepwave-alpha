@@ -1,5 +1,5 @@
 ---
-order: "11"
+order: 11
 background_image: "/v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg"
 text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
   dass die entsprechenden Gebiete tatsächlich geschützt werden. Ausgewiesene “Schutzgebiete”

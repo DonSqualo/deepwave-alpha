@@ -48,3 +48,5 @@ fields:
     max: 
     labelField: 
   label: Explanations
+pages:
+- content/meeresoffensive/ms/MS1.md
