@@ -1,9 +1,9 @@
 {{ define "mo-main" }}
 
-<section class="mo-section">
+<section class="mo-section"> <!-- #DO https://gobyexample.com/string-functions > Titel als ID ohne Leer- und Sonderzeichen -->
 
-    <article  id="moContent" class="mo-single" style="position:relative;">
-        <div class="mo-original" style="background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
+    <article  id="moContent" class="mo-single" style="position:relative; background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');"> <!-- #DO bg img nur ausgeben, wenn nicht NULL > GO if -->
+        <div class="mo-original">
             {{ .Content }}
         </div>
         <div class="mo-translation">

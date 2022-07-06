@@ -127,6 +127,17 @@ function handleMOScrollMagic(){
 }
 
 
+/*
+
+    #DO
+    
+    VIDEO
+    Control steps framewise
+    https://codepen.io/mradionov/pen/vYNvyym?editors=0010
+
+*/
+
+
 // #################################################################################
 // #################################################################################
 

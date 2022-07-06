@@ -1,8 +1,21 @@
 #moContent{
     margin: 0;
 }
-.mo-section{}
 
+.mo-sections-wrapper{
+    position: relative;
+    min-height: 100vh;
+}
+
+.mo-section{
+    overflow-x: hidden;
+    /*
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    */
+}
 .mo-section:nth-child(even) .mo-original{
     order: 2;
 }
@@ -21,6 +34,9 @@
     min-height: 100vh;
     display: flex;
     margin: 0;
+    background-color: darkgray;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .mo-single p,
@@ -37,10 +53,7 @@
 }
 
 .mo-original{
-    background-color: lightgray;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -67,6 +80,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 1em;
+    background-color: var(--background-color);
 }
 .mo-translation p{
     margin: 0 auto;
@@ -155,10 +169,7 @@
         justify-content: flex-start;
         max-height: 50vh;
         overflow-y: scroll;
-        margin-top: 1em;
-        
-        /* background: white; /* add dark mode solution */
-        
+        margin-top: 1em;        
     }
     .mo-explanation{
         max-width: 507px;
