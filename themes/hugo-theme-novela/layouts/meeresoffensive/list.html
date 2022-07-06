@@ -15,6 +15,7 @@
             <!-- render meeresoffensive/listview.html -->
 {{ .Render "listview" }}
         {{ end }}
+<div class="mo-sections-wrapper">
         {{ range .Pages }}
             {{ if .IsSection }}
                 <!-- render meeresoffensive/subheader.html -->
@@ -24,6 +25,7 @@
 {{ .Render "listview" }}
             {{ end }}
         {{ end }}
+</div>
     {{ end }}
 
 

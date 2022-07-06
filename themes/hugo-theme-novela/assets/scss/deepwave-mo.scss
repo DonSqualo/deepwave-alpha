@@ -20,7 +20,7 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    margin: 3em 0;
+    margin: 0;
 }
 
 .mo-single p,
@@ -138,3 +138,67 @@
     text-align: center;
 }
 
+
+/* PORTRAIT MODE */
+
+@media screen and (orientation: portrait) and (max-width: 900px){
+    .mo-single{
+        flex-direction: column;
+    }
+    .mo-section:nth-child(2n) .mo-original {
+        order: 0;
+    }
+    .mo-original p{
+        padding: 1em 0;
+    }
+    .mo-translation{
+        justify-content: flex-start;
+        max-height: 50vh;
+        overflow-y: scroll;
+        margin-top: 1em;
+        
+        /* background: white; /* add dark mode solution */
+        
+    }
+    .mo-explanation{
+        max-width: 507px;
+        margin: 0 auto;
+        width: 100%;
+        transition: width 0.6s, opacity .4s;
+    }
+    .mo-explanation:first-of-type {
+        margin-top:1em;
+    }
+    .mo-section:nth-child(2n) .mo-explanation {
+        text-align: left;
+    }
+    .mo-explanation.active{
+        position: absolute;
+        left: calc(50% - 270px); /* add rules for width < 540-6% */
+        max-width: 540px;
+        margin: 1em auto;
+        z-index: +1; /* ggf. bei overlay über den anderen expl. */
+        padding: 0.8em 0.8em 1em;
+        box-shadow: 0px 0px 100px #999;
+        
+    }
+    
+    /* Positioning for slider
+    
+    .mo-sections-wrapper{
+        #try display: flex; vgl. feinwerk
+    
+        position: relative;
+        height: 100vh;
+    }
+    .mo-section{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    */
+    
+    
+    
+}

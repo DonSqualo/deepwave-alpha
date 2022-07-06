@@ -4,7 +4,7 @@ console.log('deepwave-mo-custom.js init')
 document.addEventListener('DOMContentLoaded', function(e){
     
     handleMOClicks()
-    handleMOScrollMagic()
+    //handleMOScrollMagic()
     
 })
 
