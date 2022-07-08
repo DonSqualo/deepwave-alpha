@@ -1,6 +1,6 @@
 ---
 order: 21
-background_image: ''
+background_image: "/v1645631612/Meeresoffensive/9_connecting_climate_with_ocean_protection_chris-nemeth-unsplash_shicqf.jpg"
 text_translation: ''
 explanations:
 - title: Klimaabkommen
