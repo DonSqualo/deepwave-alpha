@@ -3,13 +3,13 @@ order: 31
 background_image: ''
 text_translation: ''
 explanations:
-- title: Pruefung
-  text: ''
-- title: effektiv
+- title: Abkommen
   text: ''
 - title: Rechtsprechung
   text: ''
-- title: Abkommen
+- title: effektiv
+  text: ''
+- title: Pruefung
   text: ''
 draft: true
 
