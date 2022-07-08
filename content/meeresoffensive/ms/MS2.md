@@ -1,5 +1,5 @@
 ---
-order: "12"
+order: 12
 background_image: "/v1645631599/Meeresoffensive/Ocean_From_Space_Nasa-unsplash_z0znzq.jpg"
 text_translation: ''
 explanations:
