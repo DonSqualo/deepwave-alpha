@@ -1,5 +1,5 @@
 ---
-label: MO Single
+label: Meeresoffensive
 hide_body: false
 fields:
 - name: background_image
@@ -48,5 +48,3 @@ fields:
     max: 
     labelField: 
   label: Explanations
-pages:
-- content/meeresoffensive/ms/MS1.md
