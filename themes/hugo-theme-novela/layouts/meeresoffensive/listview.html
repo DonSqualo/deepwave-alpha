@@ -8,15 +8,17 @@
             {{ .Content }}
         </div>
         <div class="mo-translation">
-            <!-- .Params.text_original -->
-            <p>{{ .Params.text_translation }}</p>
-            
-            {{ range .Params.explanations }}
-                <div class="mo-explanation">
-                    <h3>{{ .title }}</h3>
-                    <p>{{ .text }}</p>
-                </div>
-            {{ end }}
+            <div class="mo-translation--text">
+                <!-- .Params.text_original -->
+                <p>{{ .Params.text_translation }}</p>
+
+                {{ range .Params.explanations }}
+                    <div class="mo-explanation">
+                        <h3>{{ .title }}</h3>
+                        <p>{{ .text }}</p>
+                    </div>
+                {{ end }}
+            </div>
         </div>
         
     </article>
