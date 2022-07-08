@@ -1,6 +1,6 @@
 ---
 order: 24
-background_image: ''
+background_image: "/v1645631615/Meeresoffensive/12_natural_restoration_jordan-mcqueen-unsplash_ecgdjf.jpg"
 text_translation: ''
 explanations:
 - title: Offensive
