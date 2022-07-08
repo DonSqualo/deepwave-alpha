@@ -3,15 +3,15 @@ order: 24
 background_image: ''
 text_translation: ''
 explanations:
-- title: Klimakonferenz
-  text: ''
-- title: Klimadialog
-  text: ''
-- title: solutions
+- title: Offensive
   text: ''
 - title: 15%
   text: ''
-- title: Offensive
+- title: solutions
+  text: ''
+- title: Klimadialog
+  text: ''
+- title: Klimakonferenz
   text: ''
 draft: true
 
