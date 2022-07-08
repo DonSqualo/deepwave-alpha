@@ -1,6 +1,6 @@
 ---
 order: 41
-background_image: ''
+background_image: "/v1645631599/Meeresoffensive/16_participatory_managment_vince-gx-unsplash_xoairb.jpg"
 text_translation: ''
 explanations:
 - title: Konventionen
