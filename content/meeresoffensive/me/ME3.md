@@ -1,6 +1,6 @@
 ---
 order: 43
-background_image: ''
+background_image: "/v1645631592/Meeresoffensive/18_traditional_fisheries_rights_marieke-weller-unsplash_d2mev4.jpg"
 text_translation: ''
 explanations:
 - title: Zugangsrechte
