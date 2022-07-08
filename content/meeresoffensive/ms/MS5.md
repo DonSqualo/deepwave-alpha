@@ -1,6 +1,6 @@
 ---
 order: 15
-background_image: ''
+background_image: "/v1645631598/Meeresoffensive/5_Bycatch_vikas-anand-dev-unsplash_hlbvoz.jpg"
 text_translation: ''
 explanations:
 - title: Grund
