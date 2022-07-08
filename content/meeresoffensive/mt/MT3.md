@@ -3,11 +3,11 @@ order: 33
 background_image: ''
 text_translation: ''
 explanations:
-- title: Tiefseebergbau
+- title: Verhinderung
   text: ''
 - title: Ressourcen
   text: ''
-- title: Verhinderung
+- title: Tiefseebergbau
   text: ''
 draft: true
 
