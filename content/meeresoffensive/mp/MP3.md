@@ -3,11 +3,11 @@ order: 53
 background_image: ''
 text_translation: ''
 explanations:
-- title: Massnahmen
+- title: kohärent
   text: ''
-- title: kohaerent
+- title: Massnahmen
   text: ''
 draft: true
 
 ---
-…, dass sie Beschlüsse aus international verhandelten Abkommen [kohärent](# "kohaerent") in [konkrete nationale Maßnahmen](# "Massnahmen") überführen und umsetzen.
+…, dass sie Beschlüsse aus international verhandelten Abkommen [kohärent](# "kohärent") in [konkrete nationale Maßnahmen](# "Massnahmen") überführen und umsetzen.
