@@ -3,9 +3,9 @@ order: 32
 background_image: ''
 text_translation: ''
 explanations:
-- title: CCAMLR
-  text: ''
 - title: Weddellmeer
+  text: ''
+- title: CCAMLR
   text: ''
 draft: true
 
