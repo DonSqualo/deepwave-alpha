@@ -1,6 +1,6 @@
 ---
 order: 54
-background_image: ''
+background_image: "/v1645631596/Meeresoffensive/22_Ratspraesidentschaft_Europagebauede_jolan-wathelet-unsplash_cozefo.jpg"
 text_translation: ''
 explanations:
 - title: HELCOM
