@@ -1,6 +1,6 @@
 ---
 order: 22
-background_image: ''
+background_image: "/v1645631612/Meeresoffensive/10_renewables_in_nature_efe-kurnaz-unsplash_2_nsnjrm.jpg"
 text_translation: ''
 explanations:
 - title: Energie
