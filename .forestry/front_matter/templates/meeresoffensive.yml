@@ -50,6 +50,7 @@ fields:
   label: Explanations
 pages:
 - content/meeresoffensive/MyFileName.md
+- content/meeresoffensive/mp/MP4.md
 - content/meeresoffensive/ms/MS1.md
 - content/meeresoffensive/ms/MS2.md
 - content/meeresoffensive/ms/MS3.md
