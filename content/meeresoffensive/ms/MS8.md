@@ -1,6 +1,6 @@
 ---
 order: 18
-background_image: ''
+background_image: "/v1645631614/Meeresoffensive/8_Fish_Catch_Subsidies_nguyen-linh-unsplash_kkuemk.jpg"
 text_translation: ''
 explanations:
 - title: Fond
