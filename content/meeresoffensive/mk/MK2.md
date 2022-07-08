@@ -3,19 +3,19 @@ order: 22
 background_image: ''
 text_translation: ''
 explanations:
-- title: Schutzgebiete
-  text: ''
-- title: Belastungsgrenzen
-  text: ''
-- title: Gesetz
-  text: ''
-- title: Raumordnung
-  text: ''
-- title: Fortschreibung
+- title: Energie
   text: ''
 - title: Infrastruktur
   text: ''
-- title: Energie
+- title: Fortschreibung
+  text: ''
+- title: Raumordnung
+  text: ''
+- title: Gesetz
+  text: ''
+- title: Belastungsgrenzen
+  text: ''
+- title: Schutzgebiete
   text: ''
 draft: true
 
