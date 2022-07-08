@@ -1,5 +1,5 @@
 ---
-order: "17"
+order: 17
 background_image: ''
 text_translation: ''
 explanations:
