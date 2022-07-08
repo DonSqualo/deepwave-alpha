@@ -1,6 +1,6 @@
 ---
 order: 31
-background_image: ''
+background_image: "/v1645631599/Meeresoffensive/13_biodiversity_coral_reefs_shaun-low-unsplash_ngbprd.jpg"
 text_translation: ''
 explanations:
 - title: Abkommen
