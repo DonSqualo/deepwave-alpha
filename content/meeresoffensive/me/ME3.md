@@ -3,23 +3,23 @@ order: 43
 background_image: ''
 text_translation: ''
 explanations:
-- title: Meerespolitik
+- title: Zugangsrechte
   text: ''
-- title: Conference
-  text: ''
-- title: SDG14
-  text: ''
-- title: Economy
-  text: ''
-- title: Ernaehrungssicherheit
+- title: Fischgründe
   text: ''
 - title: Beteiligungsrechte
   text: ''
-- title: Fischgruende
+- title: Ernährungssicherheit
   text: ''
-- title: Zugangsrechte
+- title: Economy
+  text: ''
+- title: SDG14
+  text: ''
+- title: Conference
+  text: ''
+- title: Meerespolitik
   text: ''
 draft: true
 
 ---
-…, dass der Schutz [traditioneller Zugangsrechte](# "Zugangsrechte") zu [Fischgründen](# "Fischgruende"), sowie von [Land- und Beteiligungsrechten](# "Beteiligungsrechte") und die [Ernährungssicherheit](# "Ernaehrungssicherheit") vor jeglichen Vorhaben im Rahmen der [„Blue Economy“](# "Economy") Vorrang haben. Dafür muss sich die Bundesregierung für entwicklungspolitische Maßnahmen zur Umsetzung des [SDG14](# "SDG14") u.a. im Rahmen der [UN Ocean Conference](# "Conference") und der [europäischen Meerespolitik](# "Meerespolitik") einsetzen.
+…, dass der Schutz [traditioneller Zugangsrechte](# "Zugangsrechte") zu [Fischgründen](# "Fischgründe"), sowie von [Land- und Beteiligungsrechten](# "Beteiligungsrechte") und die [Ernährungssicherheit](# "Ernährungssicherheit") vor jeglichen Vorhaben im Rahmen der [„Blue Economy“](# "Economy") Vorrang haben. Dafür muss sich die Bundesregierung für entwicklungspolitische Maßnahmen zur Umsetzung des [SDG14](# "SDG14") u.a. im Rahmen der [UN Ocean Conference](# "Conference") und der [europäischen Meerespolitik](# "Meerespolitik") einsetzen.
