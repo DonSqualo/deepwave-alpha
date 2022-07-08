@@ -1,6 +1,6 @@
 ---
 order: 42
-background_image: ''
+background_image: "/v1645631611/Meeresoffensive/17_Small_Scale_Fisheries_sai-kiran-anagani-unsplash_uoejbc.jpg"
 text_translation: ''
 explanations:
 - title: Kleinfischerei
