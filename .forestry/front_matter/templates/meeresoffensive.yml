@@ -49,7 +49,6 @@ fields:
     labelField: 
   label: Explanations
 pages:
-- content/meeresoffensive/MyFileName.md
 - content/meeresoffensive/me/ME1.md
 - content/meeresoffensive/me/ME2.md
 - content/meeresoffensive/me/ME3.md
