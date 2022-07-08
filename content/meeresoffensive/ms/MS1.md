@@ -1,5 +1,5 @@
 ---
-order: 11
+order: "11"
 background_image: "/v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg"
 text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
   dass die entsprechenden Gebiete tatsächlich geschützt werden. Hier wird gefischt,
@@ -12,7 +12,7 @@ explanations:
     und Ostsee veröffentlicht. Für alle sechs Gebiete gilt, dass ihre Regulierungskonzepte
     nicht ausreichen, um sie von der wirtschaftlichen Nutzung zu befreien. So wie
     sie aktuell formuliert sind, bringen die Managementpläne den deutschen Meeren
-    wenig - und denen viel, die sie ausbeuten.
+    wenig – und denen viel, die sie ausbeuten.
 - title: adaptiv
   text: Anders als die deutsche Politik ist das Meer ein dynamisches System und verändert
     sich ständig. Wer es schützen will, muss auf Veränderungen eingehen können. Das
