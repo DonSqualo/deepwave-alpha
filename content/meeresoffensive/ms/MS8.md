@@ -1,5 +1,5 @@
 ---
-order: "18"
+order: 18
 background_image: ''
 text_translation: ''
 explanations:
