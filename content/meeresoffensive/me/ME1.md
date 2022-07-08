@@ -3,21 +3,21 @@ order: 41
 background_image: ''
 text_translation: ''
 explanations:
-- title: Nutzungsformen
-  text: ''
-- title: Zivilgesellschaft
-  text: ''
-- title: Gremien
-  text: ''
-- title: Nutzung
-  text: ''
-- title: transparent
-  text: ''
-- title: partizipatorisch
+- title: Konventionen
   text: ''
 - title: CBD
   text: ''
-- title: Konventionen
+- title: partizipatorisch
+  text: ''
+- title: transparent
+  text: ''
+- title: Nutzung
+  text: ''
+- title: Gremien
+  text: ''
+- title: Zivilgesellschaft
+  text: ''
+- title: Nutzungsformen
   text: ''
 draft: true
 
