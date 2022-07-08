@@ -3,15 +3,15 @@ order: 23
 background_image: ''
 text_translation: ''
 explanations:
-- title: bilanzieren
+- title: klimarelevant
   text: ''
-- title: Nutzungsinteressen
+- title: Kohlenstoffsenken
   text: ''
 - title: Lebensraumbildner
   text: ''
-- title: Kohlestoffsenken
+- title: Nutzungsinteressen
   text: ''
-- title: klimarelevant
+- title: bilanzieren
   text: ''
 draft: true
 
