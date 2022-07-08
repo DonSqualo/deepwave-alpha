@@ -3,11 +3,11 @@ order: 21
 background_image: ''
 text_translation: ''
 explanations:
-- title: Meeresschutz
+- title: Klimaabkommen
   text: ''
 - title: Wirtschaftsraum
   text: ''
-- title: Klimaabkommen
+- title: Meeresschutz
   text: ''
 draft: true
 
