@@ -6,11 +6,19 @@
 
     {{ $script := resources.Get "js/initColors.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
+    
+    <!-- Greensocket/GSAP -->
+    {{ $script := resources.Get "js/scrollmagic/gsap.min.js" }}
+    <script src="{{ $script.RelPermalink }}"></script>
+    
     <!-- ScrollMagic -->
     {{ $script := resources.Get "js/scrollmagic/uncompressed/ScrollMagic.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
+    {{ $script := resources.Get "js/scrollmagic/minified/plugins/animation.gsap.min.js" }}
+    <script src="{{ $script.RelPermalink }}"></script>
     {{ $script := resources.Get "js/scrollmagic/uncompressed/plugins/debug.addIndicators.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
+    
     <!-- Deepwave Custom -->
     {{ $script := resources.Get "js/deepwave-mo-custom.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
