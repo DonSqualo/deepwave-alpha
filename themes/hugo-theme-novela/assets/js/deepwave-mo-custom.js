@@ -1,4 +1,4 @@
-console.log('deepwave-mo-custom.js init NIU')
+console.log('deepwave-mo-custom.js init')
 
 
 document.addEventListener('DOMContentLoaded', function(e){
@@ -343,6 +343,7 @@ function handleSidenotes(){
     
     expanders.forEach(function(entry, index){
         entry.addEventListener('click', function(e){
+            e.stopPropagation()
             e.currentTarget.closest('.expander').classList.toggle('active')
         })
     })
