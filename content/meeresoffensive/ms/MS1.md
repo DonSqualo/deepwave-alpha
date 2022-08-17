@@ -31,7 +31,7 @@ explanations:
   text: |-
     Ratet mal, welche der folgenden Nutzungsformen als wirtschaftlich gelten: Sprengungen von Bomben aus den Weltkriegen, militärische Übungsmanöver, Grundschleppnetzfischerei, Stellnetze, Aufsuchung und Gewinnung von Kohlenwasserstoffen (also auf deutsch: Erdöl- und Erdgasbohrungen), Endlagerung von CO₂-Einträgen, Offshore-Windanlagen, Verlegung von Kabeln und Rohren, Containerschiffe, Fähren, Sportboote, Flugzeuge, Sand- und Kiesabbau - Überraschung: alle. Und wir fragen uns:
 
-    Was wird hier vor wem geschützt? Schutzgebiete ergeben nur dann Sinn, wenn sie als Nullnutzungszonen oder zumindest als Fang- und Abbauverbotszoneneingestuft werden.
+    Was wird hier vor wem geschützt? Schutzgebiete ergeben nur dann Sinn, wenn sie als Nullnutzungszonen oder zumindest als Fang- und Abbauverbotszonen eingestuft werden.
 
 ---
 …, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.
