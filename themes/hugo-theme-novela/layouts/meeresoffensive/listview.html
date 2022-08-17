@@ -10,17 +10,18 @@
         <div class="mo-translation">
             <div class="mo-translation--text">
                 <!-- .Params.text_original -->
-                <p>{{ .Params.text_translation }}</p>
+                <p>{{ .Params.text_translation | safeHTML }}</p>
 
                 {{ range .Params.explanations }}
                     <div class="mo-explanation">
                         <h3>{{ .title }}</h3>
-                        <p>{{ .text }}</p>
+                        <p>{{ .text | safeHTML }}</p>
                     </div>
                 {{ end }}
             </div>
         </div>
-        
+        <div class="mo-animation">
+        </div>
     </article>
 
 </section>

@@ -1,12 +1,137 @@
-console.log('deepwave-mo-custom.js init')
+console.log('deepwave-mo-custom.js init NIU')
 
 
 document.addEventListener('DOMContentLoaded', function(e){
     
     handleMOClicks()
     //handleMOScrollMagic()
+    handleMOAnimation()
+    handleSidenotes()
     
 })
+
+
+
+// #################################################################################
+// #################################################################################
+// CHECKING WEBP SUPPORT
+
+// via https://developpaper.com/determine-whether-the-browser-supports-webp-images/
+
+//The developer tool of Chrome browser is used to capture and display packages, and the fields related to response header and request header can be viewed;
+//Judge whether the accept contains the image / webp field. If it does, webp is supported. Otherwise, it is not supported.
+//Function returns true or false; true is supported, but false is not;
+function browser_check_webp( ) {
+    try{
+        //!]. Map is mainly used to judge whether the browser is IE9 +, so as to avoid the todataurl method hanging up;
+        //If you directly extend the map method to the array prototype, you need to use methods other than!]. Map to judge, for example!! window.addEventListener  Etc;
+        return ( !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0 );
+    }catch( err ) {
+        return  false;
+    }
+}
+
+
+
+// #################################################################################
+// #################################################################################
+// PRELOADING IMAGES WITH JS
+
+// via https://www.codegrepper.com/code-examples/javascript/javascript+preload+images
+
+/* 
+  Standards friendly image preloading
+  Generates `<link rel="preload" as="image" href="important_image.png">`
+  Ref: https://web.dev/preload-responsive-images/#preload-overview
+*/
+ 
+function preloadImages(images) {
+  for (i = 0; i < images.length; i++) {
+    let l = document.createElement('link')
+    l.rel = 'preload'
+    l.as = 'image'
+    l.href = images[i]
+    document.head.appendChild(l)
+  }
+}
+
+// Usage:
+imageUrlHeap = ['http://example.com/test/img-1.jpg','http://example.com/test/img-2.jpg','http://example.com/test/img-3.jpg'];
+//preloadImages(imageUrlHeap);
+
+
+
+// #################################################################################
+// #################################################################################
+// HANDLING FRAME BY FRAME ANIMATION
+
+// via https://scrollmagic.io/examples/expert/image_sequence.html
+
+function handleMOAnimation(){
+    // define images
+	var images = [
+		"/animations/ms1/Meeresschutzgebiet02_00200.png",
+        "/animations/ms1/Meeresschutzgebiet02_00199.png",
+        "/animations/ms1/Meeresschutzgebiet02_00197.png",
+        "/animations/ms1/Meeresschutzgebiet02_00195.png",
+        "/animations/ms1/Meeresschutzgebiet02_00193.png",
+        "/animations/ms1/Meeresschutzgebiet02_00191.png",
+        "/animations/ms1/Meeresschutzgebiet02_00189.png",
+        "/animations/ms1/Meeresschutzgebiet02_00187.png",
+        "/animations/ms1/Meeresschutzgebiet02_00185.png",
+        "/animations/ms1/Meeresschutzgebiet02_00183.png",
+        "/animations/ms1/Meeresschutzgebiet02_00181.png",
+        "/animations/ms1/Meeresschutzgebiet02_00179.png",
+        "/animations/ms1/Meeresschutzgebiet02_00177.png",
+        "/animations/ms1/Meeresschutzgebiet02_00175.png"
+	];
+
+	// TweenMax can tween any property of any object. We use this object to cycle through the array
+	var obj = {curImg: 0};
+
+	// create tween
+	var tween = TweenMax.to(obj, 0.5,
+		{
+			curImg: images.length - 1,       // animate propery curImg to number of images
+			roundProps: "curImg",            // only integers so it can be used as an array index
+			repeat: 1,                       // repeat X times
+			immediateRender: true,           // load first image automatically
+			ease: Linear.easeNone,           // show every image the same ammount of time
+			onUpdate: function () {
+                console.log(images[obj.curImg])
+                document.querySelector('.mo-animation').style.backgroundImage = ('url("' + images[obj.curImg] + '")' )
+			}
+		}
+	);
+
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+	// build scene
+	//var scene = 
+    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 400, offset: 0, triggerHook: 'onLeave'}) // , duration: 300
+					.setTween(tween)
+                    .setPin("#MS1")
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    
+    // 
+    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 500, offset: 400, triggerHook: 'onLeave'})
+        .setPin("#MS1")
+        .setClassToggle("#MS1 .mo-translation", "myExtraClass")
+        .addIndicators()
+        .on("enter leave", myFunction)
+        .addTo(controller);
+    
+    function myFunction(e){
+        // https://scrollmagic.io/examples/expert/cascading_pins.html
+        if(e.type == "enter"){}
+        console.log("Scene entered")
+    }
+}
+
+
+
 
 // #################################################################################
 // #################################################################################
@@ -196,6 +321,29 @@ function handleMOClicks(){
                 e.currentTarget.classList.toggle('active')
 
             })
+            
+            // Show Translation regardless of animation state
+            entry.addEventListener("mouseover", function(e){
+                e.currentTarget.closest('.mo-single').querySelector('.mo-translation').classList.add('tease')
+            })
+            entry.addEventListener("mouseout", function(e){
+                e.currentTarget.closest('.mo-single').querySelector('.mo-translation').classList.remove('tease')
+            })
+        })
+    })
+}
+
+
+// #################################################################################
+// #################################################################################
+
+function handleSidenotes(){
+    console.log('init handleSidenotes')
+    let expanders = document.querySelectorAll('.trigger')
+    
+    expanders.forEach(function(entry, index){
+        entry.addEventListener('click', function(e){
+            e.currentTarget.closest('.expander').classList.toggle('active')
         })
     })
 }
