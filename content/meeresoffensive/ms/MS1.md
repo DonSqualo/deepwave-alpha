@@ -9,15 +9,15 @@ explanations:
 - title: Managementpläne
   text: Sie sind das Tool, um den Ist- und den Soll-Zustand eines Gebiets im Meer
     zu beschreiben. 2020 wurden Managementpläne für jeweils drei Gebiete in der Nord-
-    und Ostsee veröffentlicht <span class="expander"><span class="trigger">Ein Beispiel
-    Trigger </span><span class="info">Lorem ipsum dolor sit amet, consetetur sadipscing
-    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-    erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </span></span>. Für alle sechs Gebiete gilt, dass ihre Regulierungskonzepte nicht
-    ausreichen, um sie von der wirtschaftlichen Nutzung zu befreien. So wie sie aktuell
-    formuliert sind, bringen die Managementpläne den deutschen Meeren wenig – und
-    denen viel, die sie ausbeuten.
+    und Ostsee veröffentlicht <span class="expander"><span class="trigger">– hier
+    ein Expanderbeispiel </span><span class="info">Lorem ipsum dolor sit amet, consetetur
+    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+    dolor sit amet. </span></span>. Für alle sechs Gebiete gilt, dass ihre Regulierungskonzepte
+    nicht ausreichen, um sie von der wirtschaftlichen Nutzung zu befreien. So wie
+    sie aktuell formuliert sind, bringen die Managementpläne den deutschen Meeren
+    wenig – und denen viel, die sie ausbeuten.
 - title: adaptiv
   text: Anders als die deutsche Politik ist das Meer ein dynamisches System und verändert
     sich ständig. Wer es schützen will, muss auf Veränderungen eingehen können. Das
