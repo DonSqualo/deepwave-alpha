@@ -30,16 +30,10 @@ explanations:
     rel="noopener">TEXT, der eine Grafik kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span>
     und Rückschritte der umgesetzten Maßnahmen laufend zu überprüfen.
 - title: effektiv
-  text: "Effektiv heißt nichts anderes, als dass <span class=\"sidenote\"><cite class=\"icon-link_internal\">
-    [Hier steht, was dich bei Klick oder Touch erwartet...](#) </cite> <span>Meeresschutzgebiete</span></span>
-    \ das tun können, was sie sollen: Meereslebewesen einen Rückzugsort schaffen,
-    an dem sie sich wirklich erholen \n\n<span class=\"sidenote\"><cite class=\"icon-image\">
-    [Das ist meine Bildbeschreibung...](https://res.cloudinary.com/deepwave-org/image/upload/v1649864799/beach-clouds-dawn-747016_daiwyb.jpg)
-    </cite> <span>Das ist die Textreferenz zum Bild im Fließtext </span></span>\n\n
-    können. Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung, strikte
-    Kontrollen und konsequente \n\n<span class=\"sidenote\"><cite class=\"icon-link_external\">
-    [Eine kleine Linkbeschreibung. Mhjam.](https://www.deepwave.org/) </cite> <span>Strafen</span></span>\n\n
-    \ bei Verstößen."
+  text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
+    was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich
+    erholen können. Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung,
+    strikte Kontrollen und konsequente Strafen bei Verstößen.'
 - title: 50%
   text: Achtung! Mit 50 % ist nicht etwa die Hälfte der deutschen Meere gemeint, sondern
     die Hälfte von dem, von dem ihr denkt, das es zu 100 % geschützt ist.
