@@ -10,12 +10,12 @@
         <div class="mo-translation">
             <div class="mo-translation--text">
                 <!-- .Params.text_original -->
-                <p>{{ .Params.text_translation | safeHTML | markdownify }}</p>
+                <p>{{ .Params.text_translation | markdownify | safeHTML }}</p>
 
                 {{ range .Params.explanations }}
                     <div class="mo-explanation">
                         <h3>{{ .title }}</h3>
-                        <p>{{ .text | safeHTML | markdownify }}</p>
+                        <p>{{ .text | markdownify | safeHTML }}</p>
                     </div>
                 {{ end }}
             </div>
