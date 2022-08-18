@@ -16,19 +16,30 @@ explanations:
     et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
     dolor sit amet. </span></span>Für alle sechs Gebiete gilt, dass ihre Regulierungskonzepte
     nicht ausreichen, um sie von der wirtschaftlichen Nutzung zu befreien. So wie
-    sie aktuell formuliert sind, bringen die <span class="sidenote"><cite class="icon-link_external"><a href="https://germany.representation.ec.europa.eu/news/europaischer-rat-beschliesst-neues-sanktionspaket-gegen-russland-2022-02-25_de" target="_blank" rel="noopener">TEXT, der den externen Link kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span> Managementpläne den deutschen Meeren
-    wenig – und denen viel, die sie ausbeuten.
+    sie aktuell formuliert sind, bringen die <span class="sidenote"><cite class="icon-link_external"><a
+    href="https://www.deepwave.org/" target="_blank" rel="noopener">TEXT, der den
+    externen Link kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span> Managementpläne
+    den deutschen Meeren wenig – und denen viel, die sie ausbeuten.
 - title: adaptiv
   text: Anders als die deutsche Politik ist das Meer ein dynamisches System und verändert
     sich ständig. Wer es schützen will, muss auf Veränderungen eingehen können. Das
-    setzt voraus, dass sich Politiker:innen für <span class="sidenote"><cite class="icon-link_internal"><a href="#" rel="noopener">TEXT, der den internen Link kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span> wissenschaftliche Erkenntnisse öffnen
-    und Möglichkeiten schaffen, Fortschritte <span class="sidenote"><cite class="icon-image"><a href="https://res.cloudinary.com/deepwave-org/image/upload//v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg" rel="noopener">TEXT, der eine Grafik kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span> und Rückschritte der umgesetzten Maßnahmen
-    laufend zu überprüfen.
+    setzt voraus, dass sich Politiker:innen für <span class="sidenote"><cite class="icon-link_internal"><a
+    href="#" rel="noopener">TEXT, der den internen Link kurz anteasert.</a></cite>
+    <span>TEXTREFERENZ</span></span> wissenschaftliche Erkenntnisse öffnen und Möglichkeiten
+    schaffen, Fortschritte <span class="sidenote"><cite class="icon-image"><a href="https://res.cloudinary.com/deepwave-org/image/upload//v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg"
+    rel="noopener">TEXT, der eine Grafik kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span>
+    und Rückschritte der umgesetzten Maßnahmen laufend zu überprüfen.
 - title: effektiv
-  text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
-    was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich
-    erholen können. Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung,
-    strikte Kontrollen und konsequente Strafen bei Verstößen.'
+  text: "Effektiv heißt nichts anderes, als dass <span class=\"sidenote\"><cite class=\"icon-link_internal\">
+    [Hier steht, was dich bei Klick oder Touch erwartet...](#) </cite> <span>Meeresschutzgebiete</span></span>
+    \ das tun können, was sie sollen: Meereslebewesen einen Rückzugsort schaffen,
+    an dem sie sich wirklich erholen \n\n<span class=\"sidenote\"><cite class=\"icon-image\">
+    [Das ist meine Bildbeschreibung...](https://res.cloudinary.com/deepwave-org/image/upload/v1649864799/beach-clouds-dawn-747016_daiwyb.jpg)
+    </cite> <span>Das ist die Textreferenz zum Bild im Fließtext </span></span>\n\n
+    können. Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung, strikte
+    Kontrollen und konsequente \n\n<span class=\"sidenote\"><cite class=\"icon-link_external\">
+    [Eine kleine Linkbeschreibung. Mhjam.](https://www.deepwave.org/) </cite> <span>Strafen</span></span>\n\n
+    \ bei Verstößen."
 - title: 50%
   text: Achtung! Mit 50 % ist nicht etwa die Hälfte der deutschen Meere gemeint, sondern
     die Hälfte von dem, von dem ihr denkt, das es zu 100 % geschützt ist.
