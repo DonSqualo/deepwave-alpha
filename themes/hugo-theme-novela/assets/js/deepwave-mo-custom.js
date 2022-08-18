@@ -339,12 +339,32 @@ function handleMOClicks(){
 
 function handleSidenotes(){
     console.log('init handleSidenotes')
-    let expanders = document.querySelectorAll('.trigger')
     
+    // expanders
+    let expanders = document.querySelectorAll('.trigger')
     expanders.forEach(function(entry, index){
         entry.addEventListener('click', function(e){
             e.stopPropagation()
             e.currentTarget.closest('.expander').classList.toggle('active')
+        })
+    })
+    
+    // sidenotes
+    let sidenotes = document.querySelectorAll('.sidenote')
+    sidenotes.forEach(function(entry, index){
+        entry.querySelector('cite').addEventListener('click', function(e){
+            e.stopPropagation()
+            let link = e.currentTarget.querySelector('a').getAttribute('href')
+            console.log(link)
+            if(link.includes('#')){ // Link intern
+                // do something
+                alert('jump to internal link — TO BE IMPLEMENTED')
+            } else if(link.includes('cloudinary.com')){ // Image
+                // do something
+                alert('open image in lightbox — TO BE IMPLEMENTED')
+            } else{ // Link extern
+                window.open(link, '_blank')
+            }
         })
     })
 }
