@@ -31,11 +31,11 @@ explanations:
     und Rückschritte der umgesetzten Maßnahmen laufend zu überprüfen.
 - title: effektiv
   text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
-    was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich
-    erholen können. <span class="sidenote"><cite class="icon-link_external"><a href="LINK_URL_HIER"
-    target="_blank" rel="noopener">TEASER_TEXT</a></cite><span> TEXTREFERENZ</span></span>
-    Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung, strikte Kontrollen
-    und konsequente Strafen bei Verstößen.'
+    was sie sollen: [Meereslebewesen](# "Hier steht ein erklärender Text.") einen
+    Rückzugsort schaffen, an dem sie sich wirklich erholen können. <span class="sidenote"><cite
+    class="icon-link_external"><a href="LINK_URL_HIER" target="_blank" rel="noopener">TEASER_TEXT</a></cite><span>
+    TEXTREFERENZ</span></span> Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung,
+    strikte Kontrollen und konsequente Strafen bei Verstößen.'
 - title: 50%
   text: Achtung! Mit 50 % ist nicht etwa die Hälfte der deutschen Meere gemeint, sondern
     die Hälfte von dem, von dem ihr denkt, das es zu 100 % geschützt ist.
