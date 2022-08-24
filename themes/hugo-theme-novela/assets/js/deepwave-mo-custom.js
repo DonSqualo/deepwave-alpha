@@ -92,10 +92,10 @@ function handleMOAnimation(){
 	// create tween
 	var tween = TweenMax.to(obj, 0.5,
 		{
-			curImg: images.length - 1,       // animate propery curImg to number of images
+			curImg: images.length - 1,       // animate property curImg to number of images
 			roundProps: "curImg",            // only integers so it can be used as an array index
 			repeat: 1,                       // repeat X times
-			immediateRender: true,           // load first image automatically
+			immediateRender: false,          // load first image automatically
 			ease: Linear.easeNone,           // show every image the same ammount of time
 			onUpdate: function () {
                 console.log(images[obj.curImg])
@@ -107,16 +107,23 @@ function handleMOAnimation(){
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
-	// build scene
-	//var scene = 
-    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 400, offset: 0, triggerHook: 'onLeave'}) // , duration: 300
+	// build scenes
+    
+    // 
+    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 200, offset: 0, triggerHook: 'onLeave'})
+        .setPin("#MS1")
+        .addIndicators()
+        .addTo(controller);
+    
+    //
+    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 400, offset: 200, triggerHook: 'onLeave'})
 					.setTween(tween)
                     .setPin("#MS1")
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
     
     // 
-    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 500, offset: 400, triggerHook: 'onLeave'})
+    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 500, offset: 600, triggerHook: 'onLeave'})
         .setPin("#MS1")
         .setClassToggle("#MS1 .mo-translation", "myExtraClass")
         .addIndicators()
@@ -352,7 +359,9 @@ function handleSidenotes(){
     // sidenotes
     let sidenotes = document.querySelectorAll('.sidenote')
     sidenotes.forEach(function(entry, index){
-        entry.querySelector('cite').addEventListener('click', function(e){
+        //#Sidenotes beside: entry.querySelector('cite').addEventListener('click', function(e){
+        //#Sidenotes within:
+        entry.addEventListener('click', function(e){
             e.stopPropagation()
             let link = e.currentTarget.querySelector('a').getAttribute('href')
             console.log(link)
