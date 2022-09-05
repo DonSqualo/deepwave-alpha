@@ -10,13 +10,13 @@ Da sich unser Papier an _Policy Maker_ richtet, ist es sehr dicht formuliert. Mi
 
 ## Gebrauchsanweisung
 
-<span class=""></span>= Zusatzinfos oder Seitenhiebe - für die, die es wirklich wissen wollen  
-= Website, Studie, Datei oder Video  
-= Grafik für mehr Durchblick
+<span class="icon-arrow_down"></span> = Zusatzinfos oder Seitenhiebe - für die, die es wirklich wissen wollen  
+<span class="icon-link_external"></span> = Website, Studie, Datei oder Video  
+<span class="icon-image"></span> = Grafik für mehr Durchblick
 
-= Was kann ich tun? In 2 Minuten?  
-= Was kann ich tun? In meiner Freizeit?  
-= Was kann ich tun? Beruflich und in Vollzeit?
+<span class="icon-time_short"></span> = Was kann ich tun? In 2 Minuten?  
+<span class="icon-time_part"></span> = Was kann ich tun? In meiner Freizeit?  
+<span class="icon-time_full"></span> = Was kann ich tun? Beruflich und in Vollzeit?
 
 Animationen = Wenn ihr runterscrollt, passiert das, was gerade passiert. Wenn ihr wieder hochscrollt, passiert das, was passieren kann, wenn wir etwas tun.
 
