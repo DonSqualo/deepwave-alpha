@@ -9,7 +9,6 @@ explanations:
   text: ''
 - title: Meeresschutz
   text: ''
-draft: true
 
 ---
 .., dass sie die dringend notwendigen Maßnahmen ergreifen, um ihre 2015 im Rahmen des [UN-Klimaabkommens](# "Klimaabkommen") selbst gesetzten verbindlichen Ziele einzuhalten. Die Meere sind dabei nicht allein [Wirtschaftsraum](# "Wirtschaftsraum") für den Ausbau erneuerbarer Energien. Vielmehr wirken [Maßnahmen des Meeresschutzes](# "Meeresschutz") der Klimakrise effektiv entgegen. Klima- und Naturschutz müssen untrennbar miteinander verbunden werden.
