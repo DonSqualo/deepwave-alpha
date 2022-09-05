@@ -43,11 +43,6 @@ explanations:
 
     Was wird hier vor wem geschützt? Schutzgebiete ergeben nur dann Sinn, wenn sie als Nullnutzungszonen oder zumindest als Fang- und Abbauverbotszonen eingestuft werden.
 ctas:
-- short: false
-  part: false
-  full: true
-  text: Schließlich kann auch in Vollzeit, also hauptberuflich, am Meeresschutz gewirkt
-    werden. Wie genau stünde hier beschrieben.
 - short: true
   part: false
   full: false
@@ -58,6 +53,11 @@ ctas:
   full: false
   text: Hier würde ein Hinweis für eine Tätigkeit stehen, die in Teilzeit erledigt
     werden kann – im Sinne der nebenstehenden Forderung unserer Meeresoffensive.
+- short: false
+  part: false
+  full: true
+  text: Schließlich kann auch in Vollzeit, also hauptberuflich, am Meeresschutz gewirkt
+    werden. Wie genau stünde hier beschrieben.
 
 ---
 …, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.
