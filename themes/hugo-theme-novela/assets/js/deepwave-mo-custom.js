@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(e){
     //handleMOScrollMagic()
     handleMOAnimation()
     handleSidenotes()
+    handleCTAs()
     
 })
 
@@ -60,6 +61,36 @@ imageUrlHeap = ['http://example.com/test/img-1.jpg','http://example.com/test/img
 //preloadImages(imageUrlHeap);
 
 
+// #################################################################################
+// #################################################################################
+// EASING FUNCTIONS
+
+// t = time, b = beginning value, c = change in value, d = duration
+function easeInOutQuad (t, b, c, d) {
+    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+    return -c / 2 * ((--t) * (t - 2) - 1) + b;
+}
+function easeInOutBack (t, b, c, d) {
+    let s = 1.70158
+    //if (s == undefined) s = 1.70158;
+    if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
+    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+}
+function easeInOutBackS (t, b, c, d, s) {
+    //let s = 1.70158
+    //if (s == undefined) s = 1.70158;
+    if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
+    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+}
+function easeInOutExpo (t, b, c, d) {
+    if (t == 0) return b;
+    if (t == d) return b + c;
+    if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+    return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+}
+
+
+
 
 // #################################################################################
 // #################################################################################
@@ -68,8 +99,71 @@ imageUrlHeap = ['http://example.com/test/img-1.jpg','http://example.com/test/img
 // via https://scrollmagic.io/examples/expert/image_sequence.html
 
 function handleMOAnimation(){
+    
+    /// TIMING VARS
+    let pauseBefore = 200           // Pause before animation
+    let animationDuration = 400     // ## Multiply with number of frames
+    let pauseBetween = 200          // Pause after animation
+    let translationDuration = 500   // Translation visibility
+    let pauseAfter = 200            // Pause before next slide
+    
+    let slideTotal = pauseBefore + animationDuration + pauseBetween + translationDuration + pauseAfter
+    console.log('slideTotal: ' + slideTotal)
+    
+    /// ERFASSE ALLE SECTIONS
+    let moSections = document.querySelectorAll('.mo-sections-wrapper')
+    if(moSections.length > 0){
+        moSections.forEach(function(entry, index){
+            
+            console.log('SECTION WRAPPER START')
+            
+            // init ScrollMagic controller
+            let controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: 'onLeave', // onEnter // onCenter // onLeave
+                    reverse: true
+                }
+            });
+            
+            // CALLBACK SLIDETRANSITION
+            let counter = 0
+
+            function nextSlide(e){
+                if(e.scrollDirection == 'FORWARD'){
+                    counter += 1
+                    document.querySelector('#MS' + counter).classList.add('visited')
+                } else if(e.scrollDirection == 'REVERSE'){
+                    document.querySelector('#MS' + counter).classList.remove('visited')
+                    counter -= 1
+                } else{
+                    // do nothing
+                }
+            }
+            
+            // SECTION DURATION
+            let sectionDuration = 0
+            
+    
+            /// ERFASSE ALLE MOs
+            let mos = entry.querySelectorAll('.mo-section')
+            if( mos.length > 0 ){
+                mos.forEach(function(entry, index){
+                    
+                    // Scene ID
+                    var sceneID = entry.getAttribute('id')
+                    var sceneSelector = '#' + sceneID
+                    var triggerElmt = entry.querySelector('.mo-single')
+                    
+                    console.log('_SLIDE: ' + sceneID)
+                    //TEST console.log('__sceneSelector: ' + sceneSelector)
+                    //TEST console.log('__triggerElmt: ')
+                    //TEST console.log(triggerElmt)
+                    
+                    /// PRELOAD IMAGES
+    // ###
     // define images
 	var images = [
+        "",
 		"/animations/ms1/Meeresschutzgebiet02_00200.png",
         "/animations/ms1/Meeresschutzgebiet02_00199.png",
         "/animations/ms1/Meeresschutzgebiet02_00197.png",
@@ -85,178 +179,174 @@ function handleMOAnimation(){
         "/animations/ms1/Meeresschutzgebiet02_00177.png",
         "/animations/ms1/Meeresschutzgebiet02_00175.png"
 	];
+                    
+                    // TweenMax can tween any property of any object. We use this object to cycle through the array
+                    let obj = {curImg: 0};
 
-	// TweenMax can tween any property of any object. We use this object to cycle through the array
-	var obj = {curImg: 0};
+                    // create tween
+                    let tween = TweenMax.to(obj, 0.5,
+                        {
+                            curImg: images.length - 1,       // animate property curImg to number of images
+                            roundProps: "curImg",            // only integers so it can be used as an array index
+                            repeat: 1,                       // repeat X times
+                            immediateRender: false,          // do not load first image automatically
+                            ease: Linear.easeNone,           // show every image the same ammount of time
+                            onUpdate: function () {
+                                entry.querySelector('.mo-animation').style.backgroundImage = ('url("' + images[obj.curImg] + '")' )
+                            }
+                        }
+                    );
 
-	// create tween
-	var tween = TweenMax.to(obj, 0.5,
-		{
-			curImg: images.length - 1,       // animate property curImg to number of images
-			roundProps: "curImg",            // only integers so it can be used as an array index
-			repeat: 1,                       // repeat X times
-			immediateRender: false,          // load first image automatically
-			ease: Linear.easeNone,           // show every image the same ammount of time
-			onUpdate: function () {
-                console.log(images[obj.curImg])
-                document.querySelector('.mo-animation').style.backgroundImage = ('url("' + images[obj.curImg] + '")' )
-			}
-		}
-	);
+                    // Scene Offset
+                    let sceneOffset = 0 //slideTotal * index + index // Startpunkt der Scene in Pixel vom oberen Rand
 
-	// init controller
-	var controller = new ScrollMagic.Controller();
+                    console.log('__sceneOffset: ' + sceneOffset)
+                    
+                    // Scene Duration
+                    // let sceneDuration = ### CALCULATE NO OF FRAMES * FACTOR X
 
-	// build scenes
+                    
+                    // Slide Transition
+                    if(index != 0){
+                        
+                        //TEST console.log('   this is not the first slide')
+                        let switchIndicatorText = 'SWITCH ' + index
+                        
+                        new ScrollMagic.Scene({triggerElement: triggerElmt, duration: 1, offset: sceneOffset, triggerHook: 'onLeave'})
+                        .setPin(triggerElmt)
+                        .addIndicators({name: switchIndicatorText})
+                        .on("enter", nextSlide)
+                        .addTo(controller);
+                        
+                        console.log('__sceneOffset from !first: ' + sceneOffset)
+                        sceneOffset += 1
+                        
+                    } else{
+                        //TEST console.log('   this IS the first slide')
+                    }
+                    
+                    
+                    // Pause before
+                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBefore, offset: sceneOffset, triggerHook: 'onLeave'})
+                        .setPin(triggerElmt)
+                        .addIndicators()
+                        .addTo(controller);
+
+                    // Animation
+                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: animationDuration, offset: (sceneOffset + pauseBefore), triggerHook: 'onLeave'})
+                                    .setTween(tween)
+                                    .setPin(triggerElmt)
+                                    .addIndicators()
+                                    .addTo(controller);
+
+                    // Pause between
+                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBetween, offset: (sceneOffset + pauseBefore + animationDuration), triggerHook: 'onLeave'})
+                        .setPin(triggerElmt)
+                        .addIndicators()
+                        .addTo(controller);
+
+                    // Translation
+                    let translationHandle = entry.querySelector('.mo-translation')
+                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: translationDuration, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween), triggerHook: 'onLeave'})
+                        .setPin(triggerElmt)
+                        .setClassToggle(translationHandle, "active")
+                        .addIndicators()
+                        .addTo(controller);
+
+                    // Pause after
+                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseAfter, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween + translationDuration), triggerHook: 'onLeave'})
+                        .setPin(triggerElmt)
+                        .addIndicators()
+                        .addTo(controller);
+                    
+                    
+                    
+                    
+                    
+                    /*
+                    
+                    let sceneVars = {
+                        triggerElement: triggerElmt,
+                        duration: animationDuration,
+                        offset: sceneOffset
+                    }
+
+                    createAnimationScene(sceneID, sceneVars)
+
+
+                    /// FUNCTION: CREATE SCROLLMAGIC SCENE
+                    function createAnimationScene(sceneID, sceneVars){
+
+                        /// ERSTELLE SCROLLMAGIC SCENE
+                        let scene = {}
+                        scene[sceneID] = new ScrollMagic.Scene(sceneVars)
+                            .setPin(sceneVars.triggerElement)
+                            //.addIndicators() // DEBUG
+                            .addTo(controller)
+
+                        runAnimationScene(scene, sceneID)
+                    }
+
+
+                    /// FUNCTION: RUN SCROLLMAGIC SCENE
+                    function runAnimationScene(scene, sceneID){
+                        /// STARTE SCROLLMAGIC SCENE
+
+                        scene[sceneID].on('enter', function(event){
+                            // do something
+                            console.log(sceneID + 'entered')
+                        })
+
+                        scene[sceneID].on('progress', function(event){
+                            // do something
+                        })
+
+                        scene[sceneID].on('leave', function(event){
+                            // do something
+                            console.log('leaving')
+                        })
+                    }
+                    
+                    */
+                    
+                    
+
+                }) 
+            }
+            
+            
+
+            // SECTION
+            let sectionTrigger = entry
+            let sectionIndicatorName = 'Sec' + index
+            console.log('sectionTrigger: ')
+            console.log(sectionTrigger)
+            new ScrollMagic.Scene({triggerElement: sectionTrigger, duration: (slideTotal * mos.length + mos.length), offset: 0, triggerHook: 'onLeave'})
+                //.addIndicators({name: sectionIndicatorName})
+                .on("enter leave", sectionCallback)
+                .addTo(controller);
+            
+            // SECTION CALLBACK
+            function sectionCallback(e){
+                // https://scrollmagic.io/examples/expert/cascading_pins.html
+                if(e.type == "enter"){
+                    console.log("Scene entered: ")
+                    console.log(entry)
+                } else if(e.type == "leave"){
+                    console.log("Scene left")
+                } 
+            }
+            
+        })
     
-    // 
-    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 200, offset: 0, triggerHook: 'onLeave'})
-        .setPin("#MS1")
-        .addIndicators()
-        .addTo(controller);
-    
-    //
-    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 400, offset: 200, triggerHook: 'onLeave'})
-					.setTween(tween)
-                    .setPin("#MS1")
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-    
-    // 
-    new ScrollMagic.Scene({triggerElement: "#MS1", duration: 500, offset: 600, triggerHook: 'onLeave'})
-        .setPin("#MS1")
-        .setClassToggle("#MS1 .mo-translation", "myExtraClass")
-        .addIndicators()
-        .on("enter leave", myFunction)
-        .addTo(controller);
-    
-    function myFunction(e){
-        // https://scrollmagic.io/examples/expert/cascading_pins.html
-        if(e.type == "enter"){}
-        console.log("Scene entered")
     }
 }
-
-
 
 
 // #################################################################################
 // #################################################################################
 
-function handleMOScrollMagic(){
 
-    //
-    // init ScrollMagic controller
-    //
-
-    var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onLeave', // onEnter // onCenter // onLeave
-            reverse: true
-        }
-    });
-
-
-    /// EASING FUNCTIONS
-    // t = time, b = beginning value, c = change in value, d = duration
-    function easeInOutQuad (t, b, c, d) {
-        if ((t /= d / 2) < 1) return c / 2 * t * t + b;
-        return -c / 2 * ((--t) * (t - 2) - 1) + b;
-    }
-    function easeInOutBack (t, b, c, d) {
-        let s = 1.70158
-        //if (s == undefined) s = 1.70158;
-        if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
-        return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
-    }
-    function easeInOutBackS (t, b, c, d, s) {
-        //let s = 1.70158
-        //if (s == undefined) s = 1.70158;
-        if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
-        return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
-    }
-    function easeInOutExpo (t, b, c, d) {
-        if (t == 0) return b;
-        if (t == d) return b + c;
-        if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-        return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
-    }
-    
-
-    //
-    // MO ScrollMagic
-    //
-
-    /// ERFASSE ALLE MOs
-    let mos = document.querySelectorAll('.mo-section')
-
-    if( mos.length > 0 ){
-
-        /// FÜR JEDE MO SETUP SCROLLMAGIC SCENE
-        mos.forEach(function(entry, index){
-            
-            // Animated elements
-            let pOriginal = entry.querySelector('.mo-original p')
-
-            
-            // Scene ID
-            var my_scene_id = entry.getAttribute('id')
-            var scene_selector = '#' + my_scene_id
-
-            // Scene Offset
-            let scene_offset = 0 // Startpunkt der Scene in Pixel vom oberen Rand
-
-            // Scene Duration
-            let scene_duration = 300 // Dauer der Scene in Pixel
-
-            let scene_vars = {
-                triggerElement: scene_selector,
-                duration: scene_duration,
-                offset: scene_offset
-            }
-
-            createAnimationScene(my_scene_id, scene_vars)
-
-
-            /// FUNCTION: CREATE SCROLLMAGIC SCENE
-            function createAnimationScene(scene_id, scene_vars){
-
-                /// ERSTELLE SCROLLMAGIC SCENE
-                let scene = {}
-                scene[scene_id] = new ScrollMagic.Scene(scene_vars)
-                    .setPin(scene_vars.triggerElement)
-                    //.addIndicators() // DEBUG
-                    .addTo(controller)
-
-                runAnimationScene(scene, scene_id)
-            }
-
-
-            /// FUNCTION: RUN SCROLLMAGIC SCENE
-            function runAnimationScene(scene, scene_id){
-                /// STARTE SCROLLMAGIC SCENE
-
-                scene[scene_id].on('enter', function(event){
-                    // Action here
-                    console.log('entering')
-                })
-                
-                scene[scene_id].on('progress', function(event){
-                    //let padding = (50 * event.progress) + 'px'
-                    let padding = easeInOutQuad((scene_duration * event.progress), 25.6, 60, scene_duration) + 'px'
-                    pOriginal.style.setProperty('padding-bottom', padding)
-                })
-
-                scene[scene_id].on('leave', function(event){
-                    // Action here
-                    console.log('leaving')
-                })
-            }
-
-        }) 
-    } // END — MO ScrollMagic
-    
-}
 
 
 /*
@@ -376,4 +466,29 @@ function handleSidenotes(){
             }
         })
     })
+}
+
+// #################################################################################
+// #################################################################################
+
+function handleCTAs(){
+    console.log('init handleCTAs')
+    
+    let ctas = document.querySelectorAll('.mo-cta-button > button')
+    if(ctas.length > 0){
+        ctas.forEach(function(entry){
+            entry.addEventListener('click', function(e){
+                e.currentTarget.closest('.mo-translation').querySelector('.mo-cta-wrapper').classList.add('active')
+            })
+        })
+    }
+    
+    let ctaCloseButtons = document.querySelectorAll('.mo-cta-close')
+    if(ctaCloseButtons.length > 0){
+        ctaCloseButtons.forEach(function(entry){
+            entry.addEventListener('click', function(e){
+                e.currentTarget.closest('.mo-cta-wrapper').classList.remove('active')
+            })
+        })
+    }
 }

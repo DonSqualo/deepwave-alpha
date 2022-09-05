@@ -16,10 +16,6 @@ p{
     -ms-hyphenate-limit-lines: 2;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merryweather Sans';
-}
-
 /* MO START */
 
 #moContent{
@@ -29,16 +25,52 @@ h1, h2, h3, h4, h5, h6 {
 .mo-sections-wrapper{
     position: relative;
     min-height: 100vh;
+    margin-top: 100vh;
 }
 
 .mo-section{
     overflow-x: hidden;
-    /*
-    position: absolute;
+    
+    position: relative;
     width: 100%;
-    top: 0;
     left: 0;
-    */
+    top: -100vh;
+    margin-bottom: -100vh;
+    
+    transition: all 0.5s;
+}
+
+.mo-sections-wrapper .mo-section:nth-child(1){
+    z-index: 100;
+}
+.mo-sections-wrapper .mo-section:nth-child(2){
+    z-index: 90;
+}
+.mo-sections-wrapper .mo-section:nth-child(3){
+    z-index: 80;
+}
+.mo-sections-wrapper .mo-section:nth-child(4){
+    z-index: 70;
+}
+.mo-sections-wrapper .mo-section:nth-child(5){
+    z-index: 60;
+}
+.mo-sections-wrapper .mo-section:nth-child(6){
+    z-index: 50;
+}
+.mo-sections-wrapper .mo-section:nth-child(7){
+    z-index: 40;
+}
+.mo-sections-wrapper .mo-section:nth-child(8){
+    z-index: 30;
+}
+.mo-sections-wrapper .mo-section:nth-child(9){
+    z-index: 20;
+}
+
+.mo-section.visited{
+    opacity: 0;
+    pointer-events: none;
 }
 .mo-section:nth-child(even) .mo-original{
     order: 2;
@@ -98,8 +130,9 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-
+/* Translation */
 .mo-translation{
+    position: relative;
     flex-basis: 47%;
     display: flex;
     flex-direction: column;
@@ -110,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1em 1em;
     border-bottom-left-radius: 0;
     background-color: var(--background-color);
-    transition: all 0.4s;
+    transition: all 0.4s ease-in-out;
 }
 .mo-section:nth-child(even) .mo-translation{
     border-bottom-left-radius: 1em;
@@ -129,6 +162,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4em;
     margin: 0.2em auto 0;
     cursor: pointer;
+}
+
+/* „Ausblenden“ der Translations, um Platz für Animation zu haben. */
+.mo-translation{
+    transform: translateX(calc(50vw - 1em));
+}
+.mo-section:nth-child(even) .mo-translation{
+    transform: translateX(calc(1em - 50vw));
+}
+/* „Einblenden“ der Translations, wenn aktiv */
+.mo-translation.active,
+.mo-section:nth-child(2n) .mo-translation.active{
+    transform: none;
 }
 
 .mo-explanation{
@@ -167,6 +213,91 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+/* CTAs */
+.mo-cta-wrapper{
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: calc(100% - 2em);
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00b; /*var(--background-color);*/
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+    height: 0;
+}
+.mo-cta-wrapper.active{
+    height: calc(100% - 2em);
+}
+.mo-cta-wrapper > div{
+    margin: 0.8em 0;
+}
+.mo-cta-wrapper div h3{
+    color: white;
+}
+.mo-cta-wrapper div p{
+    color: white;
+}
+.mo-cta-button{
+    max-width: 680px;
+    margin: auto;
+}
+.mo-section:nth-child(2n) .mo-cta-button{
+    text-align: right;
+}
+.mo-cta-button > button{
+    position: relative;
+    margin: 2em auto 1em;
+    padding: 0.5em 0 1em;
+    font-family: 'Merriweather Sans';
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    color: var(--articleText);
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.6s, all 0.3s;
+}
+.mo-cta-button > button:hover{
+    background-color: #00b;
+    color: white;
+    padding: 0.5em 2em 1em;
+}
+.mo-cta-button > button::before {
+    content: '\e80c';
+    font-family: fontello;
+    font-size: 2em;
+    position: relative;
+    top: 0.1em;
+    margin-right: 0.3em;
+}
+.mo-cta-close{
+    position: absolute;
+    top: 1em;
+    right: 1.8em;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.8 13.8'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3EElement 1%3C/title%3E%3Cg id='Ebene_2' data-name='Ebene 2'%3E%3Cg id='Ebene_1-2' data-name='Ebene 1'%3E%3Cpolygon class='cls-1' points='13.8 1.1 12.7 0 6.9 5.8 1.1 0 0 1.1 5.8 6.9 0 12.7 1.1 13.8 6.9 8 12.7 13.8 13.8 12.7 8 6.9 13.8 1.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.mo-cta-close:hover{
+    transform: scale(1.1);
+}
+.mo-cta-close:active{
+    transform: scale(1);
+}
+.mo-cta-short{}
+.mo-cta-part{}
+.mo-cta-full{}
+
 /* Zwischentitel */
 .mo-subheader{
     padding: 8vw 2em 2vw;
@@ -187,6 +318,7 @@ h1, h2, h3, h4, h5, h6 {
     top: calc(50vh - 20vw);
     width: 40vw;
     height: 40vw;
+    background-size: cover;
 }
 .mo-section:nth-child(even) .mo-animation{
     right: auto;
@@ -195,24 +327,9 @@ h1, h2, h3, h4, h5, h6 {
 /* ### add scrollMagic workaround */
 
 
+
+
 /* ################# DEV RULES ##################### */
-
-#MS1 .mo-animation{
-    /*background-image: url("/animations/ms1/Meeresschutzgebiet02_00195.png");*/
-    background-size: cover;
-}
-
-.mo-animation{
-    /*border: 1px solid white;*/
-}
-
-/* „Ausblenden“ der Translations, um Platz für Animation zu haben. */
-.mo-translation{
-    transform: translateX(calc(50vw - 1em));
-}
-.mo-section:nth-child(even) .mo-translation{
-    transform: translateX(calc(1em - 50vw));
-}
 
 /* Order Number Feld der MOs im blauen Kreis */
 .order{
@@ -227,10 +344,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 3.2em;
     text-align: center;
     display: none;
-}
-
-.mo-translation.myExtraClass{
-    transform: none;
 }
 
 /* ################# END DEV RULES ##################### */
