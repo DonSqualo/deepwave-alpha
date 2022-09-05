@@ -42,6 +42,22 @@ explanations:
     Ratet mal, welche der folgenden Nutzungsformen als wirtschaftlich gelten: Sprengungen von Bomben aus den Weltkriegen, militärische Übungsmanöver, Grundschleppnetzfischerei, Stellnetze, Aufsuchung und Gewinnung von Kohlenwasserstoffen (also auf deutsch: Erdöl- und Erdgasbohrungen), Endlagerung von CO₂-Einträgen, Offshore-Windanlagen, Verlegung von Kabeln und Rohren, Containerschiffe, Fähren, Sportboote, Flugzeuge, Sand- und Kiesabbau - Überraschung: alle. Und wir fragen uns:
 
     Was wird hier vor wem geschützt? Schutzgebiete ergeben nur dann Sinn, wenn sie als Nullnutzungszonen oder zumindest als Fang- und Abbauverbotszonen eingestuft werden.
+ctas:
+- short: false
+  part: false
+  full: true
+  text: Schließlich kann auch in Vollzeit, also hauptberuflich, am Meeresschutz gewirkt
+    werden. Wie genau stünde hier beschrieben.
+- short: true
+  part: false
+  full: false
+  text: Dies ist ein Beispieltext für eine Möglichkeit des Engagements, das nur wenige
+    Minuten Zeit beansprucht.
+- short: false
+  part: true
+  full: false
+  text: Hier würde ein Hinweis für eine Tätigkeit stehen, die in Teilzeit erledigt
+    werden kann – im Sinne der nebenstehenden Forderung unserer Meeresoffensive.
 
 ---
 …, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.

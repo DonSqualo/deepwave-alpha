@@ -48,6 +48,33 @@ fields:
     max: 
     labelField: 
   label: Explanations
+- name: ctas
+  type: field_group_list
+  fields:
+  - name: short
+    type: boolean
+    label: 2 Minutes
+  - name: part
+    type: boolean
+    label: Part time
+  - name: full
+    type: boolean
+    label: Full time
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Text
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Calls to action
+  description: Was kann ich tun?
 pages:
 - content/meeresoffensive/me/ME1.md
 - content/meeresoffensive/me/ME2.md
