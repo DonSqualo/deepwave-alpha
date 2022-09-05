@@ -7,7 +7,7 @@ explanations:
   text: ''
 - title: Ressorts
   text: ''
-draft: true
+ctas: []
 
 ---
 …, dass der [Meeresumwelt- und Meeresnaturschutz](# "Meeresnaturschutz") zukünftig eine zentrale Rolle in den politischen und fachlichen Entscheidungen [aller Ressorts](# "Ressorts") spielt.
