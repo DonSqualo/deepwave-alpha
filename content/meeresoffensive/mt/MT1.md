@@ -11,7 +11,7 @@ explanations:
   text: ''
 - title: Pruefung
   text: ''
-draft: true
+ctas: []
 
 ---
 … den erfolgreichen Abschluss der Verhandlungen über ein rechts­verbindliches [UN-Abkommen zum Schutz der Biodiversität](# "Abkommen") in [Meeresgebieten jenseits nationaler Rechtsprechung](# "Rechtsprechung"), welches insbesondere die Einrichtung von [effektiven](# "effektiv") Meeresschutzgebieten ermöglicht und die Durchführung von [Umweltverträglich­keitsprüfungen](# "Pruefung") regelt.
