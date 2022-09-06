@@ -1,5 +1,5 @@
 ---
-order: "12"
+order: 12
 background_image: "/v1645631599/Meeresoffensive/Ocean_From_Space_Nasa-unsplash_z0znzq.jpg"
 text_translation: Stellt euch vor, ihr wollt in eurem Dorf einen ganz besonderen Apfelbaum
   mit einem Zaun schützen, aber aus irgendwelchen blöden Gründen beschließt das Bauamt,
@@ -17,8 +17,10 @@ explanations:
 - title: 30%
   text: Bis heute stehen weniger als 3 % aller Meere unter Schutz. Umweltverbände
     fordern deswegen _Thirty by Thirty_ und das heißt, dass bis 2030 nicht nur 30
-    % aller Meere unter einen wirksamen Schutz gestellt, sondern dafür auch die richtigen
-    Gebiete und Wanderkorridore ausgewählt werden.
+    % aller Meere unter einen wirksamen Schutz gestellt, sondern <span class="sidenote"><cite
+    class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">TEASER_TEXT</a></cite>
+    <span>TEXTREFERENZ</span></span> dafür auch die richtigen Gebiete und Wanderkorridore
+    ausgewählt werden.
 - title: Rechte
   text: Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste,
     euer Meer in- und auswendig. Lebt mit und von der Natur. Wisst, was es braucht,
@@ -26,6 +28,7 @@ explanations:
     Und dann kommt eine Gruppe weißer Cis-Menschen daher, die sich Politiker:innen
     nennen und im Concrete Jungle aufgewachsen sind, und entscheidet darüber wie eure
     Heimat gemanagt wird.
+ctas: []
 
 ---
 …, dass sie sich in internationalen Verhandlungen für die Etablierung eines effektiven [Schutzgebietsnetzwerkes](# "Schutzgebietsnetzwerk") auf [30% der globalen Meeresfläche bis 2030](# "30%") einsetzen, welches die [Rechte der lokalen Bevölkerung](# "Rechte") wahrt und diese in die Festlegung gebietsspezifischer Schutzziele einbezieht.
