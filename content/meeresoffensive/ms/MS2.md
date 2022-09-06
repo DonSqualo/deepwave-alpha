@@ -17,10 +17,8 @@ explanations:
 - title: 30%
   text: Bis heute stehen weniger als 3 % aller Meere unter Schutz. Umweltverbände
     fordern deswegen _Thirty by Thirty_ und das heißt, dass bis 2030 nicht nur 30
-    % aller Meere unter einen wirksamen Schutz gestellt, sondern <span class="sidenote"><cite
-    class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">TEASER_TEXT</a></cite>
-    <span>TEXTREFERENZ</span></span> dafür auch die richtigen Gebiete und Wanderkorridore
-    ausgewählt werden.
+    % aller Meere unter einen wirksamen Schutz gestellt, sondern dafür auch die richtigen
+    Gebiete und Wanderkorridore ausgewählt werden.
 - title: Rechte
   text: Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste,
     euer Meer in- und auswendig. Lebt mit und von der Natur. Wisst, was es braucht,
