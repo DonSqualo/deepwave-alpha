@@ -1,6 +1,6 @@
 ---
 order: 23
-background_image: "/v1645631612/Meeresoffensive/11_seegrass_meadow_blue_carbon_brian-yurasits-unsplash_ciwu2j.jpg"
+background_image: "/v1662664255/11_Seegrass_meadow_blue_carbon_brian-yurasits-unsplash_ciwu2j_vokl0v.jpg"
 text_translation: ''
 explanations:
 - title: klimarelevant
@@ -13,6 +13,7 @@ explanations:
   text: ''
 - title: bilanzieren
   text: ''
+ctas: []
 draft: true
 
 ---
