@@ -1,6 +1,6 @@
 ---
 order: 14
-background_image: "/v1645631614/Meeresoffensive/4_Plastic_pollution_angela-compagnone-unsplash_dzyzwh.jpg"
+background_image: "/v1662664251/4_Plastic_pollution_angela-compagnone-unsplash_dzyzwh_rboxn6.jpg"
 text_translation: ''
 explanations:
 - title: GES
@@ -17,6 +17,7 @@ explanations:
   text: ''
 - title: Lärm
   text: ''
+ctas: []
 
 ---
 …, dass bereits beschlossene Maßnahmen umgesetzt sowie neue, konkrete und zeitgebundene Ziele und Maßnahmen vereinbart werden, welche die Erreichung des Guten Umweltzustandes ([GES](# "GES")) im Rahmen der Meeresstrategie-Rahmenrichtlinie ([MSRL](# "MSRL")) ermöglichen. Darunter fällt insbesondere die Beendigung der [kumulativen](# "kumulativ") Überlastung der Meere durch Maßnahmen zur Reduktion der [Schadstoff](# "Schadstoff")- und [Mülleinträge](# "Müll") ins Meer, eine Reduktion der [Nährstoffeinträge](# "Nährstoff") sowie national wie international greifende Schallschutzkonzepte zur Eindämmung und Vermeidung von [Unterwasserlärm](# "Lärm").
