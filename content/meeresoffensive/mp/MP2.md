@@ -1,6 +1,6 @@
 ---
 order: 52
-background_image: "/v1645631613/Meeresoffensive/20_NATURA_2000_kyle-fritz-unsplash_lern2r.jpg"
+background_image: "/v1662664250/20_NATURA_2000_kyle-fritz-unsplash_lern2r_bgz3ot.jpg"
 text_translation: ''
 explanations:
 - title: institutionell
@@ -13,6 +13,7 @@ explanations:
   text: ''
 - title: Vogelschutzrichtlinie
   text: ''
+ctas: []
 draft: true
 
 ---
