@@ -1,6 +1,6 @@
 ---
 order: 54
-background_image: "/v1645631596/Meeresoffensive/22_Ratspraesidentschaft_Europagebauede_jolan-wathelet-unsplash_cozefo.jpg"
+background_image: "/v1662664256/22_Ratspraesidentschaft_Europagebauede_jolan-wathelet-unsplash_cozefo_g8dbob.jpg"
 text_translation: ''
 explanations:
 - title: HELCOM
@@ -9,6 +9,7 @@ explanations:
   text: ''
 - title: Verhandlungslinie
   text: ''
+ctas: []
 draft: true
 
 ---
