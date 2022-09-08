@@ -1,6 +1,6 @@
 ---
 order: 42
-background_image: "/v1645631611/Meeresoffensive/17_Small_Scale_Fisheries_sai-kiran-anagani-unsplash_uoejbc.jpg"
+background_image: "/v1662664252/17_Small_Scale_Fisheries_sai-kiran-anagani-unsplash_uoejbc_mk6pur.jpg"
 text_translation: ''
 explanations:
 - title: Kleinfischerei
@@ -9,6 +9,7 @@ explanations:
   text: ''
 - title: stärker
   text: ''
+ctas: []
 draft: true
 
 ---
