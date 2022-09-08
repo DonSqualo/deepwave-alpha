@@ -1,6 +1,6 @@
 ---
 order: 11
-background_image: "/v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg"
+background_image: "/v1662664243/1_North_Sea_Coast_karsten-wurth-unsplash_bchl3t_jjzp4x.jpg"
 text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
   dass die entsprechenden Gebiete tatsächlich geschützt werden. Hier wird gefischt,
   Rohstoffe werden abgebaut und Kabel verlegt - um nur drei von sechzehn legalen Nutzungsformen

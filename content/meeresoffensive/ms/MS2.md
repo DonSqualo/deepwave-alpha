@@ -1,6 +1,6 @@
 ---
 order: 12
-background_image: "/v1645631599/Meeresoffensive/Ocean_From_Space_Nasa-unsplash_z0znzq.jpg"
+background_image: "/v1662664253/2_Ocean_From_Space_Nasa-unsplash_z0znzq_f7vio7.jpg"
 text_translation: Stellt euch vor, ihr wollt in eurem Dorf einen ganz besonderen Apfelbaum
   mit einem Zaun schützen, aber aus irgendwelchen blöden Gründen beschließt das Bauamt,
   dass es viel einfacher ist, den Zaun woanders hinzustellen, wo gar nichts zu schützen

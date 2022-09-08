@@ -1,6 +1,6 @@
 ---
 order: 13
-background_image: "/v1645631595/Meeresoffensive/3_Meeresraumordnungsplan_moritz-kindler-unsplash_dblkkt.jpg"
+background_image: "/v1662664256/3_Meeresraumordnungsplan_moritz-kindler-unsplash_dblkkt_duzsem.jpg"
 text_translation: 'Ihr spielt Tetris, aber es hat einen Bug: Wenn ihr eine Reihe gefüllt
   habt, verschwindet sie nicht. Immer schneller fallen Formen nach unten. Und plötzlich
   passen sie gar nicht mehr ineinander. So ist das auch, wenn Militär, Rohstoff-,
