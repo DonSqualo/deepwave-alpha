@@ -1,6 +1,6 @@
 ---
 order: 24
-background_image: "/v1645631615/Meeresoffensive/12_natural_restoration_jordan-mcqueen-unsplash_ecgdjf.jpg"
+background_image: "/v1662664248/12_Natural_restoration_jordan-mcqueen-unsplash_ecgdjf_xrihxn.jpg"
 text_translation: ''
 explanations:
 - title: Offensive
@@ -13,6 +13,7 @@ explanations:
   text: ''
 - title: Klimakonferenz
   text: ''
+ctas: []
 draft: true
 
 ---
