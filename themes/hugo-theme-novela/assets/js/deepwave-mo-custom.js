@@ -209,7 +209,6 @@ function handleMOAnimation(){
                     // Slide Transition
                     if(index != 0){
                         
-                        //TEST console.log('   this is not the first slide')
                         let switchIndicatorText = 'SWITCH ' + index
                         
                         new ScrollMagic.Scene({triggerElement: triggerElmt, duration: 1, offset: sceneOffset, triggerHook: 'onLeave'})
@@ -222,7 +221,7 @@ function handleMOAnimation(){
                         sceneOffset += 1
                         
                     } else{
-                        //TEST console.log('   this IS the first slide')
+                        // this is the first slide: do nothing
                     }
                     
                     
@@ -254,63 +253,15 @@ function handleMOAnimation(){
                         .addTo(controller);
 
                     // Pause after
-                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseAfter, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween + translationDuration), triggerHook: 'onLeave'})
+                    let scenePauseAfter = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseAfter, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween + translationDuration), triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .addIndicators()
                         .addTo(controller);
                     
-                    
-                    
-                    
-                    
-                    /*
-                    
-                    let sceneVars = {
-                        triggerElement: triggerElmt,
-                        duration: animationDuration,
-                        offset: sceneOffset
-                    }
-
-                    createAnimationScene(sceneID, sceneVars)
-
-
-                    /// FUNCTION: CREATE SCROLLMAGIC SCENE
-                    function createAnimationScene(sceneID, sceneVars){
-
-                        /// ERSTELLE SCROLLMAGIC SCENE
-                        let scene = {}
-                        scene[sceneID] = new ScrollMagic.Scene(sceneVars)
-                            .setPin(sceneVars.triggerElement)
-                            //.addIndicators() // DEBUG
-                            .addTo(controller)
-
-                        runAnimationScene(scene, sceneID)
-                    }
-
-
-                    /// FUNCTION: RUN SCROLLMAGIC SCENE
-                    function runAnimationScene(scene, sceneID){
-                        /// STARTE SCROLLMAGIC SCENE
-
-                        scene[sceneID].on('enter', function(event){
-                            // do something
-                            console.log(sceneID + 'entered')
-                        })
-
-                        scene[sceneID].on('progress', function(event){
-                            // do something
-                        })
-
-                        scene[sceneID].on('leave', function(event){
-                            // do something
-                            console.log('leaving')
-                        })
-                    }
-                    
-                    */
-                    
-                    
-
+                    scenePauseAfter.on('progress', function(e){
+                        entry.querySelector('.mo-original').style.opacity = (1.5 - e.progress * 2) //.toFixed(0)
+                        entry.querySelector('.mo-animation').style.opacity = (1 - e.progress * 2.4)
+                    })
                 }) 
             }
             
@@ -318,7 +269,7 @@ function handleMOAnimation(){
 
             // SECTION
             let sectionTrigger = entry
-            let sectionIndicatorName = 'Sec' + index
+            //let sectionIndicatorName = 'Sec' + index
             console.log('sectionTrigger: ')
             console.log(sectionTrigger)
             new ScrollMagic.Scene({triggerElement: sectionTrigger, duration: (slideTotal * mos.length + mos.length), offset: 0, triggerHook: 'onLeave'})

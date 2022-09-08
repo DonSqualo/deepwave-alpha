@@ -23,11 +23,12 @@ p{
 }
 
 #mo-footer{
+    position: relative;
     max-width: 1220px;
     margin: auto;
     margin-top: 15em;
     padding: 0 4rem;
-    
+    z-index: 100;
 }
 .mo-signatories {
     margin-top: 10em;
@@ -59,6 +60,7 @@ p{
 
 .mo-section{
     overflow-x: hidden;
+    overflow-y: hidden;
     
     position: relative;
     width: 100%;
@@ -69,44 +71,19 @@ p{
     transition: all 0.5s;
 }
 
-.mo-sections-wrapper .mo-section:nth-child(1){
-    z-index: 100;
-}
-.mo-sections-wrapper .mo-section:nth-child(2){
-    z-index: 90;
-}
-.mo-sections-wrapper .mo-section:nth-child(3){
-    z-index: 80;
-}
-.mo-sections-wrapper .mo-section:nth-child(4){
-    z-index: 70;
-}
-.mo-sections-wrapper .mo-section:nth-child(5){
-    z-index: 60;
-}
-.mo-sections-wrapper .mo-section:nth-child(6){
-    z-index: 50;
-}
-.mo-sections-wrapper .mo-section:nth-child(7){
-    z-index: 40;
-}
-.mo-sections-wrapper .mo-section:nth-child(8){
-    z-index: 30;
-}
-.mo-sections-wrapper .mo-section:nth-child(9){
-    z-index: 20;
-}
+.mo-sections-wrapper .mo-section:nth-child(1){ z-index: 100; }
+.mo-sections-wrapper .mo-section:nth-child(2){ z-index: 90; }
+.mo-sections-wrapper .mo-section:nth-child(3){ z-index: 80; }
+.mo-sections-wrapper .mo-section:nth-child(4){ z-index: 70; }
+.mo-sections-wrapper .mo-section:nth-child(5){ z-index: 60; }
+.mo-sections-wrapper .mo-section:nth-child(6){ z-index: 50; }
+.mo-sections-wrapper .mo-section:nth-child(7){ z-index: 40; }
+.mo-sections-wrapper .mo-section:nth-child(8){ z-index: 30; }
+.mo-sections-wrapper .mo-section:nth-child(9){ z-index: 20; }
 
 .mo-section.visited{
     opacity: 0;
     pointer-events: none;
-}
-.mo-section:nth-child(even) .mo-original{
-    order: 2;
-}
-/* ScrollMagic Workaround */
-.scrollmagic-pin-spacer:nth-child(even) .mo-section .mo-original{
-    order: 2;
 }
 
 /* CSS workaround Novela Theme class .footer-gradient */
@@ -115,6 +92,7 @@ p{
 }
 
 .mo-single{
+    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -134,14 +112,32 @@ p{
 .mo-single > div{
     flex-basis: 50%;
     flex-grow: 2;
-    /*min-width: 500px;*/
+}
+
+.mo-background.inactive{
+    /*background: none !important;*/
+}
+
+.mo-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 0;
 }
 
 .mo-original{
-    background-repeat: no-repeat !important;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.mo-section:nth-child(even) .mo-original{
+    order: 2;
 }
 .mo-original p{
     color: white;
