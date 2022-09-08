@@ -1,6 +1,6 @@
 ---
 order: 43
-background_image: "/v1645631592/Meeresoffensive/18_traditional_fisheries_rights_marieke-weller-unsplash_d2mev4.jpg"
+background_image: "/v1662664245/18_Traditional_fisheries_rights_marieke-weller-unsplash_d2mev4_g8fgyf.jpg"
 text_translation: ''
 explanations:
 - title: Zugangsrechte
@@ -19,6 +19,7 @@ explanations:
   text: ''
 - title: Meerespolitik
   text: ''
+ctas: []
 draft: true
 
 ---
