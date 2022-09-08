@@ -1,6 +1,6 @@
 ---
 order: 33
-background_image: "/v1645631613/Meeresoffensive/15_Deep_sea_moratorium_anton-chernyavskiy-unsplash_dg9fzi.jpg"
+background_image: "/v1662664247/15_Deep_sea_moratorium_anton-chernyavskiy-unsplash_dg9fzi_sviqsb.jpg"
 text_translation: ''
 explanations:
 - title: Verhinderung
@@ -9,6 +9,7 @@ explanations:
   text: ''
 - title: Tiefseebergbau
   text: ''
+ctas: []
 draft: true
 
 ---

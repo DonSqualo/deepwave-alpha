@@ -1,12 +1,13 @@
 ---
 order: 32
-background_image: "/v1645631610/Meeresoffensive/14_protect_antarctic_james-eades-unsplash_g6qgos.jpg"
+background_image: "/v1662664345/14_Protect_antarctic_james-eades-unsplash_g6qgos_rjhhpn.jpg"
 text_translation: ''
 explanations:
 - title: Weddellmeer
   text: ''
 - title: CCAMLR
   text: ''
+ctas: []
 draft: true
 
 ---
