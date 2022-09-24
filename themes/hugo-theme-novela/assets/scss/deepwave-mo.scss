@@ -145,12 +145,23 @@ p{
     font-size: 1.6em;
     padding: 1em;
 }
+
 .mo-original p a{
+    color: white;
+    text-decoration: none;
+    pointer-events: none;
+}
+.mo-original a.active{
+    color: inherit;
+    text-decoration: none;
+}
+.mo-section.translation-active .mo-original p a{
+    pointer-events: all;
     color: white;
     text-decoration: underline;
     text-underline-offset: 0.2em;
 }
-.mo-original a.active{
+.mo-section.translation-active .mo-original a.active{
     color: lightgreen;
     text-decoration: none;
 }
@@ -199,8 +210,8 @@ p{
     transform: translateX(calc(1em - 50vw));
 }
 /* „Einblenden“ der Translations, wenn aktiv */
-.mo-translation.active,
-.mo-section:nth-child(2n) .mo-translation.active{
+.mo-section.translation-active .mo-translation,
+.mo-section:nth-child(2n).translation-active .mo-translation{
     transform: none;
 }
 
@@ -306,7 +317,7 @@ p{
     top: 0.1em;
     margin-right: 0.3em;
 }
-.mo-cta-close{
+.mo-close-handle{
     position: absolute;
     top: 1em;
     right: 1.8em;
@@ -318,10 +329,10 @@ p{
     cursor: pointer;
     transition: all 0.3s;
 }
-.mo-cta-close:hover{
+.mo-close-handle:hover{
     transform: scale(1.1);
 }
-.mo-cta-close:active{
+.mo-close-handle:active{
     transform: scale(1);
 }
 .mo-cta-short{}
@@ -355,8 +366,28 @@ p{
     top: calc(50vh - 20vw);
     width: 40vw;
     height: 40vw;
-    background-size: cover;
 }
+
+.mo-animation > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 40vw;
+    background-size: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0;
+}
+
+.mo-animation > div.active{
+    opacity: 1;
+}
+
+
+
 .mo-section:nth-child(even) .mo-animation{
     right: auto;
     left: 5vw;
@@ -462,7 +493,7 @@ p{
 }
 
 
-/* ################# ICONS ##################### */
+/* ################# SIDENOTES ##################### */
 
 .expander .trigger{
     cursor: pointer;
@@ -607,6 +638,16 @@ p{
 }
 .sidenote > .icon-image + span::after{
     content: '\e803';
+}
+
+/* Image LightBox */
+.basicLightbox__placeholder img{
+    max-height: 96vh;
+}
+
+/* Overlay is active */
+body.overlay-is-active{
+    overflow: hidden;
 }
 
 /* ICON FONT */

@@ -10,9 +10,11 @@ function initColors(){
 
     if (localStorage.getItem("isLight") === 'false'){
         makeDark();
+        be.classList.add('is-dark')
     }
     else{
         makeLight();
+        be.classList.remove('is-dark')
     }
 }
 

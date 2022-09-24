@@ -25,6 +25,7 @@ function initAnimation(){
 function toggleColors(){
     if (localStorage.getItem("isLight") === 'true'){
         makeDark();
+        bodyElement.classList.add("is-dark")
 
         moonMask.classList.add("mask-to-sun-animation");
         moonOrSun.classList.add("to-sun-animation");
@@ -43,6 +44,7 @@ function toggleColors(){
     }
     else{
         makeLight();
+        bodyElement.classList.remove("is-dark")
 
         moonMask.classList.add("mask-to-moon-animation");
         moonOrSun.classList.add("to-moon-animation");
