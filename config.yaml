@@ -1,4 +1,4 @@
-baseURL: "https://example.com"
+baseURL: "https://meeresoffensive.deepwave.org"
 languageCode: "de-DE"
 title: "DEEPWAVE e.V."
 markup:
@@ -16,10 +16,10 @@ paginate: 8
 social:
   twitter: "#"
   github: "#"
-  instagram: "#"
-  linkedin: "#"
+  instagram: "https://www.instagram.com/deepwave_ocean_org/"
+  linkedin: "https://de.linkedin.com/company/deepwave-e-v"
   dribbble: "#"
-  youtube: "#"
+  youtube: "https://www.youtube.com/channel/UCOuPrqLgaFa5ATC-kVpJ5ZA"
 taxonomies:
   category: categories
   author: authors

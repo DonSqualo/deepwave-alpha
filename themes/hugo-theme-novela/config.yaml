@@ -1,4 +1,4 @@
-baseURL: "https://example.com"
-languageCode: "en-us"
-title: "Hugo Novela"
+baseURL: "https://meeresoffensive.deepwave.org"
+languageCode: "de-DE"
+title: "Deepwave — Meeresoffensive"
 pygmentsstyle: 'monokai'
