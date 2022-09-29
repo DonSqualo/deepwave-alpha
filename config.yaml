@@ -1,6 +1,6 @@
 baseURL: "https://meeresoffensive.deepwave.org"
 languageCode: "de-DE"
-title: "DEEPWAVE e.V."
+title: "Kommentar zur „Meeresoffensive“"
 markup:
   goldmark:
     renderer:

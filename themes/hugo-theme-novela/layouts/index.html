@@ -16,24 +16,24 @@ if(typeof jQuery==="undefined"){loadjQuery("//ajax.googleapis.com/ajax/libs/jque
 .cr_site{margin:0;padding:75px 0 0 0;text-align:center;background-color:#eeeeee;}
 .cr_font{font-size: 14px;font-family: 'Merriweather Sans';}
 .cr_page{width: 100% !important;max-width:680px}
-.cr_body{box-shadow: 0px 0px 5px 0px rgba(151,151,151,0.4);border-radius:8px;line-height:150%;font-family:Helvetica;font-size:12px;color:#333333;}
+.cr_body{box-shadow: 0px 0px 5px 0px rgba(151,151,151,0.4);border-radius:8px;line-height:150%;font-family:'Merriweather Sans';font-size:12px;color:#333333;}
 .cr_body h2, .cr_header h2{font-size:22px;line-height:28px;margin:0 0 10px 0;}
 .cr_body h1, .cr_header h2{font-size:28px;margin-bottom:15px;padding:0;margin-top:0;}
 .wrapper, .cr_page{margin:0 auto 10px auto;text-align:left;}
 .cr_header{text-align:center;background: transparent !Important;}
 .cr_header img {max-width: 100%;}
-.cr_body label, .cr_body .label{float:none;clear:both;display:inline-block;width:auto;margin-top:8px;text-align:left;font-weight:bold;position:relative;}
+.cr_body label, .cr_body .label{float:none;clear:both;display:inline-block;width:auto;margin-top:8px;text-align:left;font-weight:normal;position:relative;}
 .cr_body .no-label{font-weight: normal;}
 .cr_body #editable_content{padding:20px;}
 .editable-content {padding:20px}
-.cr_button{display:inline-block;font-family:'Helvetica', Arial, sans-serif;width:auto;white-space:nowrap;height:32px;margin:5px 0;padding:0 22px;text-decoration:none;text-align:center;font-weight:bold;font-style:normal;font-size:15px;line-height:32px;cursor:pointer;border:0;-moz-border-radius:4px;border-radius:4px;-webkit-border-radius:4px;vertical-align:top;}
-.cr_button{background-color:#333;color:#ffffff;}
+.cr_button{display:inline-block;font-family:'Merriweather Sans', Arial, sans-serif;width:auto;white-space:nowrap;height:32px;margin:5px 0;padding:0 22px;text-decoration:none;text-align:center;font-weight:bold;font-style:normal;font-size:15px;line-height:32px;cursor:pointer;border:0;-moz-border-radius:4px;border-radius:4px;-webkit-border-radius:4px;vertical-align:top;}
+.cr_button{background-color:#333;color:#ffffff;text-transform: uppercase;letter-spacing: 0.05em;}
 .cr_button:hover,.cr_button-small:hover{opacity:0.7;filter:alpha(opacity=70);}
 .powered{padding:20px 0;width:560px;margin:0 auto;}
 .cr_ipe_item label{line-height:150%;font-size:14px;}
-.cr_ipe_item textarea{background: none repeat scroll 0 0 #ffffff;border-radius:3px;border: 1px solid #ccc;font-family: Helvetica;font-size: 16px;}
-.cr_ipe_item input{background: none repeat scroll 0 0 #ffffff;border-radius:3px;border: 1px solid #ccc;padding: 12px;font-family: Helvetica;font-size: 16px;}
-.cr_ipe_item select{background: none repeat scroll 0 0 #ffffff;border-radius:3px;border: 1px solid #ccc;padding: 12px !Important;display: block;margin: 0;padding: 5px;width: 100%;font-family: Helvetica;font-size: 16px;}
+.cr_ipe_item textarea{background: none repeat scroll 0 0 #ffffff;border-radius:3px;border: 1px solid #ccc;font-family: 'Merriweather Sans';font-size: 16px;}
+.cr_ipe_item input{background: none repeat scroll 0 0 #ffffff;border-radius:3px;border: 1px solid #ccc;padding: 12px;font-family: 'Merriweather Sans';font-size: 16px;}
+.cr_ipe_item select{background: none repeat scroll 0 0 #ffffff;border-radius:3px;border: 1px solid #ccc;padding: 12px !Important;display: block;margin: 0;padding: 5px;width: 100%;font-family: 'Merriweather Sans';font-size: 16px;}
 .cr_ipe_item input.cr_ipe_radio, input.cr_ipe_checkbox{-moz-binding: none;-moz-box-sizing: border-box;background-color: -moz-field !important;border: 2px inset ThreeDFace !important;color: -moz-fieldtext !important;cursor: default;height: 13px;padding: 0 !important;width: 13px;}
 .cr_ipe_item input.cr_ipe_radio{-moz-appearance: radio;border-radius: 100% 100% 100% 100% !important;margin: 3px 3px 0 5px;}
 .cr_ipe_item{margin: 0px 10px; padding: 0px 10px;}
@@ -67,12 +67,32 @@ if(typeof jQuery==="undefined"){loadjQuery("//ajax.googleapis.com/ajax/libs/jque
 .cr_site a {color:#0084ff;}
 .imprint {color:#000000;}
 .cr_page {width:auto;}
-.cr_font {font-family:Verdana;}
+.cr_font {font-family:'Merriweather Sans';}
 
+h1{
+    margin-bottom: 0.6em;
+}
+h1::first-line{
+    font-size: smaller;
+}
+@media screen and (max-width: 540px){
+    h1{
+        padding: 0 20px;
+    }
+    form{
+        padding: 0 10px;
+    }
+}
+    .social-icon-container a:last-of-type{
+        margin-right: 0;
+    }
+    .social-icon-container span.hidden:last-child{
+        display: none;
+    }
 </style>
 
 
-<h1>Meeresoffensive</h1>
+<h1 style="">Kommentar zur<br />„Meeresoffensive“</h1>
 <p>
     Die Fertigstellung dieser Seite steht kurz bevor. <br />
     Gerne informieren wir dich, wenn es soweit ist. Trage dich dafür einfach in die Liste ein.
