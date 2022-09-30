@@ -26,7 +26,7 @@ explanations:
     setzt voraus, dass sich Politiker:innen für <span class="sidenote"><cite class="icon-link_internal"><a
     href="#" rel="noopener">TEXT, der den internen Link kurz anteasert.</a></cite>
     <span>TEXTREFERENZ</span></span> wissenschaftliche Erkenntnisse öffnen und Möglichkeiten
-    schaffen, Fortschritte <span class="sidenote"><cite class="icon-image"><a href="https://res.cloudinary.com/deepwave-org/image/upload//v1645631599/Meeresoffensive/North_Sea_Coast_karsten-wurth-unsplash_bchl3t.jpg"
+    schaffen, Fortschritte <span class="sidenote"><cite class="icon-image"><a href="https://res.cloudinary.com/deepwave-org/image/upload//v1662664747/8_Fish_Catch_Subsidies_nguyen-linh-unsplash_kkuemk_hd3wib.jpg"
     rel="noopener">TEXT, der eine Grafik kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span>
     und Rückschritte der umgesetzten Maßnahmen laufend zu überprüfen.
 - title: effektiv
