@@ -58,6 +58,8 @@ ctas:
   full: true
   text: Schließlich kann auch in Vollzeit, also hauptberuflich, am Meeresschutz gewirkt
     werden. Wie genau stünde hier beschrieben.
+animation:
+  number_of_frames: 14
 
 ---
 …, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.
