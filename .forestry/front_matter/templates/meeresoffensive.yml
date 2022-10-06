@@ -75,6 +75,21 @@ fields:
     labelField: 
   label: Calls to action
   description: Was kann ich tun?
+- name: animation
+  type: field_group
+  config: {}
+  fields:
+  - name: number_of_frames
+    type: number
+    label: Number of Frames
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Animation
 pages:
 - content/meeresoffensive/me/ME1.md
 - content/meeresoffensive/me/ME2.md
