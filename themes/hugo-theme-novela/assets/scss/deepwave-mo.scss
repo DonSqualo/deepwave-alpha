@@ -16,6 +16,18 @@ p{
     -ms-hyphenate-limit-lines: 2;
 }
 
+h1{
+    margin-bottom: 0.6em;
+}
+h1::first-line{
+    font-size: smaller;
+}
+@media screen and (max-width: 540px){
+    h1, h2, h3, h4, h5{
+        padding: 0 20px;
+    }
+}
+
 /* MO START */
 
 #moContent{
@@ -90,6 +102,14 @@ p{
 .mo-section + .footer-gradient{
     background: none;
 }
+
+.social-icon-container a:last-of-type{
+    margin-right: 0;
+}
+.social-icon-container span.hidden:last-child{
+    display: none;
+}
+
 
 .mo-single{
     position: relative;
