@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function(e){
     
     handleMOClicks()
     handleMOAnimation()
+    //handleMOProgress()
     handleSidenotes()
     handleCTAs()
     
@@ -170,12 +171,15 @@ function handleMOAnimation(){
     
     /// TIMING VARS
     let pauseBefore = 200           // Pause before animation
-    let animationDuration = 1200     // ## Multiply with number of frames
+    let animationDuration = 1200    // ## Multiply with number of frames
     let pauseBetween = 200          // Pause after animation
     let translationDuration = 500   // Translation visibility
     let pauseAfter = 300            // Pause before next slide
     
     let slideTotal = pauseBefore + animationDuration + pauseBetween + translationDuration + pauseAfter
+    
+    const progressBase = []         // Array to hold Progress Circle Values
+    let slideCounter = 0
     
     /// ERFASSE ALLE SECTIONS
     let moSections = document.querySelectorAll('.mo-sections-wrapper')
@@ -187,7 +191,6 @@ function handleMOAnimation(){
             
             let sectionDuraton = 0 // Section Duration
             
-            /*
             // init ScrollMagic controller for SECTIONS
             let sectionController = new ScrollMagic.Controller({
                 globalSceneOptions: {
@@ -195,7 +198,6 @@ function handleMOAnimation(){
                     reverse: true
                 }
             });
-            */
             
             // init ScrollMagic controller for SLIDES
             let slideController = new ScrollMagic.Controller({
@@ -205,6 +207,50 @@ function handleMOAnimation(){
                 }
             });
 
+            
+            let mos = entry.querySelectorAll('.mo-section')
+            // SECTION
+            let sectionTrigger = entry
+            new ScrollMagic.Scene({triggerElement: sectionTrigger, duration: (slideTotal * mos.length + mos.length), offset: 0, triggerHook: 'onEnter'})
+                .on("enter leave", sectionCallback)
+                .addTo(sectionController);
+            
+            
+            // SECTION CALLBACK
+            function sectionCallback(e){
+                
+                let progressElement = document.getElementById('mo-progress')
+                let circlesContainer = progressElement.querySelector('#mo-progress--circles')
+                let sectionHeadlineContainer = progressElement.querySelector('#mo-progress--headline')
+                
+                circlesContainer.innerHTML = ''
+                
+                if(e.type == "enter"){
+                    // Set progress headline to section headline
+                    let sectionHeadlines = document.querySelectorAll('.mo-subheader h2')
+                    sectionHeadlineContainer.innerHTML = sectionHeadlines[index].innerHTML
+                    
+                    // Add ProgressCircles according to number of slides
+                    mos.forEach(function(){
+                        let node = document.createElement('div')
+                        node.setAttribute('class', 'mo-progress--circle')
+                        circlesContainer.appendChild(node)
+                        if(e.scrollDirection == 'FORWARD'){
+                            new CircleProgress(node, { max: 100, value: 0, textFormat: 'none' })
+                        } else{
+                            new CircleProgress(node, { max: 100, value: 100, textFormat: 'none' })
+                        }
+                    })
+                    progressElement.classList.remove('hidden')
+                    console.log("Scene entered: " + index)
+                    
+                } else if(e.type == "leave"){
+                    progressElement.classList.add('hidden')
+                    console.log("Scene left: " + index)
+                } 
+            }
+            
+            
             // CALLBACK SLIDETRANSITION
             let counter = 0
             let idPrefix = '#' + entry.querySelector('.mo-section').getAttribute('id').slice(0, 2) /* ACHTUNG */
@@ -216,18 +262,15 @@ function handleMOAnimation(){
                 } else if(e.scrollDirection == 'REVERSE'){
                     document.querySelector(idPrefix + counter).classList.remove('visited')
                     counter -= 1
-                } else{
-                    // do nothing
                 }
             }
 
+            
 
             /// HANDLE MOs
-            let mos = entry.querySelectorAll('.mo-section')
             if( mos.length > 0 ){
-                console.log('mos.length: ' + mos.length)
                 mos.forEach(function(entry, mosIndex){                    
-                    console.log('mosIndex ' + mosIndex)
+
                     // Scene ID
                     var sceneID = entry.getAttribute('id')
                     var sceneSelector = '#' + sceneID
@@ -235,12 +278,17 @@ function handleMOAnimation(){
                     
                     console.log('_SLIDE: ' + sceneID)
                     
+                    // Progress Circle Values
+                    progressBase.push([0])
+                    progressBase[index][mosIndex] = 0
                     
+                    /*
                     //let firstFrame = entry.getAttribute('data-first-frame')
                     let numberOfFrames = entry.getAttribute('data-number-of-frames')
                     if(numberOfFrames){
                         console.log('number of frames via data-attribute: ' + numberOfFrames)
                     }
+                    */
                     
                     
                     // CALLBACK SLIDE: PRELOAD NEXT ANIMATION
@@ -248,11 +296,24 @@ function handleMOAnimation(){
                         if(e.type == "enter"){
                             console.log("Slide entered: " + sceneID)
                             
+                            // Set SlideCounter for Progress
+                            let progressCounterContainer = document.querySelector('#mo-progress--count > span')
+                            if(e.scrollDirection == 'FORWARD'){
+                                slideCounter += 1
+                                progressCounterContainer.innerHTML = slideCounter
+                            } else if(e.scrollDirection == 'REVERSE'){
+                                slideCounter -= 1
+                                progressCounterContainer.innerHTML = slideCounter
+                            }
+                            
+                            // Trigger Animation Preloading
                             let nextSceneObject
                             if(mosIndex < (mos.length - 1)){
                                 nextSceneObject = mos[(mosIndex + 1)]
                             }else{
-                                nextSceneObject = moSections[(index + 1)].querySelector('.mo-section')
+                                if(moSections[(index + 1)]){
+                                    nextSceneObject = moSections[(index + 1)].querySelector('.mo-section')
+                                }
                             }
                             if(nextSceneObject){
                                 let nextSceneID = nextSceneObject.getAttribute('id')
@@ -285,12 +346,20 @@ function handleMOAnimation(){
                     
                     
                     // Pause before
-                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBefore, offset: sceneOffset, triggerHook: 'onLeave'})
+                    let scenePauseBefore = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBefore, offset: sceneOffset, triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .addIndicators()
                         .on("enter", slideCallback)
                         .addTo(slideController);
 
+                    scenePauseBefore.on('enter', function(e){
+                        presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+                    
+                    scenePauseBefore.on('progress', function(e){
+                        updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+                    
                     
                     // Animation
                     let sceneAnimation = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: animationDuration, offset: (sceneOffset + pauseBefore), triggerHook: 'onLeave'})
@@ -305,7 +374,8 @@ function handleMOAnimation(){
                     sceneAnimation.on('enter', function(e){
                         let frameElements = entry.querySelectorAll('.mo-animation > div')
                         numberOfFrames = frameElements.length
-                        //console.log("No of frames " + frameElements.length)
+                        
+                        presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)                        
                     })
                     
                     sceneAnimation.on('progress', function(e){
@@ -326,24 +396,42 @@ function handleMOAnimation(){
                             }
                             currentFrame = indexNext
                         }
+                        
+                        updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
                     })
 
-                    
+
                     // Pause between
-                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBetween, offset: (sceneOffset + pauseBefore + animationDuration), triggerHook: 'onLeave'})
+                    let scenePauseBetween = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBetween, offset: (sceneOffset + pauseBefore + animationDuration), triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .addIndicators()
                         .addTo(slideController);
 
+                    scenePauseBetween.on('enter', function(e){
+                        presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+
+                    scenePauseBetween.on('progress', function(e){
+                        updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+                    
                     
                     // Translation
                     let translationHandle = entry.querySelector('.mo-translation')
-                    new ScrollMagic.Scene({triggerElement: triggerElmt, duration: translationDuration, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween), triggerHook: 'onLeave'})
+                    let sceneTranslation = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: translationDuration, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween), triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .setClassToggle(entry, "translation-active")
                         .addIndicators()
                         .addTo(slideController);
 
+                    sceneTranslation.on('enter', function(e){
+                        presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+
+                    sceneTranslation.on('progress', function(e){
+                        updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+                    
                     
                     // Pause after
                     let scenePauseAfter = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseAfter, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween + translationDuration), triggerHook: 'onLeave'})
@@ -351,37 +439,52 @@ function handleMOAnimation(){
                         .addIndicators()
                         .addTo(slideController);
                     
+                    scenePauseAfter.on('enter', function(e){
+                        presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
+                    })
+                    
                     scenePauseAfter.on('progress', function(e){
                         // Fade out original text and animation
                         entry.querySelector('.mo-original').style.opacity = (1.5 - e.progress * 2)
                         entry.querySelector('.mo-animation').style.opacity = (1 - e.progress * 2.4)
+                        
+                        updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
                     })
+                    
                 }) 
             }
-                        
-            
-            /*
-            // SECTION
-            let sectionTrigger = entry
-            new ScrollMagic.Scene({triggerElement: sectionTrigger, duration: (slideTotal * mos.length + mos.length), offset: 0, triggerHook: 'onEnter'})
-                .on("enter leave", sectionCallback)
-                //.addIndicators({name: '#'})
-                .addTo(sectionController);
-            
-            // SECTION CALLBACK
-            function sectionCallback(e){
-                if(e.type == "enter"){
-                    console.log("Scene entered: " + index)
-                } else if(e.type == "leave"){
-                    console.log("Scene left: " + index)
-                } 
-            }
-            */
             
         })    
     }
 }
 
+
+// #################################################################################
+// #################################################################################
+// PROGRESS CIRCLES
+
+function presetSceneProgress(event, index, mosIndex, progressBase, sceneDuration, slideTotal){
+    let circleObj = document.querySelector('.mo-progress--circle:nth-child(' + (mosIndex + 1) + ')')
+    if(circleObj){
+        let circle = circleObj.circleProgress
+        if(event.scrollDirection == 'FORWARD'){
+            progressBase[index][mosIndex] = circle['value']
+        } else if(event.scrollDirection == 'REVERSE'){
+            progressBase[index][mosIndex] = circle['value'] - (sceneDuration / slideTotal * 100)
+        }
+    }
+}
+
+function updateProgress(event, index, mosIndex, progressBase, sceneDuration, slideTotal){
+    let circleObj = document.querySelector('.mo-progress--circle:nth-child(' + (mosIndex + 1) + ')')
+    if(circleObj){
+        let circle = circleObj.circleProgress
+        let newValue = (progressBase[index][mosIndex] + (sceneDuration / slideTotal) * (100 * event.progress)).toFixed(0)
+        if(newValue >= 0 && newValue <= 100){
+            circle['value'] = newValue
+        }
+    }
+}
 
 // #################################################################################
 // #################################################################################

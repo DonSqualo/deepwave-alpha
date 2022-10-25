@@ -11,7 +11,7 @@
     {{ $prism := resources.Get "css/prism.css" }}
     <!--<link rel="stylesheet" href="{{ $prism.RelPermalink }}" />-->
         
-    {{ $lightbox := resources.Get "basicLightbox/main.scss" | resources.ToCSS $options | fingerprint }}
+    {{ $lightbox := resources.Get "scss/basicLightbox/main.scss" | resources.ToCSS $options | fingerprint }}
     <link rel="stylesheet" href="{{ $lightbox.RelPermalink }}" />
         
     {{ partial "seo/print.html" . }}

@@ -26,7 +26,11 @@
     <script src="{{ $script.RelPermalink }}"></script>
     
     <!-- basicLightbox -->
-    {{ $script := resources.Get "basicLightbox/basicLightbox.min.js" }}
+    {{ $script := resources.Get "js/basicLightbox/basicLightbox.min.js" }}
+    <script src="{{ $script.RelPermalink }}"></script>
+    
+    <!-- progress -->
+    {{ $script := resources.Get "js/progress/circle-progress.min.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
     
     <!-- Deepwave Custom -->
@@ -49,7 +53,7 @@
     </div>
 
     {{ $script := resources.Get "js/prism.js" }}
-    <script src="{{ $script.RelPermalink }}"></script>
+    <!--<script src="{{ $script.RelPermalink }}"></script>-->
 </body>
 
 </html>
