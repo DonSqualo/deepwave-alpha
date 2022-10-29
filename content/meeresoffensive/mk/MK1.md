@@ -10,7 +10,10 @@ explanations:
 - title: Klimaabkommen
   text: ''
 - title: Wirtschaftsraum
-  text: ''
+  text: |-
+    Unter dem Druck, die Klimakrise in den Griff zu kriegen, fällt vielen zuerst ein, schön viele Windräder ins Meer zu stellen. Aber so einfach ist das nicht, wenn man die Begleiterscheinungen miteinbezieht: Zerstörung von Lebensräumen, Lärm durch die Rammung der Pfeiler und den Dauerbetrieb, Schreddern von Vögeln, Schiffsverkehr durch Wartungsarbeiten, Verlegung von Offshore-Kabeln.
+
+    Es ist schwierig, Klima- und Meeresschutz nicht gegeneinander auszuspielen, aber vielleicht hilft hier der Gedanke, die Meere nicht als Dienstleister zu betrachten.
 - title: Meeresschutz
   text: ''
 ctas: []
