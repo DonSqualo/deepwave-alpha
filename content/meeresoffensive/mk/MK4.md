@@ -20,4 +20,4 @@ animation:
   number_of_frames: 
 
 ---
-…, dass sie eine europäische [Ökosystem-Wiederherstellungs-Offensive](# "Offensive") initiieren und vorantreiben, um mindestens [15%](# "15%") der europäischen Meere in einen naturnahen und ungestörten Zustand zu versetzen. Die Bundesregierung muss dem Wert der ‚[nature-based solutions](# "solutions")‘ in den anstehenden internationalen Prozessen z.B. dem [Petersberger Klimadialog](# "Klimadialog") oder der [UN-Klimakonferenz](# "Klimakonferenz") höchste Priorität einräumen.
+«…, dass sie eine europäische [Ökosystem-Wiederherstellungs-Offensive](# "Offensive") initiieren und vorantreiben, um mindestens [15%](# "15%") der europäischen Meere in einen naturnahen und ungestörten Zustand zu versetzen. Die Bundesregierung muss dem Wert der ‚[nature-based solutions](# "solutions")‘ in den anstehenden internationalen Prozessen z.B. dem [Petersberger Klimadialog](# "Klimadialog") oder der [UN-Klimakonferenz](# "Klimakonferenz") höchste Priorität einräumen.»
