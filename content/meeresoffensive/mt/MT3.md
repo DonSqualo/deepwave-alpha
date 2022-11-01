@@ -19,4 +19,4 @@ animation:
   number_of_frames: 
 
 ---
-…eine [Verhinderung](# "Verhinderung") des Abbaus von [marinen mineralischen Ressourcen](# "Ressourcen") durch [Tiefseebergbau](# "Tiefseebergbau").
+«…eine [Verhinderung](# "Verhinderung") des Abbaus von [marinen mineralischen Ressourcen](# "Ressourcen") durch [Tiefseebergbau](# "Tiefseebergbau").»
