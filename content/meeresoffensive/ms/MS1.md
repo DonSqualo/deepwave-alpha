@@ -32,16 +32,16 @@ explanations:
 - title: effektiv
   text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
     was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich
-    erholen können. Dazu braucht es dreierlei: eine ganzheitliche Gebietsplanung,
-    strikte Kontrollen und konsequente Strafen bei Verstößen.'
+    erholen können. Dazu braucht es dreierlei: eine ganzheitliche {Gebietsplanung},
+    strikte {Kontrollen} und konsequente Strafen bei Verstößen.'
 - title: 50%
   text: Achtung! Mit 50 % ist nicht etwa die Hälfte der deutschen Meere gemeint, sondern
     die Hälfte von dem, von dem ihr denkt, das es zu 100 % geschützt ist.
 - title: Nullnutzung
   text: |-
-    Ratet mal, welche der folgenden Nutzungsformen als wirtschaftlich gelten: Sprengungen von Bomben aus den Weltkriegen, militärische Übungsmanöver, Grundschleppnetzfischerei, Stellnetze, Aufsuchung und Gewinnung von Kohlenwasserstoffen (also auf deutsch: Erdöl- und Erdgasbohrungen), Endlagerung von CO₂-Einträgen, Offshore-Windanlagen, Verlegung von Kabeln und Rohren, Containerschiffe, Fähren, Sportboote, Flugzeuge, Sand- und Kiesabbau - Überraschung: alle. Und wir fragen uns:
+    Ratet mal, welche der folgenden Nutzungsformen als wirtschaftlich gelten: Sprengungen von Bomben aus den Weltkriegen, militärische Übungsmanöver, {Grundschleppnetzfischerei}, Stellnetze, Aufsuchung und Gewinnung von Kohlenwasserstoffen (also auf deutsch: Erdöl- und Erdgasbohrungen), Endlagerung von CO₂-Einträgen, Offshore-Windanlagen, Verlegung von Kabeln und Rohren, Containerschiffe, Fähren, Sportboote, Flugzeuge, Sand- und {Kiesabbau} - Überraschung: {alle}. Und wir fragen uns:
 
-    Was wird hier vor wem geschützt? Schutzgebiete ergeben nur dann Sinn, wenn sie als Nullnutzungszonen oder zumindest als Fang- und Abbauverbotszonen eingestuft werden.
+    Was wird hier vor wem geschützt? Schutzgebiete ergeben nur dann Sinn, wenn sie als {Nullnutzungszonen} oder zumindest als {Fang- und Abbauverbotszonen} eingestuft werden.
 ctas:
 - short: true
   part: false
