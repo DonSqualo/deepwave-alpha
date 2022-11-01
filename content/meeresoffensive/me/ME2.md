@@ -10,7 +10,8 @@ explanations:
 - title: stärker
   text: ''
 ctas: []
-draft: true
+animation:
+  number_of_frames: 
 
 ---
-…, dass der [Kleinfischerei](# "Kleinfischerei") eindeutig Vorrang beim Fischfang gewährt wird im Sinne der [Richtlinie der UN-Ernährungs- und Landwirtschaftsorganisation zum Schutz einer nachhaltigen Kleinfischerei](# "Richtlinie"). Die Bundesregierung muss sich im Rahmen der Umsetzung der Richtlinie finanziell und politisch [stärker als bisher](# "stärker") engagieren und mit ihren Aktivitäten die Meeres- und Entwicklungspolitik unterstützen.
+«…, dass der [Kleinfischerei](# "Kleinfischerei") eindeutig Vorrang beim Fischfang gewährt wird im Sinne der [Richtlinie der UN-Ernährungs- und Landwirtschaftsorganisation zum Schutz einer nachhaltigen Kleinfischerei](# "Richtlinie"). Die Bundesregierung muss sich im Rahmen der Umsetzung der Richtlinie finanziell und politisch [stärker als bisher](# "stärker") engagieren und mit ihren Aktivitäten die Meeres- und Entwicklungspolitik unterstützen.»
