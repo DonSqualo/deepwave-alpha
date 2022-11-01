@@ -14,4 +14,4 @@ animation:
   number_of_frames: 
 
 ---
-…, dass sie Beschlüsse aus international verhandelten Abkommen [kohärent](# "kohärent") in [konkrete nationale Maßnahmen](# "Massnahmen") überführen und umsetzen.
+«…, dass sie Beschlüsse aus international verhandelten Abkommen [kohärent](# "kohärent") in [konkrete nationale Maßnahmen](# "Massnahmen") überführen und umsetzen.»
