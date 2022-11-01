@@ -14,4 +14,4 @@ animation:
   number_of_frames: 
 
 ---
-…, dass sie im Rahmen ihres [Vorsitzes bei HELCOM](# "HELCOM") und der [EU-Ratspräsident­schaft](# "EU-Ratspräsidentschaft") Themen setzen und Maßnahmen vorantreiben, die zu einem guten Zustand der Meere führen und in diesem Sinne eine [progressive Verhandlungslinie](# "Verhandlungslinie") einnehmen.
+«…, dass sie im Rahmen ihres [Vorsitzes bei HELCOM](# "HELCOM") und der [EU-Ratspräsident­schaft](# "EU-Ratspräsidentschaft") Themen setzen und Maßnahmen vorantreiben, die zu einem guten Zustand der Meere führen und in diesem Sinne eine [progressive Verhandlungslinie](# "Verhandlungslinie") einnehmen.»
