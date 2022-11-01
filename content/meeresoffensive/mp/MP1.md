@@ -19,4 +19,4 @@ animation:
   number_of_frames: 
 
 ---
-…, dass der [Meeresumwelt- und Meeresnaturschutz](# "Meeresnaturschutz") zukünftig eine zentrale Rolle in den politischen und fachlichen Entscheidungen [aller Ressorts](# "Ressorts") spielt.
+«…, dass der [Meeresumwelt- und Meeresnaturschutz](# "Meeresnaturschutz") zukünftig eine zentrale Rolle in den politischen und fachlichen Entscheidungen [aller Ressorts](# "Ressorts") spielt.»
