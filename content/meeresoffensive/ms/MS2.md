@@ -7,6 +7,11 @@ text_translation: Stellt euch vor, ihr wollt in eurem Dorf einen ganz besonderen
   ist. Außerdem hat man vergessen euch zu fragen, warum ihr genau diesen Baum schützen
   wollt und ob die Stelle, an der der Zaun jetzt steht, euren Weg blockiert.
 explanations:
+- title: effektiv
+  text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
+    was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich
+    erholen können. Dazu braucht es dreierlei: eine {ganzheitliche Gebietsplanung},
+    _{_strikte Kontrollen} und konsequente Strafen bei Verstößen.'
 - title: Schutzgebietsnetzwerk
   text: 'Es ist wie bei uns Menschen: Ich allein kann Gutes bewirken. Auch andere
     können Gutes bewirken. Wenn wir uns aber zusammentun, kann Großartiges entstehen.
@@ -15,18 +20,20 @@ explanations:
     Hotspots zu schützen, wenn doch der eigentliche Hotspot die vielfältigen Verbindungen,
     Wanderrouten und Netzwerke der Meere sind.'
 - title: 30%
-  text: Bis heute stehen weniger als 3 % aller Meere unter Schutz. Umweltverbände
-    fordern deswegen _Thirty by Thirty_ und das heißt, dass bis 2030 nicht nur 30
-    % aller Meere unter einen wirksamen Schutz gestellt, sondern dafür auch die richtigen
-    Gebiete und Wanderkorridore ausgewählt werden.
+  text: "{Bis heute stehen weniger als 3 % aller Meere unter Schutz.} Umweltverbände
+    fordern deswegen {_Thirty by Thirty}_ und das heißt, dass bis 2030 nicht nur {30
+    %} aller Meere unter einen wirksamen Schutz gestellt, sondern dafür auch die {richtigen
+    Gebiete} und {Wanderkorridore} ausgewählt werden."
 - title: Rechte
   text: Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste,
-    euer Meer in- und auswendig. Lebt mit und von der Natur. Wisst, was es braucht,
-    damit euer Zuhause in Zukunft so lebendig sein kann wie es in eurer Kindheit war.
-    Und dann kommt eine Gruppe weißer Cis-Menschen daher, die sich Politiker:innen
+    euer Meer in- und auswendig. Lebt mit und von der Natur. {Wisst, was es braucht,
+    damit euer Zuhause in Zukunft so lebendig sein kann wie es in eurer Kindheit war.}
+    Und dann kommt eine Gruppe {weißer Cis-Menschen} daher, die sich Politiker:innen
     nennen und im Concrete Jungle aufgewachsen sind, und entscheidet darüber wie eure
     Heimat gemanagt wird.
 ctas: []
+animation:
+  number_of_frames: 
 
 ---
-…, dass sie sich in internationalen Verhandlungen für die Etablierung eines effektiven [Schutzgebietsnetzwerkes](# "Schutzgebietsnetzwerk") auf [30% der globalen Meeresfläche bis 2030](# "30%") einsetzen, welches die [Rechte der lokalen Bevölkerung](# "Rechte") wahrt und diese in die Festlegung gebietsspezifischer Schutzziele einbezieht.
+…, dass sie sich in internationalen Verhandlungen für die Etablierung eines [effektiven](# "effektiv") [Schutzgebietsnetzwerkes](# "Schutzgebietsnetzwerk") auf [30% der globalen Meeresfläche bis 2030](# "30%") einsetzen, welches die [Rechte der lokalen Bevölkerung](# "Rechte") wahrt und diese in die Festlegung gebietsspezifischer Schutzziele einbezieht.
