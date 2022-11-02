@@ -171,12 +171,13 @@ function handleMOAnimation(){
     
     /// TIMING VARS
     let pauseBefore = 200           // Pause before animation
+    let animationAppearDuration = 0 // Animation appearance
     let animationDuration = 1200    // ## Multiply with number of frames
     let pauseBetween = 200          // Pause after animation
     let translationDuration = 500   // Translation visibility
     let pauseAfter = 300            // Pause before next slide
     
-    let slideTotal = pauseBefore + animationDuration + pauseBetween + translationDuration + pauseAfter
+    let slideTotal = pauseBefore + animationAppearDuration + animationDuration + pauseBetween + translationDuration + pauseAfter
     
     const progressBase = []         // Array to hold Progress Circle Values
     let slideCounter = 0
@@ -296,6 +297,7 @@ function handleMOAnimation(){
                         if(e.type == "enter"){
                             console.log("Slide entered: " + sceneID)
                             
+                            /* DEACTIVATED
                             // Set SlideCounter for Progress
                             let progressCounterContainer = document.querySelector('#mo-progress--count > span')
                             if(e.scrollDirection == 'FORWARD'){
@@ -305,6 +307,7 @@ function handleMOAnimation(){
                                 slideCounter -= 1
                                 progressCounterContainer.innerHTML = slideCounter
                             }
+                            */
                             
                             // Trigger Animation Preloading
                             let nextSceneObject
@@ -361,8 +364,22 @@ function handleMOAnimation(){
                     })
                     
                     
+                    // Animation Appear
+                    /*
+                    let sceneAnimationAppear = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: animationAppearDuration, offset: (sceneOffset + pauseBefore), triggerHook: 'onLeave'})
+                                    .setPin(triggerElmt)
+                                    .addIndicators()
+                                    .reverse(false)
+                                    .addTo(slideController);
+                    
+                    sceneAnimationAppear.on('progress', function(e){
+                        //console.log(e.progress)
+                    })
+                    */
+                    
+                    
                     // Animation
-                    let sceneAnimation = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: animationDuration, offset: (sceneOffset + pauseBefore), triggerHook: 'onLeave'})
+                    let sceneAnimation = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: animationDuration, offset: (sceneOffset + pauseBefore + animationAppearDuration), triggerHook: 'onLeave'})
                                     .setPin(triggerElmt)
                                     .addIndicators()
                                     .addTo(slideController);
@@ -402,7 +419,7 @@ function handleMOAnimation(){
 
 
                     // Pause between
-                    let scenePauseBetween = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBetween, offset: (sceneOffset + pauseBefore + animationDuration), triggerHook: 'onLeave'})
+                    let scenePauseBetween = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseBetween, offset: (sceneOffset + pauseBefore + animationAppearDuration + animationDuration), triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .addIndicators()
                         .addTo(slideController);
@@ -418,7 +435,7 @@ function handleMOAnimation(){
                     
                     // Translation
                     let translationHandle = entry.querySelector('.mo-translation')
-                    let sceneTranslation = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: translationDuration, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween), triggerHook: 'onLeave'})
+                    let sceneTranslation = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: translationDuration, offset: (sceneOffset + pauseBefore + animationAppearDuration + animationDuration + pauseBetween), triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .setClassToggle(entry, "translation-active")
                         .addIndicators()
@@ -434,7 +451,7 @@ function handleMOAnimation(){
                     
                     
                     // Pause after
-                    let scenePauseAfter = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseAfter, offset: (sceneOffset + pauseBefore + animationDuration + pauseBetween + translationDuration), triggerHook: 'onLeave'})
+                    let scenePauseAfter = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: pauseAfter, offset: (sceneOffset + pauseBefore + animationAppearDuration + animationDuration + pauseBetween + translationDuration), triggerHook: 'onLeave'})
                         .setPin(triggerElmt)
                         .addIndicators()
                         .addTo(slideController);
