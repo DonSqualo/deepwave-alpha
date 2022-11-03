@@ -1,5 +1,5 @@
 ---
-title: Kommentar zur „Meeresoffensive“
+title: KLARTEXT „Meeresoffensive“
 
 ---
 Gemeinsam mit 16 weiteren Organisationen haben wir 2020 eine „Meeresoffensive“ von der Bundesregierung gefordert: zu jedem Aspekt des politischen Meeresschutzes eine Kernforderung. Insgesamt 22, mit der Dringlichkeit, dass Meerespolitik die entscheidende Rolle in der Bewältigung der Klimakrise spielt. Ein Teil dieser Forderungen findet sich im Koalitionsvertrag wieder und „Meeresoffensive“ gehört inzwischen zum Wortschatz von deutschen Politiker:innen.
