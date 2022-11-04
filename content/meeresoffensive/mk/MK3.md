@@ -24,4 +24,4 @@ animation:
   number_of_frames: 
 
 ---
-«…, dass sie die [klimarelevanten Funktionen](# "klimarelevant") der natürlichen, marinen Ökosysteme (z.B. [Kohlenstoffsenken](# "Kohlenstoffsenken"), [Lebensraumbildner](# "Lebensraumbildner")) in allen relevanten nationalen politischen Entscheidungen berücksichtigen und gegenüber [anthropogenen Nutzungsinteressen](# "Nutzungsinteressen") [bilanzieren](# "bilanzieren").»
+»…, dass sie die [klimarelevanten Funktionen](# "klimarelevant") der natürlichen, marinen Ökosysteme (z.B. [Kohlenstoffsenken](# "Kohlenstoffsenken"), [Lebensraumbildner](# "Lebensraumbildner")) in allen relevanten nationalen politischen Entscheidungen berücksichtigen und gegenüber [anthropogenen Nutzungsinteressen](# "Nutzungsinteressen") [bilanzieren](# "bilanzieren").«
