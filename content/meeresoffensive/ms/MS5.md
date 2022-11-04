@@ -15,4 +15,4 @@ animation:
   number_of_frames: 
 
 ---
-«…, dass sie ihre Fischereimaßnahmen verbindlich an ökologischen Kriterien ausrichten, um Beeinträchtigungen durch [grundberührende ](# "Grund")Fanggeräte, [Beifänge ](# "Beifang")und das [fischereilich bedingte Töten](# "Fischerei") von Seevögeln und Meeressäugern weitest möglich auszuschließen.»
+»…, dass sie ihre Fischereimaßnahmen verbindlich an ökologischen Kriterien ausrichten, um Beeinträchtigungen durch [grundberührende ](# "Grund")Fanggeräte, [Beifänge ](# "Beifang")und das [fischereilich bedingte Töten](# "Fischerei") von Seevögeln und Meeressäugern weitest möglich auszuschließen.«
