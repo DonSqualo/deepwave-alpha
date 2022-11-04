@@ -35,4 +35,4 @@ animation:
   number_of_frames: 
 
 ---
-«…, dass [ökosystembasierte](# "ökosystembasiert") [Meeres­raumordnungspläne](# "Meeresraumordnungspläne") für die deutsche ausschließliche Wirtschaftszone ([AWZ](# "AWZ")) und die europäischen Meere erarbeitet werden, in denen eine Sicherung und Entwicklung der [ökologischen Funktionen](# "Funktionen") der Meere gewährleistet werden.»
+»…, dass [ökosystembasierte](# "ökosystembasiert") [Meeres­raumordnungspläne](# "Meeresraumordnungspläne") für die deutsche ausschließliche Wirtschaftszone ([AWZ](# "AWZ")) und die europäischen Meere erarbeitet werden, in denen eine Sicherung und Entwicklung der [ökologischen Funktionen](# "Funktionen") der Meere gewährleistet werden.«
