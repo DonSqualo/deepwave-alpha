@@ -13,4 +13,4 @@ animation:
   number_of_frames: 
 
 ---
-«… die Ausweisung eines Meeresschutz­gebietes im antarktischen [Weddellmeer](# "Weddellmeer") durch die zuständige [„Kommission zur Erhaltung der lebenden Meeresschätze der Antarktis“ (CCAMLR)](# "CCAMLR").»
+»… die Ausweisung eines Meeresschutz­gebietes im antarktischen [Weddellmeer](# "Weddellmeer") durch die zuständige [„Kommission zur Erhaltung der lebenden Meeresschätze der Antarktis“ (CCAMLR)](# "CCAMLR").«
