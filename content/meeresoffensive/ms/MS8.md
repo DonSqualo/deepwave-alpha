@@ -18,4 +18,4 @@ animation:
   number_of_frames: 
 
 ---
-«…, dass sie sich auf allen relevanten Ebenen, u.a. im Rahmen der Neuauflegung des [Europäischen Meeres- und Fischereifonds](# "Fond") und bei der Ministerkonferenz der [Welthandelsorganisation (WTO)](# "WTO"), entschieden dafür einsetzen, dass jegliche [schädliche Fischereisubventionen](# "Subventionen") beendet werden.»
+»…, dass sie sich auf allen relevanten Ebenen, u.a. im Rahmen der Neuauflegung des [Europäischen Meeres- und Fischereifonds](# "Fond") und bei der Ministerkonferenz der [Welthandelsorganisation (WTO)](# "WTO"), entschieden dafür einsetzen, dass jegliche [schädliche Fischereisubventionen](# "Subventionen") beendet werden.«
