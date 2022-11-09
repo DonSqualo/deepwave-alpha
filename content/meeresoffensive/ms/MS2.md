@@ -9,9 +9,9 @@ text_translation: Stellt euch vor, ihr wollt in eurem Dorf einen ganz besonderen
 explanations:
 - title: effektiv
   text: |-
-    Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können, was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich erholen können. Dazu braucht es dreierlei: eine <span class="expander"><span class="trigger">TRIGGER
-    </span><span class="info">CONTENT
-    </span></span> {ganzheitliche Gebietsplanung}, _{_strikte Kontrollen} und konsequente Strafen bei Verstößen.
+    Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können, was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich erholen können. Dazu braucht es dreierlei: eine <span class="expander"><span class="trigger">ganzheitliche Gebietsplanung
+    </span><span class="info">Zwei Beispiele: 1. Ein Schutzgebiet sollte groß genug sein, um wirksam zu schützen. 2. Zwischen Schutzgebieten müssen Wanderkorridore eingerichtet werden.
+    </span></span>, _{_strikte Kontrollen} und konsequente Strafen bei Verstößen.
 - title: Schutzgebietsnetzwerk
   text: 'Es ist wie bei uns Menschen: Ich allein kann Gutes bewirken. Auch andere
     können Gutes bewirken. Wenn wir uns aber zusammentun, kann Großartiges entstehen.
