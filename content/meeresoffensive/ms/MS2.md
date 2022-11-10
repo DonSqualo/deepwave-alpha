@@ -19,10 +19,17 @@ explanations:
     Hotspots zu schützen, wenn doch der eigentliche Hotspot die vielfältigen Verbindungen,
     Wanderrouten und Netzwerke der Meere sind.'
 - title: 30%
-  text: "{Bis heute stehen weniger als 3 % aller Meere unter Schutz.} Umweltverbände
-    fordern deswegen {_Thirty by Thirty}_ und das heißt, dass bis 2030 nicht nur {30
-    %} aller Meere unter einen wirksamen Schutz gestellt, sondern dafür auch die {richtigen
-    Gebiete} und {Wanderkorridore} ausgewählt werden."
+  text: '<span class="expander"><span class="trigger">Bis heute stehen weniger als
+    3 % aller Meere unter Schutz. </span><span class="info">Wenn man das überhaupt
+    Schutz nennen kann.</span></span> Umweltverbände fordern deswegen {_Thirty by
+    Thirty}_ und das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a
+    href="[https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf](https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf
+    "https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf")"
+    target="_blank" rel="noopener">Studie: “30X30 A Blueprint For Ocean Protection:
+    How we can protect 30 % of our oceans by 2030” der University of Oxford, University
+    of York und Greenpeace</a></cite><span>30 %</span></span> aller Meere unter einen
+    wirksamen Schutz gestellt, sondern dafür auch die {richtigen Gebiete} und {Wanderkorridore}
+    ausgewählt werden.'
 - title: Rechte
   text: Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste,
     euer Meer in- und auswendig. Lebt mit und von der Natur. {Wisst, was es braucht,
