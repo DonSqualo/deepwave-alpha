@@ -1,18 +1,18 @@
 ---
 order: 13
 background_image: "/v1662664256/3_Meeresraumordnungsplan_moritz-kindler-unsplash_dblkkt_duzsem.jpg"
-text_translation: 'Ihr spielt Tetris, aber es hat einen Bug: Wenn ihr eine Reihe gefüllt
-  habt, verschwindet sie nicht. Immer schneller fallen Formen nach unten. Und plötzlich
-  passen sie gar nicht mehr ineinander. So ist das auch, wenn Militär, Rohstoff-,
-  Öl- und Energiekonzerne, Fischereiunternehmen und Reedereien gleichzeitig eine Fläche
-  im Meer für sich beanspruchen wollen. Das Meer wird zu voll. Seine Kapazitäten gesprengt.'
+text_translation: 'Ihr spielt Tetris, aber euer Spiel hat einen Fehler: Wenn ihr eine
+  Reihe gefüllt habt, verschwindet sie nicht. Immer schneller fallen Formen nach unten.
+  Und plötzlich passen sie gar nicht mehr ineinander. So ist das auch, wenn Militär,
+  Rohstoff-, Öl- und Energiekonzerne, Fischereiunternehmen und Reedereien gleichzeitig
+  eine Fläche im Meer für sich beanspruchen wollen. Das Meer wird zu voll. Seine Kapazitäten
+  gesprengt.'
 explanations:
 - title: ökosystembasiert
-  text: "{Nur, wenn Pläne für den Ozean gemacht werden, die von der Natur aus gedacht
-    sind, kann das Spiel zwischen Mensch und Meer langfristig funktionieren.} Dafür
-    sollte die Natur kein weiterer Verhandlungspartner am Tisch mit Ölkonzernen und
-    Containerschiffern sein, sondern {Grundlage aller Entscheidungen}. Oder bildlich
-    gesprochen, {der Tisch selbst}."
+  text: |-
+    {Nur, wenn Pläne für den Ozean gemacht werden, die von der Natur aus gedacht sind, kann das Spiel zwischen Mensch und Meer langfristig funktionieren.} Dafür sollte die Natur kein weiterer Verhandlungspartner am Tisch mit Ölkonzernen und Containerschiffern sein, sondern <span class="expander"><span class="trigger">Grundlage aller Entscheidungen.
+    </span><span class="info">Klimaschutz ist wirtschaftlicher als alles andere. Statt sich teurer technischer Lösungen bedienen zu wollen, die es noch gar nicht gibt, ist es sinnvoller und kosteneffizienter, die Natur ihre Arbeit selbst machen zu lassen.
+    </span></span>. Oder bildlich gesprochen, <span class="sidenote"><cite class="icon-link_external"><a href="[https://www.helcom.fi/wp-content/uploads/2019/08/Guideline-for-the-implementation-of-ecosystem-based-approach-in-MSP-in-the-Baltic-Sea-area_June-2016.pdf](https://www.helcom.fi/wp-content/uploads/2019/08/Guideline-for-the-implementation-of-ecosystem-based-approach-in-MSP-in-the-Baltic-Sea-area_June-2016.pdf "https://www.helcom.fi/wp-content/uploads/2019/08/Guideline-for-the-implementation-of-ecosystem-based-approach-in-MSP-in-the-Baltic-Sea-area_June-2016.pdf")" target="_blank" rel="noopener">HELCOM und VASAB haben bereits 2016 Leitlinien entwickelt, die zeigen wie eine ökosystembasierte marine Raumplanung umgesetzt werden kann.</a></cite><span>der Tisch selbst.</span></span>
 - title: Meeresraumordnungspläne
   text: Die aktuell gültigen {Meeresraumordnungspläne} erfüllen alles andere als ihre
     Funktion, ein {“wirkungsvolles begleitendes Instrument für den Meeresnaturschutz”}
