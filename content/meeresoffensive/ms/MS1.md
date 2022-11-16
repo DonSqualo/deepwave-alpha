@@ -27,11 +27,9 @@ explanations:
 - title: adaptiv
   text: Anders als die deutsche Politik ist das Meer ein dynamisches System und verändert
     sich ständig. Wer es schützen will, muss auf Veränderungen eingehen können. Das
-    setzt voraus, dass sich Politiker:innen für <span class="sidenote"><cite class="icon-link_internal"><a
-    href="#" rel="noopener">TEXT, der den internen Link kurz anteasert.</a></cite>
-    <span>TEXTREFERENZ</span></span> wissenschaftliche Erkenntnisse öffnen und Möglichkeiten
-    schaffen, Fortschritte <span class="sidenote"><cite class="icon-image"><a href="https://res.cloudinary.com/deepwave-org/image/upload//v1662664747/8_Fish_Catch_Subsidies_nguyen-linh-unsplash_kkuemk_hd3wib.jpg"
-    rel="noopener">TEXT, der eine Grafik kurz anteasert.</a></cite> <span>TEXTREFERENZ</span></span>
+    setzt voraus, dass sich Politiker:innen für <span class="expander"><span class="trigger">wissenschaftliche
+    Erkenntnisse </span><span class="info">die ihnen seit über 40 Jahren von Wissenschaftler:innen
+    zugespielt werden </span></span>öffnen und Möglichkeiten schaffen, Fortschritte
     und Rückschritte der umgesetzten Maßnahmen laufend zu überprüfen.
 - title: effektiv
   text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
