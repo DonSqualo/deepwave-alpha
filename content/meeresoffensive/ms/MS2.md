@@ -25,13 +25,11 @@ explanations:
     </span></span> und <span class="expander"><span class="trigger">Wanderkorridore
     </span><span class="info">Wenn ihr auf der Karte ([https://www.greenpeaceoceanblueprint.org/de/](https://www.greenpeaceoceanblueprint.org/de/ "https://www.greenpeaceoceanblueprint.org/de/")) das 30 % Szenario anklickt, werden euch nicht 30, sondern 41,8 % geschützte Fläche angezeigt. Das liegt daran, dass hier wirklich alle Faktoren (conservation features) einbezogen werden, die zur Erhaltung der dort vorkommenden Arten beitragen; einschließlich Wanderkorridore. Denn wie soll ein Tier vor menschlichem Eingreifen geschützt sein, wenn der Weg zwischen seinen Lebensräumen nicht geschützt ist?
     </span></span> ausgewählt werden.
-- title: Rechte
-  text: Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste,
-    euer Meer in- und auswendig. Lebt mit und von der Natur. {Wisst, was es braucht,
-    damit euer Zuhause in Zukunft so lebendig sein kann wie es in eurer Kindheit war.}
-    Und dann kommt eine Gruppe {weißer Cis-Menschen} daher, die sich Politiker:innen
-    nennen und im Concrete Jungle aufgewachsen sind, und entscheidet darüber wie eure
-    Heimat gemanagt wird.
+- title: Rechte der lokalen Bevölkerung
+  text: |-
+    Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste, euer Meer in- und auswendig. Lebt mit und von der Natur. <span class="expander"><span class="trigger">Wisst, was es braucht, damit euer Zuhause in Zukunft so lebendig sein kann, wie es in eurer Kindheit war.
+    </span><span class="info">Die Umsetzung eines globalen Schutzgebietsnetzwerks kann nur gelingen, wenn lokale Bevölkerungsgruppen teilhaben und mitbestimmen dürfen.
+    </span></span>Und dann kommt eine Gruppe <span class="sidenote"><cite class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">Cis-Menschen sind Menschen, die sich mit dem in ihrem Geburtsregister eingetragenen Geschlecht identifizieren. Wir haben den Cis-Zusatz eingefügt, weil er daran erinnert, dass seit Jahrhunderten die gleichen Menschen machthabend sind und sich nichts verändern wird, wenn sie es bleiben.</a></cite> <span>weißer Cis-Menschen</span></span>} daher, die sich Politiker:innen nennen und im Concrete Jungle aufgewachsen sind, und entscheidet darüber wie eure Heimat gemanagt wird.
 ctas: []
 animation:
   number_of_frames: 
