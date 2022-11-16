@@ -16,7 +16,7 @@ explanations:
 - title: Meeresraumordnungspläne
   text: |-
     Die aktuell gültigen <span class="expander"><span class="trigger">Meeresraumordnungspläne
-    </span><span class="info">CONTENT
+    </span><span class="info">Wer sich fragt, warum es Meeresraumordnungspläne ([https://www.youtube.com/watch?v=sJBQduMQuyU](https://www.youtube.com/watch?v=sJBQduMQuyU "https://www.youtube.com/watch?v=sJBQduMQuyU")) braucht, wenn es doch schon Managementpläne gibt: In Managementplänen wird festgelegt, wie mit bereits ausgewiesenen Schutzgebieten umgegangen wird. Raumordnung soll Konflikte zwischen Interessengruppen, die die Meere nutzen oder schützen wollen, minimieren.
     </span></span> erfüllen alles andere als ihre Funktion, ein {“wirkungsvolles begleitendes Instrument für den Meeresnaturschutz”} zu sein, {wie es das BMUV nahelegt}, {sondern hier stehen wieder einmal die wirtschaftlichen Interessen über denen des Meeresschutzes.}
 - title: AWZ
   text: Die {Ausschließliche Wirtschaftszone (AWZ)} beginnt {12 Seemeilen von der
