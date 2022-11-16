@@ -21,8 +21,11 @@ explanations:
 - title: 30%
   text: 'Bis heute stehen<span class="expander"><span class="trigger">weniger als
     3 % aller Meere unter Schutz. </span><span class="info">Wenn man das überhaupt
-    Schutz nennen kann.</span></span> Umweltverbände fordern deswegen {_Thirty by
-    Thirty}_ und das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a
+    Schutz nennen kann.</span></span> Umweltverbände fordern deswegen <span class="sidenote"><cite
+    class="icon-link_external"><a href="[https://www.greenpeaceoceanblueprint.org/de/](https://www.greenpeaceoceanblueprint.org/de/
+    "https://www.greenpeaceoceanblueprint.org/de/")" target="_blank" rel="noopener">Interaktive
+    Weltkarte von Greenpeace zum 30X30-Szenario</a></cite><span>_Thirty by Thirty_</span></span>_:_
+    das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a
     href="[https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf](https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf
     "https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf")"
     target="_blank" rel="noopener">Studie: “30X30 A Blueprint For Ocean Protection:
