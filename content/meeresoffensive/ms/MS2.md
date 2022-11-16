@@ -19,7 +19,7 @@ explanations:
     Hotspots zu schützen, wenn doch der eigentliche Hotspot die vielfältigen Verbindungen,
     Wanderrouten und Netzwerke der Meere sind.'
 - title: 30%
-  text: '<span class="expander"><span class="trigger">Bis heute stehen weniger als
+  text: 'Bis heute stehen<span class="expander"><span class="trigger">weniger als
     3 % aller Meere unter Schutz. </span><span class="info">Wenn man das überhaupt
     Schutz nennen kann.</span></span> Umweltverbände fordern deswegen {_Thirty by
     Thirty}_ und das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a
