@@ -24,7 +24,7 @@ explanations:
     Schutz nennen kann.</span></span> Umweltverbände fordern deswegen <span class="sidenote"><cite
     class="icon-link_external"><a href="[https://www.greenpeaceoceanblueprint.org/de/](https://www.greenpeaceoceanblueprint.org/de/
     "https://www.greenpeaceoceanblueprint.org/de/")" target="_blank" rel="noopener">Interaktive
-    Weltkarte von Greenpeace zum 30X30-Szenario</a></cite><span>_Thirty by Thirty_</span></span>_:_
+    Weltkarte von Greenpeace zum 30X30-Szenario</a></cite><span>_Thirty by Thirty_</span></span>:
     das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a
     href="[https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf](https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf
     "https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf")"
