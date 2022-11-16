@@ -14,10 +14,10 @@ explanations:
     </span><span class="info">Klimaschutz ist wirtschaftlicher als alles andere. Statt sich teurer technischer Lösungen bedienen zu wollen, die es noch gar nicht gibt, ist es sinnvoller und kosteneffizienter, die Natur ihre Arbeit selbst machen zu lassen.
     </span></span>. Oder bildlich gesprochen, <span class="sidenote"><cite class="icon-link_external"><a href="[https://www.helcom.fi/wp-content/uploads/2019/08/Guideline-for-the-implementation-of-ecosystem-based-approach-in-MSP-in-the-Baltic-Sea-area_June-2016.pdf](https://www.helcom.fi/wp-content/uploads/2019/08/Guideline-for-the-implementation-of-ecosystem-based-approach-in-MSP-in-the-Baltic-Sea-area_June-2016.pdf "https://www.helcom.fi/wp-content/uploads/2019/08/Guideline-for-the-implementation-of-ecosystem-based-approach-in-MSP-in-the-Baltic-Sea-area_June-2016.pdf")" target="_blank" rel="noopener">HELCOM und VASAB haben bereits 2016 Leitlinien entwickelt, die zeigen wie eine ökosystembasierte marine Raumplanung umgesetzt werden kann.</a></cite><span>der Tisch selbst.</span></span>
 - title: Meeresraumordnungspläne
-  text: Die aktuell gültigen {Meeresraumordnungspläne} erfüllen alles andere als ihre
-    Funktion, ein {“wirkungsvolles begleitendes Instrument für den Meeresnaturschutz”}
-    zu sein, {wie es das BMUV nahelegt}, {sondern hier stehen wieder einmal die wirtschaftlichen
-    Interessen über denen des Meeresschutzes.}
+  text: |-
+    Die aktuell gültigen <span class="expander"><span class="trigger">Meeresraumordnungspläne
+    </span><span class="info">CONTENT
+    </span></span> erfüllen alles andere als ihre Funktion, ein {“wirkungsvolles begleitendes Instrument für den Meeresnaturschutz”} zu sein, {wie es das BMUV nahelegt}, {sondern hier stehen wieder einmal die wirtschaftlichen Interessen über denen des Meeresschutzes.}
 - title: AWZ
   text: Die {Ausschließliche Wirtschaftszone (AWZ)} beginnt {12 Seemeilen von der
     Küste eines Landes entfernt} und {reicht bis zu 200 Seemeilen seewärts}. Sie gehört
