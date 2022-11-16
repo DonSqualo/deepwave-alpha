@@ -14,7 +14,7 @@ explanations:
 - title: Schutzgebietsnetzwerk
   text: 'Es ist wie bei uns Menschen: Ich allein kann Gutes bewirken. Auch andere
     können Gutes bewirken. Wenn wir uns aber zusammentun, kann Großartiges entstehen.
-    Gemeinsam und verbunden sind wir viel mehr wert als als Einzelkämpfer:innen. Genauso
+    Gemeinsam und verbunden sind wir viel stärker als Einzelkämpfer:innen. Genauso
     funktioniert das, wenn wir die Meere schützen wollen. Es reicht nicht, spezifische
     Hotspots zu schützen, wenn doch der eigentliche Hotspot die vielfältigen Verbindungen,
     Wanderrouten und Netzwerke der Meere sind.'
