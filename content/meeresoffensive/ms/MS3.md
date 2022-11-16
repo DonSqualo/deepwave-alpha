@@ -20,10 +20,12 @@ explanations:
     </span><span class="info">Zusätzliches Problem: Selbst wenn ein Land Gebiete von jeglicher menschlicher Nutzung freispricht, heißt das nicht, dass andere Nationen sich auch daran halten müssen. Fischt beispielsweise die Niederlande in der deutschen AWZ, hat sie ein Mitspracherecht, wenn es um die Nutzung der Gebiete geht. Deswegen fordern wir meeresschützende Maßnahmen auch auf europäischer Ebene.
     </span></span>
 - title: AWZ
-  text: Die {Ausschließliche Wirtschaftszone (AWZ)} beginnt {12 Seemeilen von der
-    Küste eines Landes entfernt} und {reicht bis zu 200 Seemeilen seewärts}. Sie gehört
-    nicht zum Territorium des jeweiligen Landes, das aber dort bestimmte {Pflichten
-    und Rechte} hat.
+  text: |-
+    Die <span class="expander"><span class="trigger">Ausschließliche Wirtschaftszone (AWZ)
+    </span><span class="info">Funfact am Rande: Wer “AWZ” ecosiert, bekommt erstmal “Alles was zählt”-Ergebnisse vorgeschlagen. Schön, dass deutsche Soaps wichtiger sind als Meerespolitik
+    </span></span>beginnt <span class="sidenote"><cite class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">TEASER_TEXT</a></cite> <span>12 Seemeilen von der Küste eines Landes entfernt</span></span> und <span class="sidenote"><cite class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">TEASER_TEXT</a></cite> <span>reicht bis zu 200 Seemeilen seewärts</span></span>. Sie gehört nicht zum Territorium des jeweiligen Landes, das aber dort bestimmte <span class="expander"><span class="trigger">Pflichten und Rechte
+    </span><span class="info">Länder dürfen in ihrer AWZ z. B. Offshore Windkraftanlagen errichten oder Rohstoffe abbauen.
+    </span></span> hat.
 - text: Die Meere leisten weitaus mehr für uns als uns bewusst ist. Neben der Tatsache,
     dass sie {uns mit Sauerstoff versorgen} und unzähligen Menschen Nahrung und Rohstoffe
     liefern, {nehmen sie Wärme und CO₂ aus der Umgebung auf und speichern sie}. Diese
