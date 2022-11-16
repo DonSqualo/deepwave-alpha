@@ -34,8 +34,12 @@ explanations:
 - title: effektiv
   text: 'Effektiv heißt nichts anderes, als dass Meeresschutzgebiete das tun können,
     was sie sollen: Meereslebewesen einen Rückzugsort schaffen, an dem sie sich wirklich
-    erholen können. Dazu braucht es dreierlei: eine ganzheitliche {Gebietsplanung},
-    strikte {Kontrollen} und konsequente Strafen bei Verstößen.'
+    erholen können. Dazu braucht es dreierlei: eine <span class="expander"><span class="trigger">ganzheitliche
+    Gebietsplanung </span><span class="info">Zwei Beispiele: 1. Ein Schutzgebiet sollte
+    groß genug sein, um wirksam zu schützen. 2. Zwischen Schutzgebieten müssen Wanderkorridore
+    eingerichtet werden. </span></span>, <span class="expander"><span class="trigger">strikte
+    Kontrollen </span><span class="info">sodass z. B. illegaler Fischerei nicht Tür
+    und Tor offen gelassen werden </span></span> und konsequente Strafen bei Verstößen.'
 - title: 50%
   text: Achtung! Mit 50 % ist nicht etwa die Hälfte der deutschen Meere gemeint, sondern
     die Hälfte von dem, von dem ihr denkt, das es zu 100 % geschützt ist.
