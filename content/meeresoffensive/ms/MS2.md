@@ -19,20 +19,10 @@ explanations:
     Hotspots zu schützen, wenn doch der eigentliche Hotspot die vielfältigen Verbindungen,
     Wanderrouten und Netzwerke der Meere sind.'
 - title: 30%
-  text: 'Bis heute stehen<span class="expander"><span class="trigger">weniger als
-    3 % aller Meere unter Schutz. </span><span class="info">Wenn man das überhaupt
-    Schutz nennen kann.</span></span> Umweltverbände fordern deswegen <span class="sidenote"><cite
-    class="icon-link_external"><a href="[https://www.greenpeaceoceanblueprint.org/de/](https://www.greenpeaceoceanblueprint.org/de/
-    "https://www.greenpeaceoceanblueprint.org/de/")" target="_blank" rel="noopener">Interaktive
-    Weltkarte von Greenpeace zum 30X30-Szenario</a></cite><span>_Thirty by Thirty_</span></span>:
-    das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a
-    href="[https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf](https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf
-    "https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf")"
-    target="_blank" rel="noopener">Studie: “30X30 A Blueprint For Ocean Protection:
-    How we can protect 30 % of our oceans by 2030” der University of Oxford, University
-    of York und Greenpeace</a></cite><span>30 %</span></span> aller Meere unter einen
-    wirksamen Schutz gestellt, sondern dafür auch die {richtigen Gebiete} und {Wanderkorridore}
-    ausgewählt werden.'
+  text: |-
+    Bis heute stehen<span class="expander"><span class="trigger">weniger als 3 % aller Meere unter Schutz. </span><span class="info">Wenn man das überhaupt Schutz nennen kann.</span></span> Umweltverbände fordern deswegen <span class="sidenote"><cite class="icon-link_external"><a href="[https://www.greenpeaceoceanblueprint.org/de/](https://www.greenpeaceoceanblueprint.org/de/ "https://www.greenpeaceoceanblueprint.org/de/")" target="_blank" rel="noopener">Interaktive Weltkarte von Greenpeace zum 30X30-Szenario</a></cite><span>_Thirty by Thirty_</span></span>: das heißt, dass bis 2030 nicht nur <span class="sidenote"><cite class="icon-link_external"><a href="[https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf](https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf "https://www.greenpeaceoceanblueprint.org/pdfDocs/Greenpeace_30x30_Blueprint_Report_web.pdf")" target="_blank" rel="noopener">Studie: “30X30 A Blueprint For Ocean Protection: How we can protect 30 % of our oceans by 2030” der University of Oxford, University of York und Greenpeace</a></cite><span>30 %</span></span> aller Meere unter einen wirksamen Schutz gestellt, sondern dafür auch die <span class="expander"><span class="trigger">richtigen Gebiete
+    </span><span class="info">In der 30X30 Studie schlagen die Verfasser:innen vor, Key Biodiversity Areas (KBAs) ([https://www.iucn.org/crossroads-blog/202108/we-need-protect-and-conserve-30-planet-it-has-be-right-30](https://www.iucn.org/crossroads-blog/202108/we-need-protect-and-conserve-30-planet-it-has-be-right-30 "https://www.iucn.org/crossroads-blog/202108/we-need-protect-and-conserve-30-planet-it-has-be-right-30")) - also Gebiete mit besonders großer oder außergewöhnlicher Biodiversität - in den Fokus zu stellen, wenn es um die Festlegung der zu schützenden 30 % geht.
+    </span></span> und {Wanderkorridore} ausgewählt werden.
 - title: Rechte
   text: Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste,
     euer Meer in- und auswendig. Lebt mit und von der Natur. {Wisst, was es braucht,
