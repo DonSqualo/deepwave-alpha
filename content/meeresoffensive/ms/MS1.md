@@ -28,7 +28,7 @@ explanations:
   text: Anders als die deutsche Politik ist das Meer ein dynamisches System und verändert
     sich ständig. Wer es schützen will, muss auf Veränderungen eingehen können. Das
     setzt voraus, dass sich Politiker:innen für <span class="expander"><span class="trigger">wissenschaftliche
-    Erkenntnisse </span><span class="info">die ihnen seit über 40 Jahren von Wissenschaftler:innen
+    Erkenntnisse </span><span class="info">Die ihnen seit über 40 Jahren von Wissenschaftler:innen
     zugespielt werden </span></span>öffnen und Möglichkeiten schaffen, Fortschritte
     und Rückschritte der umgesetzten Maßnahmen laufend zu überprüfen.
 - title: effektiv
