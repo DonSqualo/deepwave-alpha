@@ -146,8 +146,8 @@ h1::first-line{
     justify-content: center;
 }
 .mo-signatories-logos img{
-    flex-basis: 180px;
-    width: 180px;
+    flex-basis: 150px;
+    width: 150px;
     max-width: 300px;
     min-width: auto;
     flex-grow: 2;
@@ -312,6 +312,7 @@ h1::first-line{
     position: relative;
     padding-right: 2em;
 }
+/*
 .mo-translation::before,
 .mo-translation::after{
     content: '';
@@ -328,6 +329,7 @@ h1::first-line{
     bottom: 0;
     background: linear-gradient(to top, var(--background-color) 2em, transparent 100%);
 }
+*/
 .mo-translation p{
     margin: 0 auto;
     font-size: 1.2em;
@@ -480,7 +482,7 @@ h1::first-line{
 .mo-cta-full{}
 .mo-cta-short::before, .mo-cta-part::before, .mo-cta-full::before{
     color: white !important;
-    font-size: 2.5em;
+    font-size: 3.5em;
     display: block;
     margin-right: 0.3em;
     line-height: 1.3;
@@ -493,7 +495,7 @@ h1::first-line{
 }
 .mo-subheader h2{
     max-width: none;
-    text-align: left;
+    text-align: center;
     font-size: 4em;
     font-size: clamp(32px, 4vw, 4em);
 }
@@ -774,6 +776,7 @@ h1::first-line{
     font-family: 'mo-icons';
     color: #999;
     font-size: 0.8em;
+    font-style: normal !important;
     transition: all 0.3s;
 }
 .sidenote > cite + span:hover::after{
@@ -802,6 +805,17 @@ h1::first-line{
 body.overlay-is-active{
     overflow: hidden;
 }
+
+
+/* INDIVIDUAL COLOURS */
+#MS1.translation-active .mo-original a.active{ color: #4c8aa4; }
+#MS1 .mo-cta-button > button:hover,
+#MS1 .mo-cta-wrapper{ background-color: #4c8aa4; }
+
+#MS2.translation-active .mo-original a.active{ color: #235aa1; }
+#MS2 .mo-cta-button > button:hover,
+#MS2 .mo-cta-wrapper{ background-color: #235aa1; }
+
 
 /* ICON FONT */
 
