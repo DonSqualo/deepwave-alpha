@@ -7,23 +7,10 @@ text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nich
   in geschützten Gebieten Deutschlands zu nennen.'
 explanations:
 - title: Managementpläne
-  text: Sie sind das Tool, um den <span class="expander"><span class="trigger">Ist-
-    </span><span class="info">die in einem Gebiet vorkommenden Tiere, Pflanzen und
-    Ökosysteme</span></span>und den <span class="expander"><span class="trigger">Soll-Zustand
-    </span><span class="info">die Entwicklungsziele und entsprechenden Maßnahmen zur
-    Erreichung dieser </span></span> eines Gebiets im Meer zu beschreiben. 2020 wurden
-    Managementpläne für jeweils drei Gebiete in der Nord- und Ostsee veröffentlicht
-    <span class="expander"><span class="trigger">– hier ein Expanderbeispiel. </span><span
-    class="info">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </span></span>Für
-    alle sechs Gebiete gilt, dass ihre Regulierungskonzepte nicht ausreichen, um sie
-    von der wirtschaftlichen Nutzung zu befreien. So wie sie aktuell formuliert sind,
-    bringen die <span class="sidenote"><cite class="icon-link_external"><a href="https://www.deepwave.org/"
-    target="_blank" rel="noopener">TEXT, der den externen Link kurz anteasert.</a></cite>
-    <span>TEXTREFERENZ</span></span> Managementpläne den deutschen Meeren wenig –
-    und denen viel, die sie ausbeuten.
+  text: |-
+    Sie sind das Tool, um den <span class="expander"><span class="trigger">Ist- </span><span class="info">die in einem Gebiet vorkommenden Tiere, Pflanzen und Ökosysteme</span></span>und den <span class="expander"><span class="trigger">Soll-Zustand </span><span class="info">die Entwicklungsziele und entsprechenden Maßnahmen zur Erreichung dieser </span></span> eines Gebiets im Meer zu beschreiben. 2020 wurden Managementpläne für jeweils drei Gebiete in der <span class="sidenote"><cite class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">Die drei Schutzgebiete: "Doggerbank", "Borkum Riffgrund" und "Sylter Außenriff – Östliche Deutsche Bucht"</a></cite> <span>TEXTREFERENZ</span></span>Nord- und <span class="sidenote"><cite class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">Die drei Schutzgebiete: "Fehmarnbelt", "Kadetrinne" und "Pommersche Bucht - Rönnebank"</a></cite> <span>TEXTREFERENZ</span></span>Ostsee <span class="expander"><span class="trigger">TRIGGER
+    </span><span class="info">CONTENT
+    </span></span>veröffentlicht. Für alle sechs Gebiete gilt, dass ihre Regulierungskonzepte nicht ausreichen, um sie von der wirtschaftlichen Nutzung zu befreien. So wie sie aktuell formuliert sind, bringen die Managementpläne den deutschen Meeren wenig – und denen viel, die sie ausbeuten.
 - title: adaptiv
   text: Anders als die deutsche Politik ist das Meer ein dynamisches System und verändert
     sich ständig. Wer es schützen will, muss auf Veränderungen eingehen können. Das
