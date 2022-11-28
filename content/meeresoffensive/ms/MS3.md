@@ -42,7 +42,7 @@ explanations:
     Ozean aber nur spielen, wenn wir seine Prozesse ungestört lassen, ihn von schädlichen
     Einflüssen verschonen und ihm dabei helfen, das wiederherzustellen, was wir bereits
     zerstört haben.'
-  title: Funktionen
+  title: Ökologische Funktionen
 ctas: []
 animation:
   number_of_frames: 
