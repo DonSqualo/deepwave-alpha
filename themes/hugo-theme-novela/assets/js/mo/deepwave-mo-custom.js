@@ -174,7 +174,7 @@ function handleMOAnimation(){
     let animationAppearDuration = 150 // Animation appearance
     let animationDuration = 3000    // ## Multiply with number of frames
     let pauseBetween = 200          // Pause after animation
-    let translationDuration = 500   // Translation visibility
+    let translationDuration = 800   // Translation visibility
     let pauseAfter = 300            // Pause before next slide
     
     let slideTotal = pauseBefore + animationAppearDuration + animationDuration + pauseBetween + translationDuration + pauseAfter
