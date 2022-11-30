@@ -134,26 +134,33 @@ h1::first-line{
     padding: 0 4rem;
     z-index: 100;
 }
-.mo-signatories {
-    margin-top: 10em;
-}
-.mo-signatories h2{
-    text-align: center;
-    margin-bottom: 2em;
-}
-.mo-signatories-logos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    justify-content: center;
-}
-.mo-signatories-logos img{
-    flex-basis: 150px;
-    width: 150px;
-    max-width: 300px;
-    min-width: auto;
-    flex-grow: 2;
-}
+    #mo-signatories {
+        margin-top: 10em;
+    }
+        #mo-signatories h2{
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .mo-logos-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3em;
+            justify-content: center;
+        }
+            .mo-logos-container .mo-signatory-logo{
+                flex-basis: 150px;
+                width: 150px;
+                max-width: 300px;
+                min-width: auto;
+                flex-grow: 2;
+            }
+    #deepwave-says-thank-you{
+        margin: 20vh 0;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
 .mo-sections-wrapper{
