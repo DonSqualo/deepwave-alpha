@@ -30,7 +30,11 @@ explanations:
     Ihr seid Expert:innen seit ihr geboren wurdet. Kennt euer Land, eure Küste, euer Meer in- und auswendig. Lebt mit und von der Natur. <span class="expander"><span class="trigger">Wisst, was es braucht, damit euer Zuhause in Zukunft so lebendig sein kann, wie es in eurer Kindheit war.
     </span><span class="info">Die Umsetzung eines globalen Schutzgebietsnetzwerks kann nur gelingen, wenn lokale Bevölkerungsgruppen teilhaben und mitbestimmen dürfen.
     </span></span>Und dann kommt eine Gruppe <span class="sidenote"><cite class="icon-image"><a href="IMG_URL_HIER" target="_blank" rel="noopener">Cis-Menschen sind Menschen, die sich mit dem in ihrem Geburtsregister eingetragenen Geschlecht identifizieren. Wir haben den Cis-Zusatz eingefügt, weil er daran erinnert, dass seit Jahrhunderten die gleichen Menschen machthabend sind und sich nichts verändern wird, wenn sie es bleiben.</a></cite> <span>weißer Cis-Menschen</span></span>} daher, die sich Politiker:innen nennen und im Concrete Jungle aufgewachsen sind, und entscheidet darüber wie eure Heimat gemanagt wird.
-ctas: []
+ctas:
+- short: false
+  part: true
+  full: false
+  text: This is another example...
 animation:
   number_of_frames: 
 
