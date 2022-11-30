@@ -7,8 +7,8 @@
     opacity: 1;
     pointer-events: all;
     position: fixed;
-    top: 1.5em;
-    left: 2.5em;
+    top: 1.5%;
+    left: 1.2%;
     width: calc(100% - 5em);
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +41,8 @@
     font-size: 1em;
     line-height: 1.5em;
     background-color: rgba(0,0,0,0.5);
+    border-radius: 0.3em;
+    border-top-left-radius: 0;
 }
 #mo-progress--circles{
     display: inline-block;
@@ -291,26 +293,31 @@ h1::first-line{
 .mo-translation{
     position: relative;
     flex-basis: 47%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     z-index: +1;
-    padding: 2em;
-    margin: 1.5%;
+    margin: calc(3% + 1.5em) 1.5% 1.5%;
     border-radius: 2em 2em;
     border-bottom-left-radius: 0;
     background-color: var(--background-color);
     transition: all 0.4s ease-in-out;
-    max-height: 95vh;
+    max-height: calc(98vh - 5em);
+}
+.mo-translation > div{
+    max-height: 100%;
+    padding: 2em;
     overflow-y: scroll;
 }
+.mo-translation > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .mo-section:nth-child(even) .mo-translation{
-    border-bottom-left-radius: 1em;
+    border-bottom-left-radius: 2em;
     border-bottom-right-radius: 0;
 }
 .mo-translation--text{
     position: relative;
-    padding-right: 2em;
+    /*padding-right: 2em;*/
 }
 /*
 .mo-translation::before,
@@ -359,6 +366,7 @@ h1::first-line{
     transition: all 0.4s;
     border-left: 2px solid var(--background-color);
     border-right: 2px solid var(--background-color);
+    pointer-events: none;
 }
 .mo-section:nth-child(even) .mo-explanation{
     text-align: right;
@@ -379,8 +387,12 @@ h1::first-line{
 .mo-explanation.active h3 ~ *{
     max-height: 800px;
 }
+.mo-explanation h3, .mo-explanation p *{
+    pointer-events: all;
+}
 .mo-explanation p{
     font-size: 1em;
+    pointer-events: none;
 }
 .mo-explanation.active{
     /*border-radius: 1em;*/
@@ -396,25 +408,28 @@ h1::first-line{
 /* CTAs */
 .mo-cta-wrapper{
     position: absolute;
-    left: 1em;
-    top: 1em;
-    width: calc(100% - 2em);
+    left: 0;
+    top: 0;
+    width: 100%;
     padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #029ad2;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
     overflow: hidden;
     transition: all 0.3s ease-out;
     opacity: 1;
     height: 0;
     overflow-y: scroll;
+    border-radius: 2em 2em;
+    border-bottom-left-radius: 0;
+}
+.mo-section:nth-child(2n) .mo-cta-wrapper{
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 0;
 }
 .mo-cta-wrapper.active{
-    height: calc(100% - 2em);
+    height: 100%;
     padding: 2em 5%;
 }
 .mo-cta-wrapper > div{
@@ -461,8 +476,8 @@ h1::first-line{
 }
 .mo-close-handle{
     position: absolute;
-    top: 0;
-    right: -3em;
+    top: 1em;
+    right: 1.5em;
     display: inline-block;
     width: 2em;
     height: 2em;

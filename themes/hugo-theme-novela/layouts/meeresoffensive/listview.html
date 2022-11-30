@@ -11,33 +11,35 @@
             {{ .Content }}
         </div>
         <div class="mo-translation">
-            <div class="mo-translation--text">
-                <p>{{ .Params.text_translation | safeHTML }}</p>
+            <div>
+                <div>
+                    <div class="mo-translation--text">
+                        <p>{{ .Params.text_translation | safeHTML }}</p>
 
-                {{ range .Params.explanations }}
-                    <div class="mo-explanation">
-                        <h3>{{ .title }}</h3>
-                        <p>{{ .text | safeHTML }}</p>
+                        {{ range .Params.explanations }}
+                            <div class="mo-explanation">
+                                <h3>{{ .title }}</h3>
+                                <p>{{ .text | safeHTML }}</p>
+                            </div>
+                        {{ end }}
+
+                        {{ with .Params.ctas }}
+                            <div class="mo-cta-button"><button>Was kann ich tun?</button></div>
+                        {{ end }}
                     </div>
-                {{ end }}
-                
+                </div>
                 {{ with .Params.ctas }}
-                    <div class="mo-cta-button"><button>Was kann ich tun?</button></div>
+                <div class="mo-cta-wrapper">
+                    <h3>Was kann ich tun?</h3>
+                    {{ range . }}
+                        <div class="{{ if eq .short true}}mo-cta-short icon-time_short{{ end }}{{ if eq .part true}}mo-cta-part icon-time_part{{ end }}{{ if eq .full true}}mo-cta-full icon-time_full{{ end }}">
+                            <p>{{ .text | safeHTML }}</p>
+                        </div>
+                    {{ end }}
+                    <div class="mo-close-handle"></div>
+                </div>
                 {{ end }}
             </div>
-            
-            {{ with .Params.ctas }}
-            <div class="mo-cta-wrapper">
-                <h3>Was kann ich tun?</h3>
-                {{ range . }}
-                    <div class="{{ if eq .short true}}mo-cta-short icon-time_short{{ end }}{{ if eq .part true}}mo-cta-part icon-time_part{{ end }}{{ if eq .full true}}mo-cta-full icon-time_full{{ end }}">
-                        <p>{{ .text | safeHTML }}</p>
-                    </div>
-                {{ end }}
-                <div class="mo-close-handle"></div>
-            </div>
-            {{ end }}
-            
         </div>
         <div class="mo-animation">
             
