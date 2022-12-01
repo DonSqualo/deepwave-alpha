@@ -74,15 +74,27 @@
 
 @media screen and (orientation: portrait) and (max-width: 900px){
     #mo-progress{
-        top: 1em;
-        left: 1.5em;
-        width: calc(100% - 3em);
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    #mo-progress--headline{
+        display: inline;
+        margin-bottom: 0.1em;
+        font-size: 0.8em;
+        width: 100%;
+        text-align: center;
     }
     .mo-progress--circle{
-        width: 1.2em;
-        height: 1.2em;
+        width: 1em;
+        height: 1em;
         max-width: 1.5em;
         max-height: 1.5em;
+    }
+    #mo-progress--circles{
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -234,6 +246,12 @@ h1::first-line{
         flex-grow: 2;
     }
 
+@media screen and (orientation: portrait) and (max-width: 900px){
+    .mo-single > div{
+        min-height: 50vh;
+    }
+}
+
 .mo-background.inactive{
     /*background: none !important;*/
 }
@@ -255,6 +273,11 @@ h1::first-line{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+@media screen and (orientation: portrait) and (max-width: 900px){
+    .mo-original{
+        padding-top: 3.8em;
+    }
 }
 .mo-section:nth-child(even) .mo-original{
     order: 2;
@@ -601,18 +624,29 @@ h1::first-line{
         /*justify-content: center;*/
     }
     .mo-original p{
-        padding: 1em 0;
+        padding: 1em 0 0;
         max-width: 94%;
     }
     .mo-translation{
         justify-content: flex-start;
         max-height: 50vh;
         overflow-y: scroll;
-        margin-top: 1em;
+        margin-top: 0;
         transform: translateY(100%);
+        border-radius: 1em 1em;
     }
     .mo-section:nth-child(2n) .mo-translation {
         transform: translateY(100%);
+    }
+    .mo-translation > div{
+        padding: 1em;
+    }
+    .mo-translation h3{
+        font-size: 1.2em;
+    }
+    .mo-translation p{
+        font-size: 1em;
+        padding: 0;
     }
     .mo-explanation{
         max-width: 507px;
@@ -621,7 +655,7 @@ h1::first-line{
         transition: width 0.6s, opacity .4s;
     }
     .mo-explanation:first-of-type {
-        margin-top:1em;
+        margin-top: 0.8em;
     }
     .mo-section:nth-child(2n) .mo-explanation {
         text-align: left;
@@ -637,7 +671,7 @@ h1::first-line{
     }
     .mo-animation{
         top: auto;
-        bottom: 4vh;
+        bottom: 2vh;
         right: auto;
         left: calc(50% - 22vh);
         width: 44vh;
@@ -648,8 +682,39 @@ h1::first-line{
         height: 44vh;
     }
     .mo-section:nth-child(2n) .mo-animation {
-        left: calc(50% - 20vw);
+        left: calc(50vw - 22vh);
     }
+    
+    .mo-cta-wrapper{
+        max-height: calc(100vh - 3.8em);
+        top: 3.8em;
+    }
+    .mo-cta-wrapper.active{
+        position: fixed;
+        top: 3.8em;
+        height: calc(100vh - 3.8em);
+        max-height: calc(100vh - 3.8em);
+        border-radius: 1em;
+    }
+    .mo-cta-button{
+        text-align: center;
+        margin-top: 0.5em;
+    }
+    .mo-section:nth-child(2n) .mo-cta-button{
+        text-align: center;
+    }
+    .mo-cta-button > button::before{
+        font-size: 1.8em;
+    }
+    .mo-cta-button > button{
+        margin: 1em auto 1em;
+        padding: 0.5em 2em 1em;
+        font-size: 1em;
+        color: white;
+        background-color: #029ad2;
+    }
+    
+    /*$$$*/
     
     /* Positioning for slider
     
@@ -851,6 +916,10 @@ body.overlay-is-active{
 #MS1.translation-active .mo-original a.active{ color: #4c8aa4; }
 #MS1 .mo-cta-button > button:hover,
 #MS1 .mo-cta-wrapper{ background-color: #4c8aa4; }
+@media screen and (orientation: portrait) and (max-width: 900px){
+    #MS1 .mo-cta-button > button{ background-color: #4c8aa4; }
+}
+
 
 #MS2.translation-active .mo-original a.active{ color: #235aa1; }
 #MS2 .mo-cta-button > button:hover,
