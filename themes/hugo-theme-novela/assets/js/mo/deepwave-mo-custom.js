@@ -541,7 +541,8 @@ function handleMOClicks(){
                 // activate clicked explanation and link
                 explanationLinks[index].classList.toggle('active')
                 e.currentTarget.classList.toggle('active')
-                
+                e.currentTarget.closest('.mo-translation').classList.toggle('noscroll-portrait')
+                e.currentTarget.scrollTop = 0
             })
         })
         
@@ -564,6 +565,8 @@ function handleMOClicks(){
                 // activate clicked link and explanation
                 explanations[index].classList.toggle('active')
                 e.currentTarget.classList.toggle('active')
+                e.currentTarget.closest('.mo-single').querySelector('.mo-translation').classList.toggle('noscroll-portrait')
+                e.currentTarget.scrollTop = 0
 
             })
             

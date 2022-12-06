@@ -415,7 +415,7 @@ h1::first-line{
     overflow: hidden;
     transition: all 0.5s;
 }
-.mo-explanation.active h3 ~ *{
+.mo-explanation.active h3 ~ *{ /* for transition purposes */
     max-height: 800px;
 }
 .mo-explanation h3, .mo-explanation p *{
@@ -640,6 +640,7 @@ h1::first-line{
     }
     .mo-translation > div{
         padding: 1em;
+        max-height: 50vh;
     }
     .mo-translation h3{
         font-size: 1.2em;
@@ -647,6 +648,9 @@ h1::first-line{
     .mo-translation p{
         font-size: 1em;
         padding: 0;
+    }
+    .noscroll-portrait{
+        overflow-y: hidden;
     }
     .mo-explanation{
         max-width: 507px;
@@ -662,12 +666,23 @@ h1::first-line{
     }
     .mo-explanation.active{
         position: absolute;
-        left: calc(50% - 270px); /* add rules for width < 540-6% */
+        height: 100%;
+        top: 0;
         max-width: 540px;
-        margin: 1em auto;
+        margin: 0 auto;
         z-index: +1; /* ggf. bei overlay über den anderen expl. */
         padding: 0.8em 0.8em 1em;
-        box-shadow: 0px 0px 100px #999;
+        background-color: var(--background-color);
+    }
+    
+    .mo-explanation.active p:last-child{
+        margin-bottom: 2em;
+    }
+    .mo-explanation.active h3{
+        padding: 0;
+    }
+    .mo-explanation.active h3 ~ *{
+        max-height: unset;
     }
     .mo-animation{
         top: auto;
