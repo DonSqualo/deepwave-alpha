@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', function(e){
 })
 
 
+// #################################################################################
+// #################################################################################
+// SETTING HEIGHT HANDLE FOR MOBILE IOS
+function setHeightHandle(){
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setHeightHandle()
+
+window.addEventListener('resize', () => {
+    setTimeout(setHeightHandle, 500)
+});
+
 
 // #################################################################################
 // #################################################################################
@@ -542,7 +555,7 @@ function handleMOClicks(){
                 explanationLinks[index].classList.toggle('active')
                 e.currentTarget.classList.toggle('active')
                 e.currentTarget.closest('.mo-translation').classList.toggle('noscroll-portrait')
-                e.currentTarget.scrollTop = 0
+                e.currentTarget.scrollTop = 0 /* #### */
             })
         })
         

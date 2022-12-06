@@ -640,7 +640,7 @@ h1::first-line{
     }
     .mo-translation > div{
         padding: 1em;
-        max-height: 50vh;
+        max-height: var(--vh);/*50vh;*/
     }
     .mo-translation h3{
         font-size: 1.2em;
