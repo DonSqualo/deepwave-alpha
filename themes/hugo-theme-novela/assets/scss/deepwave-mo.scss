@@ -549,6 +549,10 @@ h1::first-line{
     text-align: center;
     font-size: 4em;
     font-size: clamp(32px, 4vw, 4em);
+    padding: 0;
+}
+.mo-subheader p{
+    padding: 0;
 }
 
 
