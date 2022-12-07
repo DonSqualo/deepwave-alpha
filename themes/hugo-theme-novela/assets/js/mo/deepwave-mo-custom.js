@@ -100,7 +100,7 @@ function preloadAnimationImages(archiveID){
         loadStatus.push(archiveID)
         
         /// via: https://github.com/Stuk/jszip/issues/399 // customized for MO
-        var re = /(.jpg|.png|.gif|.ps|.jpeg|.webp)$/
+        var re = /(.png|.webp)$/ // /(.jpg|.png|.gif|.jpeg|.webp)$/
         var promises = Object.keys(zip.files).filter(function (fileName){
             // don't consider non image files
             return re.test(fileName.toLowerCase())
@@ -119,8 +119,9 @@ function preloadAnimationImages(archiveID){
         result.sort()
         return result
     }).then(function(result){
+        console.log('zip filtered length: ' + result.length)
         result.forEach(function(entry, index){
-            
+            console.log(entry[0])
             // Append DOM element
             let node = document.createElement('div')
             node.setAttribute('style', 'background-image:url("' + entry[1] + '")')
@@ -186,7 +187,7 @@ function handleMOAnimation(){
     /// TIMING VARS
     let pauseBefore = 200           // Pause before animation
     let animationAppearDuration = 150 // Animation appearance
-    let animationDuration = 3000    // ## Multiply with number of frames
+    let animationDuration = 3000    // Animation Duration
     let pauseBetween = 200          // Pause after animation
     let translationDuration = 800   // Translation visibility
     let pauseAfter = 300            // Pause before next slide
@@ -202,7 +203,7 @@ function handleMOAnimation(){
         
         moSections.forEach(function(entry, index){
             
-            console.log('SECTION START ' + index)
+            ///console.log('SECTION START ' + index)
             
             let sectionDuraton = 0 // Section Duration
             
@@ -291,7 +292,7 @@ function handleMOAnimation(){
                     var sceneSelector = '#' + sceneID
                     var triggerElmt = entry.querySelector('.mo-single')
                     
-                    console.log('_SLIDE: ' + sceneID)
+                    ///console.log('_SLIDE: ' + sceneID)
                     
                     // Progress Circle Values
                     progressBase.push([0])
