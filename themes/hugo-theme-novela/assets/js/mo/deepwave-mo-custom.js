@@ -100,10 +100,13 @@ function preloadAnimationImages(archiveID){
         loadStatus.push(archiveID)
         
         /// via: https://github.com/Stuk/jszip/issues/399 // customized for MO
-        var re = /(.png|.webp)$/ // /(.jpg|.png|.gif|.jpeg|.webp)$/
+        var isImg = /(.png|.webp)$/ // /(.jpg|.png|.gif|.jpeg|.webp)$/
+        var isSys = /^[_.]/
         var promises = Object.keys(zip.files).filter(function (fileName){
             // don't consider non image files
-            return re.test(fileName.toLowerCase())
+            if(! isSys.test(fileName)){
+                return isImg.test(fileName.toLowerCase())
+            }
         }).map(function (fileName){
             var file = zip.files[fileName]
             return file.async("blob").then(function (blob){
@@ -119,9 +122,7 @@ function preloadAnimationImages(archiveID){
         result.sort()
         return result
     }).then(function(result){
-        console.log('zip filtered length: ' + result.length)
         result.forEach(function(entry, index){
-            console.log(entry[0])
             // Append DOM element
             let node = document.createElement('div')
             node.setAttribute('style', 'background-image:url("' + entry[1] + '")')
