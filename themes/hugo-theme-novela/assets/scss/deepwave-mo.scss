@@ -179,7 +179,9 @@ h1::first-line{
 .mo-sections-wrapper{
     position: relative;
     min-height: 100vh;
+    min-height: calc(100 * var(--vh));
     margin-top: 100vh;
+    margin-top: calc(100 * var(--vh));
 }
 
 .mo-section{
@@ -190,7 +192,9 @@ h1::first-line{
     width: 100%;
     left: 0;
     top: -100vh;
+    top: calc(-100 * var(--vh));
     margin-bottom: -100vh;
+    margin-bottom: calc(-100 * var(--vh));
     
     transition: all 0.5s;
 }
@@ -227,6 +231,7 @@ h1::first-line{
     position: relative;
     width: 100%;
     min-height: 100vh;
+    min-height: calc(100 * var(--vh));
     display: flex;
     margin: 0;
     background-color: darkgray;
@@ -248,7 +253,7 @@ h1::first-line{
 
 @media screen and (orientation: portrait) and (max-width: 900px){
     .mo-single > div{
-        min-height: 50vh;
+        min-height: calc(50 * var(--vh));
     }
 }
 
@@ -633,7 +638,7 @@ h1::first-line{
     }
     .mo-translation{
         justify-content: flex-start;
-        max-height: 50vh;
+        max-height: calc(50 * var(--vh));
         overflow-y: scroll;
         margin-top: 0;
         transform: translateY(100%);
@@ -690,29 +695,29 @@ h1::first-line{
     }
     .mo-animation{
         top: auto;
-        bottom: 2vh;
+        bottom: calc(2 * var(--vh));
         right: auto;
-        left: calc(50% - 22vh);
-        width: 44vh;
-        height: 44vh;
+        left: calc(50% - (22 * var(--vh)));
+        width: calc(44 * var(--vh));
+        height: calc(44 * var(--vh));
     }
     .mo-animation > div{
-        width: 44vh;
-        height: 44vh;
+        width: calc(44 * var(--vh));
+        height: calc(44 * var(--vh));
     }
     .mo-section:nth-child(2n) .mo-animation {
-        left: calc(50vw - 22vh);
+        left: calc(50vw - (22 * var(--vh)));
     }
     
     .mo-cta-wrapper{
-        max-height: calc(100vh - 3.8em);
+        max-height: calc((100 * var(--vh)) - 3.8em);
         top: 3.8em;
     }
     .mo-cta-wrapper.active{
         position: fixed;
         top: 3.8em;
-        height: calc(100vh - 3.8em);
-        max-height: calc(100vh - 3.8em);
+        height: calc((100 * var(--vh)) - 3.8em);
+        max-height: calc((100 * var(--vh)) - 3.8em);
         border-radius: 1em;
     }
     .mo-cta-button{
@@ -923,6 +928,7 @@ h1::first-line{
 }
 .basicLightbox__placeholder img{
     max-height: 96vh;
+    max-height: calc(96 * var(--vh));
 }
 
 /* Overlay is active */
