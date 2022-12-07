@@ -395,8 +395,8 @@ h1::first-line{
 .mo-explanation{
     opacity: 0.4;
     transition: all 0.4s;
-    border-left: 2px solid var(--background-color);
-    border-right: 2px solid var(--background-color);
+    border-left: 2px solid transparent;/*var(--background-color);*/
+    border-right: 2px solid transparent;/*var(--background-color);*/
     pointer-events: none;
 }
 .mo-section:nth-child(even) .mo-explanation{
