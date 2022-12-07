@@ -346,7 +346,6 @@ function handleMOAnimation(){
                     
                     // Scene Duration
                     // let sceneDuration = ### CALCULATE NO OF FRAMES * FACTOR X
-
                     
                     // Slide Transition
                     if(mosIndex != 0){
@@ -383,7 +382,7 @@ function handleMOAnimation(){
                     // Animation Appear
                     let sceneAnimationAppear = new ScrollMagic.Scene({triggerElement: triggerElmt, duration: animationAppearDuration, offset: (sceneOffset + pauseBefore), triggerHook: 'onLeave'})
                                     .setPin(triggerElmt)
-                                    .addIndicators()
+                                    //.addIndicators()
                                     .addTo(slideController);
                     
                     /// ON ENTER > remove class scaled > ADD CSS accordingly scale(6), transition: transform 0.2s, pointer-events: none; ...
