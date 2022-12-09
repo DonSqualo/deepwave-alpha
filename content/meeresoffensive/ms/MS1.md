@@ -41,18 +41,22 @@ ctas:
 - short: true
   part: false
   full: false
-  text: Dies ist ein Beispieltext für eine Möglichkeit des Engagements, das nur wenige
-    Minuten Zeit beansprucht.
+  text: Erkunde die Nord- und Ostsee mit der virtuellen Simulation vom NABU <a href="https://www.nordseelife.de/de/"
+    target="_blank">NordseeLIFE</a> und <a href="https://ostsee-life.nabu.de/" target="_blank">OstseeLIFE</a>. 
 - short: false
   part: true
   full: false
-  text: Hier würde ein Hinweis für eine Tätigkeit stehen, die in Teilzeit erledigt
-    werden kann – im Sinne der nebenstehenden Forderung unserer Meeresoffensive.
+  text: Bei der <a href="https://www.mspchallenge.info/" target="_blank">MSP (Marine
+    Spatial Planning) - Challenge</a> kannst du alleine oder mit deinen Freund:innen
+    in einer interaktiven Simulation Raumordnungspläne für die Nord- oder Ostsee erstellen.
+    Schafft ihr es, eine ausreichend große Schutzgebietsfläche einzurichten?
 - short: false
   part: false
   full: true
-  text: Schließlich kann auch in Vollzeit, also hauptberuflich, am Meeresschutz gewirkt
-    werden. Wie genau stünde hier beschrieben.
+  text: |-
+    Engagiere dich bei der <a href="https://www.schutzstation-wattenmeer.de/mit-uns-aktiv/mitarbeit/" target="_blank">Schutzstation Wattenmeer</a> und helfe, unsere Naturschutzgebiete vor der eigenen Haustüre zu schützen.
+
+    Studiere Umweltmanagement an mehreren deutschen Unis oder <a href="https://www.biologie.uni-hamburg.de/studium/bachelor/bachelor-of-science-marsys-neu.html" target="_blank">Marine Ökosystem- und Fischereiwissenschaften</a> an der Uni Hamburg.
 animation:
   number_of_frames: 14
 
