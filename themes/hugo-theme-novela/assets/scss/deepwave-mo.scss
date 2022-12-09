@@ -478,6 +478,10 @@ h1::first-line{
 .mo-cta-wrapper div p{
     color: white;
 }
+.mo-cta-wrapper a{
+    color: white;
+    text-decoration: underline;
+}
 .mo-cta-wrapper .mo-cta-short::before,
 .mo-cta-wrapper .mo-cta-part::before,
 .mo-cta-wrapper .mo-cta-full::before{
@@ -657,6 +661,13 @@ h1::first-line{
     .mo-translation p{
         font-size: 1em;
         padding: 0;
+    }
+    
+    .translation-active .mo-original{
+        max-height: 50vh;
+        max-height: calc(50 * var(--vh));
+        justify-content: flex-start;
+        overflow-y: scroll;
     }
     
     .noscroll-portrait{

@@ -79,7 +79,7 @@ function preloadAnimationImages(archiveID){
         archivePath = '/animations/' + archiveIDLowerCase + '_webp.zip'
         fileExtension = '.webp'
     } else{
-        return // ### !!!
+        return // ### !!! ### FIND ALTERNATIVE (MP4?)
         archivePath = '/animations/' + archiveIDLowerCase + '_png.zip'
         fileExtension = '.png'
     }
