@@ -4,7 +4,7 @@ background_image: "/v1662664243/1_North_Sea_Coast_karsten-wurth-unsplash_bchl3t_
 text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
   dass die entsprechenden Gebiete tatsächlich geschützt werden. Hier wird gefischt,
   Rohstoffe werden abgebaut und Kabel verlegt - um nur drei von sechzehn legalen Nutzungsformen
-  in geschützten Gebieten Deutschlands zu nennen.'
+  in geschützten Gebieten Deutschlands zu nennen.[Managementpläne](# "Managmentpläne")'
 explanations:
 - title: Managementpläne
   text: |-
