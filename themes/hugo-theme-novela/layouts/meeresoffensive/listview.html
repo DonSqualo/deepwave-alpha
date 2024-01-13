@@ -8,13 +8,13 @@
             
             <span class="order">{{ .Params.order }}</span>
             
-            <span>{{ .Params.text_translation | safeHTML }}</span>
+            {{ .Content }}
         </div>
         <div class="mo-translation">
             <div>
                 <div>
                     <div class="mo-translation--text">
-                        {{ .Content }}
+                        <p>{{ .Params.text_translation | safeHTML }}</p>
 
                         {{ range .Params.explanations }}
                             <div class="mo-explanation">
