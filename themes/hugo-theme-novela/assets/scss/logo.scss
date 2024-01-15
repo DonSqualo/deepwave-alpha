@@ -1,4 +1,4 @@
-body.is-dark #logo-desktop{
+#logo-desktop {
     .change-fill{
         fill: var(--primary);
     }
@@ -7,7 +7,7 @@ body.is-dark #logo-desktop{
     }
 }
 
-body.is-dark #logo-mobile{
+#logo-mobile {
     path, polygon{
         fill: var(--primary);
     }
