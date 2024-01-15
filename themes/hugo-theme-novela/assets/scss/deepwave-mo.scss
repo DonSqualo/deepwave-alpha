@@ -660,10 +660,10 @@
 }
 
 .mo-section:nth-child(odd).translation-active .mo-animation, .mo-section:nth-child(odd).pause-out .mo-animation  {
-    transform: scale(0.6) translate(-85vw, -20vh);
+    transform: scale(0.6) translate(-85vw, -30vh);
 }
 .mo-section:nth-child(even).translation-active .mo-animation, .mo-section:nth-child(even).pause-out .mo-animation {
-    transform: scale(0.6) translate(85vw, -20vh);
+    transform: scale(0.6) translate(85vw, -30vh);
 }
 
 .mo-animation > div{
@@ -1052,7 +1052,7 @@
     width: 3em;
     height: 3em;
     z-index: +1;
-    background-color: blue;
+    background-color: rgb(33, 44, 63);
     background-size: 55%;
     background-position: center;
     background-repeat: no-repeat;
