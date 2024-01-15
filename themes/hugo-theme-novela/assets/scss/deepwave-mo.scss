@@ -105,8 +105,24 @@
     width: 240px;
     max-width: 90%;
 }
+#logo-desktop {
+    .change-fill {
+        fill: #fff;
+    }
 
+                                path,
+                                polygon {
+                                    fill: #fff;
+                                }
+                                }
 
+body.is-dark #logo-mobile {
+
+    path,
+    polygon {
+        fill: #fff;
+    }
+}
 @media screen and (max-width: 540px){
     h1, h2, h3, h4, h5{
         padding: 0 20px;
@@ -175,9 +191,12 @@
         left: 0;
         position: fixed;
         z-index: -3;
-        background-color: #081931;
-        opacity: 0.5;
+        background-color: #082131;
+            opacity: 0.7;
     };
+        a {
+            color: #5fe0ea !important;
+        }
 }
 
 
