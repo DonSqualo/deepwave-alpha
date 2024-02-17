@@ -1,6 +1,7 @@
 ---
-title: Meere schützen und nachhaltig nutzen
+title: Meeresschutz und Klimaschutz eng verknüpfen
 order: "10"
 
 ---
-»Für gesunde und vielfältige Meere müssen marine Arten und Lebensräume effektiv und umfassend geschützt sowie Nutzungen nachhaltig gemanagt werden. Daher fordern wir von der Bundesregierung und den zuständigen deutschen Behörden im Jahr 2020:«
+»Intakte marine Ökosysteme sind essentiell zur Abmilderung der Klima- sowie der Biodiversitätskrise und steigern damit die Resilienz unseres Planeten. Um den Verlust mariner Artenvielfalt aufzuhalten und zentrale Ökosystemfunktionen als Klimaregulator, Kohlenstoffsenke und Sauerstoffproduzent langfristig zu sichern, müssen die Meere besser geschützt werden.
+Daher fordern wir von der Bundesregierung und den zuständigen deutschen Behörden:«

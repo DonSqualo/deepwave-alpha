@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 19
 background_image: "/v1662664243/1_North_Sea_Coast_karsten-wurth-unsplash_bchl3t_jjzp4x.jpg"
 text_translation: 'So absurd es klingt: Bisher bewirken Meeresschutzgebiete nicht,
   dass die entsprechenden Gebiete tatsächlich geschützt werden. Hier wird gefischt,
@@ -61,4 +61,4 @@ animation:
   number_of_frames: 14
 
 ---
-<span>»…, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.«</span>
+»…, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.«
