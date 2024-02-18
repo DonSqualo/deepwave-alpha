@@ -52,7 +52,7 @@ ctas:
     Schafft ihr es, eine ausreichend große Schutzgebietsfläche einzurichten?
 - short: false
   part: false
-  full: true
+  full: true  
   text: |-
     Engagiere dich bei der <a href="https://www.schutzstation-wattenmeer.de/mit-uns-aktiv/mitarbeit/" target="_blank">Schutzstation Wattenmeer</a> und helfe, unsere Naturschutzgebiete vor der eigenen Haustüre zu schützen.
 
