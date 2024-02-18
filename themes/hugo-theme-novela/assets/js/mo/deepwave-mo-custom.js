@@ -133,7 +133,7 @@ function preloadAnimationImages(archiveID) {
 }
 
 // Load first animation immediately
-preloadAnimationImages('MS1')
+preloadAnimationImages('MO11')
 
 
 
