@@ -187,7 +187,7 @@ function handleMOAnimation() {
     console.log('INIT handleMOAnimation!')
 
     /// TIMING VARS
-    let pauseBefore = 400           // Pause before animation
+    let pauseBefore = 1400           // Pause before animation
     let animationAppearDuration = 150 // Animation appearance
     let animationDuration = 3000    // Animation Duration
     let pauseBetween = 200          // Pause after animation
