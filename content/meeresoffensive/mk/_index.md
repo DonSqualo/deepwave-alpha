@@ -1,5 +1,5 @@
 ---
-title: Meere in der Klimakrise stärken
+title: Meere effektiv schützen und wiederherstellen
 order: "20"
 
 ---

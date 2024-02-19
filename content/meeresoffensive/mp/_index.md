@@ -1,6 +1,8 @@
 ---
-title: Effektive Meerespolitik erfordert starke institutionelle Strukturen
+title: Menschen und Meere ins Zentrum globaler nachhaltiger Entwicklung 
 order: "50"
 
 ---
-»Der Meeresschutz in Deutschland ist institutionell schwach aufgestellt. Es fehlt an einer gemeinsamen politischen Verant­wortung in allen Ressorts in Bund und Ländern zum Schutz und Erhalt mariner Arten und Lebensräume. Wir fordern von der Bundes­regierung und den Bundesländern vor dem Hintergrund der 2020 wegweisenden Prozesse:«
+»Vor allem im Globalen Süden sind die Existenz- und Ernährungsgrundlagen von Milliarden von Menschen abhängig von marinen Ressourcen und gesunden Meeren. Für die Armutsbekämpfung, eine faire Rohstoff- und Handelspolitik und nicht zuletzt den planetaren Umwelt- und Klimaschutz ist eine entwicklungspolitisch fundierte Meerespolitik auf Basis von Transparenz und Partizipation Hand in Hand mit den lokalen Küstengemeinschaften vor Ort unabdinglich.
+
+Daher fordern wir von der Bundesregierung und den zuständigen deutschen Behörden:«

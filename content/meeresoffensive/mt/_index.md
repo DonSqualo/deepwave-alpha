@@ -1,6 +1,8 @@
 ---
-title: Schutz der Hohen See und der Tiefsee muss sichergestellt werden
+title: Kumulative Übernutzung der Meere drastisch reduzieren
 order: "30"
 
 ---
-»Um die Artenvielfalt und intakte Ökosysteme auf der Hohen See und in der Tiefsee zu erhalten, fordern wir von der Bundesregierung, dass sie sich im Jahr 2020 gezielt auf allen relevanten Ebenen einsetzt für:«
+»Unsere Meere verwandeln sich immer mehr zu Industriestandorten, in denen gesunde Lebensräume und die Artenvielfalt keinen Platz mehr haben. Durch die Übernutzung und Industrialisierung unserer Meere verlieren wir Tag für Tag die essentiellen Funktionen dieser wichtigen Ökosysteme. Daher muss die Nutzung unserer Meere grundsätzlich sozial- und umweltverträglich gestaltet werden und vor allem muss das Vorsorgeprinzip bei der Planung und Durchführung aller Nutzungen greifen.
+
+Daher fordern wir von der Bundesregierung und den zuständigen deutschen Behörden:«
