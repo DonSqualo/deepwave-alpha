@@ -188,7 +188,7 @@ function handleMOAnimation() {
 
     /// TIMING VARS
     let pauseBefore = 2500           // Pause before animation
-    let animationAppearDuration = 5000 // Animation appearance
+    let animationAppearDuration = 2000 // Animation appearance
     let animationDuration = 4000    // Animation Duration
     let pauseBetween = 200          // Pause after animation
     let translationDuration = 1000   // Translation visibility
