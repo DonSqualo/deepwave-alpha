@@ -397,7 +397,7 @@ body.is-dark #logo-mobile {
     text-underline-offset: 0.2em;
 }
 .mo-section.translation-active .mo-original a.active{
-    color: #5cf;
+    color: #4cd4ff;
     text-decoration: none;
 }
 
@@ -557,7 +557,7 @@ body.is-dark #logo-mobile {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #029ad2;
+    background-color: #0f1a3c;
     overflow: hidden;
     transition: all 0.3s ease-out;
     opacity: 1;
@@ -582,6 +582,8 @@ body.is-dark #logo-mobile {
 }
 .mo-cta-wrapper div p{
     color: white;
+    margin-left: 0;
+        padding-top: 6px;
 }
 .mo-cta-wrapper a{
     color: white;
@@ -612,7 +614,7 @@ body.is-dark #logo-mobile {
     transition: background-color 0.2s, color 0.6s, all 0.3s;
 }
 .mo-cta-button > button:hover{
-    background-color: #029ad2;
+    background-color: #0f1a3c;
     color: white;
     padding: 0.5em 2em 1em;
 }
@@ -692,10 +694,10 @@ body.is-dark #logo-mobile {
 }
 
 .mo-section:nth-child(odd).translation-active .mo-animation, .mo-section:nth-child(odd).pause-out .mo-animation  {
-    transform: scale(0.6) translate(-85vw, -30vh);
+    transform: scale(0.6) translate(-85vw, -35vh);
 }
 .mo-section:nth-child(even).translation-active .mo-animation, .mo-section:nth-child(even).pause-out .mo-animation {
-    transform: scale(0.6) translate(85vw, -30vh);
+    transform: scale(0.6) translate(85vw, -35vh);
 }
 
 .mo-animation > div{
