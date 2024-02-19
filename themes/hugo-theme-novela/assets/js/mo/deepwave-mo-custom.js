@@ -184,7 +184,7 @@ function easeInOutExpo(t, b, c, d) {
 // HANDLING FRAME BY FRAME ANIMATION
 
 function handleMOAnimation() {
-    console.log('INIT handleMOAnimation')
+    console.log('INIT handleMOAnimation!')
 
     /// TIMING VARS
     let pauseBefore = 10400           // Pause before animation
