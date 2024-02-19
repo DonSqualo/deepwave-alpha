@@ -187,12 +187,12 @@ function handleMOAnimation() {
     console.log('INIT handleMOAnimation!')
 
     /// TIMING VARS
-    let pauseBefore = 4400           // Pause before animation
-    let animationAppearDuration = 1000 // Animation appearance
+    let pauseBefore = 2500           // Pause before animation
+    let animationAppearDuration = 500 // Animation appearance
     let animationDuration = 4000    // Animation Duration
-    let pauseBetween = 1000          // Pause after animation
+    let pauseBetween = 200          // Pause after animation
     let translationDuration = 1000   // Translation visibility
-    let pauseAfter = 1000            // Pause before next slide
+    let pauseAfter = 300            // Pause before next slide
 
     let slideTotal = pauseBefore + animationAppearDuration + animationDuration + pauseBetween + translationDuration + pauseAfter
 

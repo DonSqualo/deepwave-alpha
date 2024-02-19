@@ -475,6 +475,7 @@ body.is-dark #logo-mobile {
     }
 
     .mo-section .gif-explanation {
+        opacity: 0;
         transform: none;
     }
     .mo-section:nth-child(even).translation-active .gif-explanation, .mo-section:nth-child(even).pause-out .gif-explanation {
