@@ -8,7 +8,12 @@ p{
     transition: var(--color-mode-transition);
     margin: 0 auto 35px;
     width: 100%;
-    max-width: 680px;
+    max-width: 600px;
+    }
+    
+    .gif-explanation p,
+    .mo-main-content p {
+        max-width: 48vw;
 }
 
 p b {

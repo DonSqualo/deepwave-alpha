@@ -58,7 +58,7 @@ ctas:
 
     Studiere Umweltmanagement an mehreren deutschen Unis oder <a href="https://www.biologie.uni-hamburg.de/studium/bachelor/bachelor-of-science-marsys-neu.html" target="_blank">Marine Ökosystem- und Fischereiwissenschaften</a> an der Uni Hamburg.
 animation:
-  number_of_frames: 14
+  number_of_frames:
 
 ---
 »…, dass [Managementpläne](# "Managmentpläne") für alle Meeresschutzgebiete in den deutschen Meeren verabschiedet werden, die ein [adaptives](# "adaptiv"), [effektives](# "effektiv") Management ermöglichen und dabei mindestens [50%](# "50%") der Schutzgebietsfläche aus der [wirtschaftlichen Nutzung](# "Nullnutzung") nehmen.«

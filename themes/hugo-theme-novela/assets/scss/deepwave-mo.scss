@@ -353,6 +353,7 @@ body.is-dark #logo-mobile {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    z-index: 10;
 }
 @media screen and (orientation: portrait) and (max-width: 900px){
     .mo-original{
