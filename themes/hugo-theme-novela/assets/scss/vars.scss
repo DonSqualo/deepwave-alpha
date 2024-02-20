@@ -13,6 +13,9 @@ body{
     --sanserif: "Merriweather Sans", "SF Pro Display", "-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI", "Arial", sans-serif;
     --monospace: "Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
 
+    /*COLOR OF BACKGROUND (from JS)*/
+    --background-extract-color: #000;
+
     /*COLOR MODE TRANSITION*/
     --color-mode-transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
 

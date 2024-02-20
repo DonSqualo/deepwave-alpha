@@ -397,7 +397,7 @@ body.is-dark #logo-mobile {
     text-underline-offset: 0.2em;
 }
 .mo-section.translation-active .mo-original a.active{
-    color: #4cd4ff;
+    color: var(--background-extract-color);
     text-decoration: none;
 }
 
