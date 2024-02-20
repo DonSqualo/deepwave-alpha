@@ -299,6 +299,14 @@ function handleMOAnimation() {
                     var sceneID = entry.getAttribute('id')
                     var sceneSelector = '#' + sceneID
                     var triggerElmt = entry.querySelector('.mo-single')
+                    var backgroundElmt = triggerElmt.querySelector('.mo-background')
+                    var accentColor = "#5cf" // fallback
+
+                    if (backgroundElmt.style.background.split("#").length == 2) {
+                        accentColor = "#" + backgroundElmt.style.background.split("#").slice(0, 6)
+                    }
+
+                    entry.style.setProperty("--background-extract-color", accentColor)
 
                     ///console.log('_SLIDE: ' + sceneID)
 

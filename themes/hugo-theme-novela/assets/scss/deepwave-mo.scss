@@ -933,7 +933,7 @@ body.is-dark #logo-mobile {
     transition: all 0.3s;
 }
 .expander.active .trigger{
-    border-bottom: 2px solid #5cf;
+    border-bottom: 2px solid var(--background-extract-color);
 }
 .expander > .trigger::after {
     content: '\e800';
@@ -944,14 +944,14 @@ body.is-dark #logo-mobile {
     margin-right: 0.2em;
 }
 .expander:hover > .trigger{
-    border-color: #5cf;
+    border-color: var(--background-extract-color);
 }
 .expander:hover > .trigger::after{
-    color: #5cf;
+    color: var(--background-extract-color);
 }
 .expander.active > .trigger::after{
     content: '\e801';
-    color: #5cf;
+    color: var(--background-extract-color);
 }
 .expander > .info {
     display: inline-block;
@@ -1010,13 +1010,13 @@ body.is-dark #logo-mobile {
     opacity: 1;
 }
 .sidenote > cite:hover::before{
-    color: #5cf;
+    color: var(--background-extract-color);
 }
 .sidenote > cite:hover + span{
     text-decoration: underline;
     text-underline-offset: 0.2em;
     text-decoration-thickness: 2px;
-    text-decoration-color: #5cf;
+    text-decoration-color: var(--background-extract-color);
 }
 */
 
@@ -1049,7 +1049,7 @@ body.is-dark #logo-mobile {
     transition: all 0.3s;
 }
 .sidenote > cite + span:hover{
-    border-bottom: 2px solid #5cf;
+    border-bottom: 2px solid var(--background-extract-color);
 }
 .sidenote > cite + span::after{
     content: '';
@@ -1064,7 +1064,7 @@ body.is-dark #logo-mobile {
     transition: all 0.3s;
 }
 .sidenote > cite + span:hover::after{
-    color: #5cf;
+    color: var(--background-extract-color);
 }
 
 .sidenote > .icon-link_external + span::after{
