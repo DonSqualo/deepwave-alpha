@@ -373,11 +373,34 @@ body.is-dark #logo-mobile {
 @media screen and (max-width: 1200px){
     .mo-original p{
         font-size: 1.2em;
+        line-height: 1.6;
     }
 }
 @media screen and (max-width: 800px){
     .mo-original p{
         font-size: 1.1em;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .mo-original p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-height: 1200px) {
+    .mo-original p {
+        font-size: 1.3em;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-height: 1200) {
+    .mo-original p {
+        font-size: 1.3em;
+        line-height: 1.6;
     }
 }
 
