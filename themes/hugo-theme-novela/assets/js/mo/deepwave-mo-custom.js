@@ -303,7 +303,7 @@ function handleMOAnimation() {
                     var accentColor = "#5cf" // fallback
 
                     if (backgroundElmt.style.background.split("#").length == 2) {
-                        accentColor = "#" + backgroundElmt.style.background.split("#").slice(0, 6)
+                        accentColor = "#" + backgroundElmt.style.background.split("#")[1].slice(0, 6)
                     }
 
                     entry.style.setProperty("--background-extract-color", accentColor)
