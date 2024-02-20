@@ -437,10 +437,17 @@ body.is-dark #logo-mobile {
     //max-height: calc(98vh - 5em);
     padding-top: 10% ;
 }
+
+@media screen and (max-height: 1200px) { 
+    .mo-translation {
+        padding-top: 0;
+    }
+}
+
 .mo-section:nth-child(even) .mo-translation{
     //border-bottom-left-radius: 2em;
     //border-bottom-right-radius: 0;
-}
+} // TYPO MAYBE????
     .mo-translation > div{
         max-height: 100%;
         padding: 2em;
