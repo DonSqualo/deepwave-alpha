@@ -9,7 +9,7 @@
     position: fixed;
     top: 1.5%;
     left: 1.2%;
-    width: calc(100% - 5em);
+    // width: calc(100% - 5em);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -597,8 +597,9 @@ body.is-dark #logo-mobile {
     border-bottom-left-radius: 0;
 }
 .mo-section:nth-child(2n) .mo-cta-wrapper{
-    border-bottom-left-radius: 2em;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    overflow: hidden;
 }
 .mo-cta-wrapper.active{
     height: 100%;
