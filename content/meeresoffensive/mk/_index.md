@@ -1,5 +1,6 @@
 ---
 title: Meere effektiv schützen und wiederherstellen
+titlesmall: Effektiv schützen
 order: "20"
 
 ---

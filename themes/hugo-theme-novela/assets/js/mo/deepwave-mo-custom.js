@@ -246,7 +246,8 @@ function handleMOAnimation() {
                 if (e.type == "enter") {
                     // Set progress headline to section headline
                     let sectionHeadlines = document.querySelectorAll('.mo-subheader h2')
-                    sectionHeadlineContainer.innerHTML = sectionHeadlines[index].innerHTML
+                    let smallSectionHeadlines = document.querySelectorAll('.mo-subheader span')
+                    sectionHeadlineContainer.innerHTML = smallSectionHeadlines[index].innerHTML
 
                     // Add ProgressCircles according to number of slides
                     mos.forEach(mo => {

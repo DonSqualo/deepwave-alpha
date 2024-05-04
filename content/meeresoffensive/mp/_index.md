@@ -1,5 +1,6 @@
 ---
-title: Menschen und Meere ins Zentrum globaler nachhaltiger Entwicklung 
+title: Menschen und Meere ins Zentrum globaler nachhaltiger Entwicklung
+titlesmall: Menschen und Meere
 order: "50"
 
 ---

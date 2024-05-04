@@ -1,41 +1,43 @@
 {{ define "mo-main" }}
 
-    <!-- Title und Content from meeresoffensive/_index.md -->
-    <div id="mo-preface">
-        <h1>{{ .Title }}</h1>
-        {{ .Content | safeHTML }}
-        <div id="mo-preface-background"></div>
-    </div>
-    
-    <div id="mo-progress" class="hidden">
-        <div id="mo-progress--count"><span>0</span><span>/22</span></div>
-        <!--<div>-->
-            <span id="mo-progress--headline">Meere schützen und nachhaltig nutzen</span>
-            <div id="mo-progress--circles"><div class="mo-progress--circle"></div></div>
-        <!--</div>-->
-    </div>
+<!-- Title und Content from meeresoffensive/_index.md -->
+<div id="mo-preface">
+    <h1>{{ .Title }}</h1>
+    {{ .Content | safeHTML }}
+    <div id="mo-preface-background"></div>
+</div>
 
-    {{ range .Data.Pages.ByParam "order" }}
-        {{ if .IsSection }}
-            <!-- render meeresoffensive/subheader.html -->
+<div id="mo-progress" class="hidden">
+    <div id="mo-progress--count"><span>0</span><span>/22</span></div>
+    <!--<div>-->
+    <span id="mo-progress--headline">Wird geladen...</span>
+    <div id="mo-progress--circles">
+        <div class="mo-progress--circle"></div>
+    </div>
+    <!--</div>-->
+</div>
+
+{{ range .Data.Pages.ByParam "order" }}
+{{ if .IsSection }}
+<!-- render meeresoffensive/subheader.html -->
 {{ .Render "subheader" }}
-        {{ else }}
-            <!-- render meeresoffensive/listview.html -->
+{{ else }}
+<!-- render meeresoffensive/listview.html -->
 {{ .Render "listview" }}
-        {{ end }}
+{{ end }}
 
 <div class="mo-sections-wrapper">
-        {{ range .Pages }}
-            {{ if .IsSection }}
-                <!-- render meeresoffensive/subheader.html -->
-{{ .Render "subheader" }}
-            {{ else }}
-                <!-- render meeresoffensive/listview.html -->
-{{ .Render "listview" }}
-            {{ end }}
-        {{ end }}
-</div>
+    {{ range .Pages }}
+    {{ if .IsSection }}
+    <!-- render meeresoffensive/subheader.html -->
+    {{ .Render "subheader" }}
+    {{ else }}
+    <!-- render meeresoffensive/listview.html -->
+    {{ .Render "listview" }}
     {{ end }}
+    {{ end }}
+</div>
+{{ end }}
 
 
 {{ end }}

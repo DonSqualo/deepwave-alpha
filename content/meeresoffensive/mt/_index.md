@@ -1,5 +1,6 @@
 ---
 title: Kumulative Übernutzung der Meere drastisch reduzieren
+titlesmall: Übernutzung reduzieren
 order: "30"
 
 ---

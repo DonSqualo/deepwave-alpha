@@ -1,4 +1,5 @@
 <div class="mo-subheader mo-subheader-{{ .Params.order }}">
     <h2>{{ .Title }}</h2>
+    <span style="display:none">{{ .Params.titlesmall }}</span>
     {{ .Content | safeHTML }}
 </div>
