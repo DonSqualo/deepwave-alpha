@@ -589,8 +589,12 @@ function handleMOClicks() {
     }, { threshold: [0] });
     
     document.addEventListener("scroll", e => {
-        console.log(e);
-        document.querySelector("#mo-header").style.opacity = 1 - window.scrollY / 100;
+        if (window.scrollY > 20) {
+            document.querySelector("#mo-header").style.opacity = 0;
+        } else {
+            document.querySelector("#mo-header").style.opacity = 1;
+        }
+        // document.querySelector("#mo-header").style.opacity = 1 - window.scrollY / 100;
     });
 
     // Find all MOs
