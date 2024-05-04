@@ -208,12 +208,31 @@ body.is-dark #logo-mobile {
         margin-bottom: 55px;
         color: #fff
     }
+    
+    h2 {
+        max-width: none;
+        text-align: center;
+        font-size: 4em;
+        font-size: clamp(32px, 4vw, 4em);
+        padding: 0;
+        margin-bottom: 55px;
+        color: #fff
+    }
+
+    #inhalt-title {
+        line-height: 1.5;
+    }
+
+    #inhalt-subtitle {
+        line-height: 0;
+    }
 
     p {
         color: #fff;
 
         iframe {
             margin-top: 20vh;
+            margin-bottom: 20vh;
             width: 60%;
             margin-left: 20%;
             margin-right: 20%;
