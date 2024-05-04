@@ -175,25 +175,26 @@ body.is-dark #logo-mobile {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .moon-mask {
     background: none;
 }
 
-#mo-preface {
-    height: calc(100vh - 200px);
-    position: fixed;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    overflow-y: auto;
+#mo-preface-background {
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
-    right: 0;
-    height: 100vh;
-    z-index: -2;
-    background-image: url("https://images.unsplash.com/photo-1444944232907-0b9e9ace348c?q=80&w=2263&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    position: fixed;
+    background-image: url("/images/background-ocean.avif");
+}
+
+#mo-preface {
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+    position: relative;
     background-size: cover;
     background-position: center;
 
@@ -211,23 +212,11 @@ body.is-dark #logo-mobile {
         color: #fff;
 
         iframe {
+            margin-top: 20vh;
             width: 100%;
             box-shadow: 0 0 200px #101010;
         }
     }
-
-    #mo-preface-background {
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        position: fixed;
-        z-index: -3;
-        background-color: #082131;
-        opacity: 0.7;
-    }
-
-    ;
 
     a {
         color: #5fe0ea !important;
@@ -811,12 +800,13 @@ body.is-dark #logo-mobile {
 
 /* Zwischentitel */
 .mo-subheader {
+    position: relative;
+    background: white;
     padding: 3vw 2em 2vw;
     text-align: center;
 }
 
 .mo-subheader-10 {
-    margin-top: 105vh;
     box-shadow: 0 0 200px #101010;
     cursor: pointer;
 }
@@ -865,10 +855,8 @@ body.is-dark #logo-mobile {
 .mo-animation>div {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 40vw;
-    height: 40vw;
     background-size: 100%;
+
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;

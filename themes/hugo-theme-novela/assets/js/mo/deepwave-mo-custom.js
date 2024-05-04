@@ -587,11 +587,11 @@ function handleMOClicks() {
             window.history.replaceState(null, null, '#' + id);
         }
     }, { threshold: [0] });
-
-    document.querySelector("#mo-preface").addEventListener('scroll', () => {
-        document.querySelector("#mo-header").style.opacity = 1 - document.querySelector("#mo-preface").scrollTop / 100;
+    
+    document.addEventListener("scroll", e => {
+        console.log(e);
+        document.querySelector("#mo-header").style.opacity = 1 - window.scrollY / 100;
     });
-
 
     // Find all MOs
     let mos = document.querySelectorAll('.mo-single')
