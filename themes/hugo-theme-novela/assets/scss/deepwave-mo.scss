@@ -190,13 +190,14 @@ body.is-dark #logo-mobile {
     transform: translate(-200%, -200%) rotate(20deg);
     border-radius: 20px;
     box-shadow: 0 0 200px 6px #101010;
-    padding: 15px;
+    padding: 30px 15px 0;
 
     &.visible {
         transform: translate(2%, 2%) rotate(0);
     }
 
     p {
+        line-height: 0;
         a {
             color: #999;
             
