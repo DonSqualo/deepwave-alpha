@@ -8,8 +8,31 @@ function testAction(referenceString) {
 function setYoutubeIFrameHeight() {
     const frame = document.getElementById("yt-iframe");
     let width = parseInt(frame.offsetWidth);
-    frame.height = parseInt(width * (16/9));
+    frame.height = parseInt(width * (16 / 9));
     console.log("width: " + frame.height.toString());
+}
+
+function openChapterbox() {
+    let sectionHeadlineContainer = document.getElementById("mo-progress")
+    const chapterBox = document.getElementById("mo-chapterbox")
+
+    sectionHeadlineContainer.addEventListener("click", () => {
+        chapterBox.classList.toggle("visible")
+        const entries = chapterBox.querySelectorAll("a");
+        let thisDigit = document.location.href.split("/")
+        thisDigit = thisDigit[thisDigit.length - 1]
+        thisDigit = thisDigit.match(/\d/)[0]
+        entries.forEach(anchor => {
+            const anchorDigit = anchor.hash.match(/\d/)[0]
+            if (anchorDigit == thisDigit) {
+                anchor.classList.add("current")
+            }
+            else {
+                anchor.classList.remove("current")
+            }
+        })
+        console.log(entries)
+    });
 }
 
 
@@ -21,8 +44,10 @@ document.addEventListener('DOMContentLoaded', function (e) {
     handleSidenotes()
     handleCTAs()
     setYoutubeIFrameHeight();
+    openChapterbox();
 
 })
+
 
 
 // #################################################################################
@@ -37,8 +62,6 @@ setHeightHandle()
 
 window.addEventListener('resize', () => {
     setTimeout(setHeightHandle, 500);
-
-
 });
 
 
@@ -510,7 +533,7 @@ function handleMOAnimation() {
                     sceneTranslation.on('leave', function (e) {
                         entry.querySelector('.mo-main-content').classList.remove('transition-delay')
                     })
-                    
+
 
 
                     // Pause after
@@ -579,16 +602,18 @@ function handleMOClicks() {
         firstHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
         firstHeader.style.cursor = 'default';
     });
-    
-    
+
+
     var observer = new IntersectionObserver(entries => {
-        if(entries[0].isIntersecting === true) {
+        if (entries[0].isIntersecting === true) {
             const id = entries[0].target.id;
             window.history.replaceState(null, null, '#' + id);
         }
     }, { threshold: [0] });
-    
+
     document.addEventListener("scroll", e => {
+        const chapterBox = document.getElementById("mo-chapterbox")
+        chapterBox.classList.remove("visible")
         if (window.scrollY > 20) {
             document.querySelector("#mo-header").style.opacity = 0;
         } else {

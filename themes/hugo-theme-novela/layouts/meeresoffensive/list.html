@@ -2,6 +2,13 @@
 
 <!-- Title und Content from meeresoffensive/_index.md -->
 <div id="mo-preface-background"></div>
+
+<div id="mo-chapterbox">
+{{ range .Pages }}
+<p><a href="#article-no-{{ .Params.order }}">{{ .Params.titlesmall }}</a></p>
+{{ end }}
+</div>
+
 <div id="mo-preface">
     <h1>{{ .Title }}</h1>
     {{ .Content | safeHTML }}
