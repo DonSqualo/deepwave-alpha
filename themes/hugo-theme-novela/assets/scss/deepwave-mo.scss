@@ -355,6 +355,7 @@ body.is-dark #logo-mobile {
 
 
 .mo-single {
+    overflow: hidden;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -829,6 +830,7 @@ body.is-dark #logo-mobile {
 
 /* Animation */
 .mo-animation {
+    z-index: 100;
     position: absolute;
     right: 5vw;
     top: calc(50vh - 20vw);
@@ -858,7 +860,11 @@ body.is-dark #logo-mobile {
 .mo-animation>div {
     position: absolute;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-size: 100%;
+
 
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
