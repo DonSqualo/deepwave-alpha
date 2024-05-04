@@ -1,5 +1,6 @@
 ---
 title: KLARTEXT „Meeresoffensive“
+youtube_id: oo2r-4bZK9c
 ---
 Keine der globalen Herausforderungen ist ohne lebendige Weltmeere zu bewältigen. Deutschland hat nicht nur die Verantwortung für echten Meeresschutz, sondern auch die Ressourcen und Kapazitäten, diese Verantwortung zu übernehmen.
 

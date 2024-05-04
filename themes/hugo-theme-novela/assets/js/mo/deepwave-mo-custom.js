@@ -5,6 +5,14 @@ function testAction(referenceString) {
 }
 
 
+function setYoutubeIFrameHeight() {
+    const frame = document.getElementById("yt-iframe");
+    let width = parseInt(frame.offsetWidth);
+    frame.height = parseInt(width * (16/9));
+    console.log("width: " + frame.height.toString());
+}
+
+
 document.addEventListener('DOMContentLoaded', function (e) {
 
     handleMOClicks()
@@ -12,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
     //handleMOProgress()
     handleSidenotes()
     handleCTAs()
+    setYoutubeIFrameHeight();
 
 })
 
@@ -27,7 +36,9 @@ function setHeightHandle() {
 setHeightHandle()
 
 window.addEventListener('resize', () => {
-    setTimeout(setHeightHandle, 500)
+    setTimeout(setHeightHandle, 500);
+
+
 });
 
 

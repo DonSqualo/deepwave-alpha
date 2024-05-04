@@ -44,10 +44,12 @@
         <div id="mo-header">
             {{ partial "header.html" . }}
         </div>
-
-        {{ block "mo-main" . }}
         
-        {{ end }}
+        <div>
+            {{ block "mo-main" . }}
+            
+            {{ end }}
+        </div> 
         
         {{ partial "mo-footer.html" . }}
         {{ partial "footer.html" . }}
