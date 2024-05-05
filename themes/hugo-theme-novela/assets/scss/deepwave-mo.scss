@@ -182,14 +182,12 @@ body.is-dark #logo-mobile {
 
 #mo-chapterbox {
     position: fixed;
-    background: var(--background);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1000000;
     left: 0;
-    top: 0;
+    top: 10;
     transition: transform .32s;
     transform: translate(-200%, -200%) rotate(20deg);
-    border-radius: 20px;
-    box-shadow: 0 0 200px 6px #101010;
     padding: 30px 15px 0;
 
     &.visible {
@@ -202,7 +200,7 @@ body.is-dark #logo-mobile {
             color: #999;
             
             &.current {
-                text-decoration: underline;
+                text-transform: uppercase;
                 color: #fefefe;
             }
         }
@@ -213,21 +211,14 @@ body.is-dark #logo-mobile {
     background: none;
 }
 
-#mo-preface-background {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-image: url("/images/background-ocean.avif");
-}
-
 #mo-preface {
     padding-top: 20vh;
     padding-bottom: 25vh;
     position: relative;
     background-size: cover;
     background-position: center;
+    background-image: url("/images/background-ocean.avif");
+        background-attachment: fixed;
 
     h1 {
         max-width: none;
@@ -316,7 +307,6 @@ body.is-dark #logo-mobile {
 }
 
 #deepwave-says-thank-you {
-    margin: 20vh 0;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -854,7 +844,7 @@ body.is-dark #logo-mobile {
 /* Zwischentitel */
 .mo-subheader {
     position: relative;
-    background: white;
+    background: var(--background-color);
     padding: 3vw 2em 2vw;
     text-align: center;
 }

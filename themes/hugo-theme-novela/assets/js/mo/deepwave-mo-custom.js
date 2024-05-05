@@ -15,9 +15,11 @@ function setYoutubeIFrameHeight() {
 function openChapterbox() {
     let sectionHeadlineContainer = document.getElementById("mo-progress")
     const chapterBox = document.getElementById("mo-chapterbox")
+    const moProgress = document.getElementById("mo-progress")
 
     sectionHeadlineContainer.addEventListener("click", () => {
         chapterBox.classList.toggle("visible")
+        moProgress.classList.toggle("hidden")
         const entries = chapterBox.querySelectorAll("a");
         let thisDigit = document.location.href.split("/")
         thisDigit = thisDigit[thisDigit.length - 1]
@@ -35,6 +37,10 @@ function openChapterbox() {
     });
 }
 
+// document.body.addEventListener("click", () => {
+//     document.getElementById("mo-chapterbox").classList.remove("visible")
+//     document.getElementById("mo-progress").classList.remove("hidden")
+// });
 
 document.addEventListener('DOMContentLoaded', function (e) {
 

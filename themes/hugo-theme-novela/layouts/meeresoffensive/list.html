@@ -1,10 +1,8 @@
 {{ define "mo-main" }}
 
 <!-- Title und Content from meeresoffensive/_index.md -->
-<div id="mo-preface-background"></div>
-
 <div id="mo-chapterbox">
-{{ range .Pages }}
+{{ range .Data.Pages.ByParam "order" }}
 <p><a href="#article-no-{{ .Params.order }}">{{ .Params.titlesmall }}</a></p>
 {{ end }}
 </div>
@@ -22,7 +20,7 @@
     <h2>Inhalt</h2>
     {{ range .Pages }}
     {{ range .Pages }}
-    <p id="inhalt-subtitle"><a href="#article-no-{{ .Params.order }}">{{ .Params.order }}</a></p>
+    <p id="inhalt-subtitle"><a href="#article-no-{{ .Params.order }}">{{ .Params.title }}</a></p>
     {{ end }}
     {{ end }}
 </div>
@@ -37,7 +35,7 @@
     <!--</div>-->
 </div>
 
-<did id="mo-articles">
+<div id="mo-articles">
     {{ range .Data.Pages.ByParam "order" }}
     {{ if .IsSection }}
     <!-- render meeresoffensive/subheader.html -->
@@ -49,7 +47,7 @@
     </div>
 
     <div class="mo-sections-wrapper">
-        {{ range .Pages }}
+        {{ range .Data.Pages.ByParam "order" }}
         {{ if .IsSection }}
         <!-- render meeresoffensive/subheader.html -->
         {{ .Render "subheader" }}
