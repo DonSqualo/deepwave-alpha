@@ -9,20 +9,31 @@
 
 <div id="mo-preface">
     <h1>{{ .Title }}</h1>
-    {{ .Content | safeHTML }}
-    <p>
-        <iframe id="yt-iframe" width="auto" height="auto"
-            src="https://www.youtube.com/embed/{{ .Params.youtube_id }}?rel=0&modestbranding" title="" frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen modestbranding></iframe>
-    </p>
-
-    <h2>Inhalt</h2>
-    {{ range .Pages }}
-    {{ range .Pages }}
-    <p id="inhalt-subtitle"><a href="#article-no-{{ .Params.order }}">{{ .Params.title }}</a></p>
+    <div class="row">
+        <div>
+            {{ .Content | safeHTML }}
+        </div>
+        <p style="margin: 0;">
+            <iframe id="yt-iframe" width="auto" height="auto"
+                src="https://www.youtube.com/embed/{{ .Params.youtube_id }}?rel=0&modestbranding" title="" frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen modestbranding></iframe>
+        </p>
+        </div>
+        <div id="toc">
+            {{ range .Data.Pages.ByParam "order" }}
+            <div class="toc_row">
+                <h3><a href="#article-no-{{ .Params.order }}">{{ .Params.titlesmall }}</a></h3>
+                {{ range .Data.Pages.ByParam "order" }}
+                <a class="toc_card"
+                    style="background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' {{ .Site.Params.cloudinary_url }}/c_thumb,w_200,g_face/{{ .Params.background_image }} ')"
+                    href="#article-no-{{ .Params.order }}">
+                    <h4>{{ .Params.title | safeHTML }}</h4>
+                </a>
     {{ end }}
+    </div>
     {{ end }}
+    </div>
 </div>
 
 <div id="mo-progress" class="hidden">

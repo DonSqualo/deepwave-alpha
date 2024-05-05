@@ -217,7 +217,7 @@ body.is-dark #logo-mobile {
     position: relative;
     background-size: cover;
     background-position: center;
-    background-image: url("/images/background-ocean.avif");
+    background-image: linear-gradient(rgba(7, 28, 37, 0.72), rgba(7, 28, 37, 0.68)), url(/images/background-ocean.avif);
         background-attachment: fixed;
 
     h1 {
@@ -229,43 +229,75 @@ body.is-dark #logo-mobile {
         margin-bottom: 55px;
         color: #fff
     }
-    
-    h2 {
-        max-width: none;
-        text-align: center;
-        font-size: 4em;
-        font-size: clamp(32px, 4vw, 4em);
-        padding: 0;
-        margin-bottom: 55px;
-        color: #fff
-    }
-
-    #inhalt-title {
-        line-height: 1.5;
-    }
-
-    #inhalt-subtitle {
-        line-height: 0;
-    }
-
-    p {
-        color: #fff;
-
-        iframe {
-            margin-top: 20vh;
-            margin-bottom: 20vh;
-            width: 60%;
-            margin-left: 20%;
-            margin-right: 20%;
-            box-shadow: 0 0 200px #101010;
-        }
-    }
-
-    a {
-        color: #5fe0ea !important;
-    }
+p {
+    color: #fff;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+
+    a {
+            color: #5fe0ea !important;
+    }
+
+        iframe {
+        width: 60%;
+        margin-left: 10%;
+        }
+        }
+        }
+
+/* Table of Contents */
+#toc {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 5%;
+
+    h3 {
+        width: 30vw;
+        text-align: center;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            a {
+                color: #fff !important;
+                }
+                }
+                }
+                
+                .toc_row {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 20vh;
+                }
+                
+                .toc_card {
+                    background-size: cover;
+                    padding: 20px;
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    width: 0;
+                    background-position: center;
+                
+                    h4 {
+                        color: transparent !important;
+                    }
+                }
+
+.toc_card:hover {
+    flex: 4;
+    text-decoration: none !important;
+
+    h4 {
+        color: #fff !important;
+    }
+}
 
 /* MO START */
 
@@ -311,6 +343,7 @@ body.is-dark #logo-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10%;
 }
 
 
