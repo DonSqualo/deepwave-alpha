@@ -290,6 +290,7 @@ p {
                     }
                 }
 
+
 .toc_card:hover {
     flex: 3;
     text-decoration: none !important;
@@ -301,6 +302,10 @@ p {
 
 /* MO START */
 
+.mo-hide-links a {
+    text-decoration: none !important;
+    cursor: default;
+}
 #moContent {
     margin: 0;
 }
