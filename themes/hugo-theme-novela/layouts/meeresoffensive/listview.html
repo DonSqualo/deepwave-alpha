@@ -3,18 +3,18 @@
 
   <!-- ### REMANE section > article, class: mo-section > mo-single-claim -->
 
-  <article class="mo-single">
+  <article class="mo-single" id="article-no-{{ .Params.order }}">
     <div class="mo-background inactive" data-bg=""
       style="background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
     </div>
     <div class="mo-original">
 
-      <span class="order" id="article-no-{{ .Params.order }}">{{ .Params.order }}</span>
+      <span class="order">{{ .Params.order }}</span>
 
       <p class="gif-explanation">
         <span>{{ .Params.text_translation | safeHTML }}</span>
       </p>
-      <span class="mo-main-content {{ if eq .Params.hide_links true}}mo-hide-links{{ end }}">{{ .Content }}</span>
+      <span class="mo-main-content">{{ .Content }}</span>
     </div>
     <div class="mo-translation">
       <div>
