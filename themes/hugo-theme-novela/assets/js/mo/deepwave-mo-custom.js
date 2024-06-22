@@ -19,7 +19,7 @@ function openChapterbox() {
 
     sectionHeadlineContainer.addEventListener("click", () => {
         chapterBox.classList.toggle("visible")
-        moProgress.classList.toggle("hidden")
+        // moProgress.classList.toggle("hidden")
         const entries = chapterBox.querySelectorAll("a");
         let thisDigit = document.location.href.split("/")
         thisDigit = thisDigit[thisDigit.length - 1]
@@ -296,7 +296,8 @@ function handleMOAnimation() {
                         node.style.cursor = 'pointer';
 
                         node.onclick = e => {
-                            mo.scrollIntoView({ behavior: 'instant', block: 'start' });
+                            mo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            setTimeout(() => progressElement.classList.remove("hidden"), 300);
                         }
 
                         circlesContainer.appendChild(node)
@@ -318,14 +319,11 @@ function handleMOAnimation() {
 
             // CALLBACK SLIDETRANSITION
             let counter = 0
-            let idPrefix = '#' + entry.querySelector('.mo-section').getAttribute('id').slice(0, 2) /* ACHTUNG */
 
             function nextSlide(e) {
                 if (e.scrollDirection == 'FORWARD') {
                     counter += 1
-                    document.querySelector(idPrefix + counter).classList.add('visited')
                 } else if (e.scrollDirection == 'REVERSE') {
-                    document.querySelector(idPrefix + counter).classList.remove('visited')
                     counter -= 1
                 }
             }
