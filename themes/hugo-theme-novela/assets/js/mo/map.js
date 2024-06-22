@@ -3,7 +3,6 @@ document.getElementById("open-map").addEventListener("click", () => {
 });
 
 document.getElementById("close-map").addEventListener("click", () => {
-  alert("test");
   document.getElementById("map-container-container").style.display = "none";
 });
 
