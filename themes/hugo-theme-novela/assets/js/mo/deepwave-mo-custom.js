@@ -12,35 +12,6 @@ function setYoutubeIFrameHeight() {
     console.log("width: " + frame.height.toString());
 }
 
-function openChapterbox() {
-    let sectionHeadlineContainer = document.getElementById("mo-progress")
-    const chapterBox = document.getElementById("mo-chapterbox")
-    const moProgress = document.getElementById("mo-progress")
-
-    sectionHeadlineContainer.addEventListener("click", () => {
-        chapterBox.classList.toggle("visible")
-        // moProgress.classList.toggle("hidden")
-        const entries = chapterBox.querySelectorAll("a");
-        let thisDigit = document.location.href.split("/")
-        thisDigit = thisDigit[thisDigit.length - 1]
-        thisDigit = thisDigit.match(/\d/)[0]
-        entries.forEach(anchor => {
-            const anchorDigit = anchor.hash.match(/\d/)[0]
-            if (anchorDigit == thisDigit) {
-                anchor.classList.add("current")
-            }
-            else {
-                anchor.classList.remove("current")
-            }
-        })
-    });
-}
-
-// document.body.addEventListener("click", () => {
-//     document.getElementById("mo-chapterbox").classList.remove("visible")
-//     document.getElementById("mo-progress").classList.remove("hidden")
-// });
-
 document.addEventListener('DOMContentLoaded', function (e) {
 
     handleMOClicks()
@@ -49,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
     handleSidenotes()
     handleCTAs()
     setYoutubeIFrameHeight();
-    openChapterbox();
 
 })
 
@@ -279,6 +249,10 @@ function handleMOAnimation() {
                 let progressElement = document.getElementById('mo-progress')
                 let circlesContainer = progressElement.querySelector('#mo-progress--circles')
                 let sectionHeadlineContainer = progressElement.querySelector('#mo-progress--headline')
+
+                sectionHeadlineContainer.addEventListener("click", () => {
+                  document.getElementById("map-container-container").classList.remove("map-hidden");
+                })
 
                 circlesContainer.innerHTML = ''
 
@@ -615,8 +589,6 @@ function handleMOClicks() {
     }, { threshold: [0] });
 
     document.addEventListener("scroll", e => {
-        const chapterBox = document.getElementById("mo-chapterbox")
-        chapterBox.classList.remove("visible")
         if (window.scrollY > 20) {
             document.querySelector("#mo-header").style.opacity = 0;
         } else {
@@ -749,6 +721,7 @@ function handleSidenotes() {
         })
     })
 }
+
 
 // #################################################################################
 // #################################################################################

@@ -1,9 +1,11 @@
 document.getElementById("open-map").addEventListener("click", () => {
-  document.getElementById("map-container-container").style.display = "block";
+  //document.getElementById("map-container-container").style.display = "block";
+  document.getElementById("map-container-container").classList.remove("map-hidden");
 });
 
 document.getElementById("close-map").addEventListener("click", () => {
-  document.getElementById("map-container-container").style.display = "none";
+  document.getElementById("map-container-container").classList.add("map-hidden");
+  // document.getElementById("map-container-container").style.display = "none";
 });
 
 const canvas = document.getElementById('map');
@@ -255,9 +257,12 @@ function onClick(event) {
   textPositions.forEach((text, index) => {
     if (mouseX >= text.x - 10 && mouseX - 10 <= text.x + text.width &&
         mouseY >= text.y - 10 && mouseY - 10 <= text.y + text.height) {
-      document.getElementById("map-container-container").style.display = "none";
+      // document.getElementById("map-container-container").style.display = "none";
+      document.getElementById("map-container-container").classList.add("map-hidden");
       console.log(`scrolling to #article-no-${text.order}`)
       document.getElementById(`article-no-${text.order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
+      console.log(document.getElementById(`article-no-${text.order}`))
+      document.getElementById('mo-progress').classList.remove("hidden");
     }
   });
 }
@@ -269,8 +274,9 @@ function onClickTouch(event) {
   textPositions.forEach((text, index) => {
     if (mouseX >= text.x - 10 && mouseX - 10 <= text.x + text.width &&
         mouseY >= text.y - 10 && mouseY - 10 <= text.y + text.height) {
-      document.getElementById("map-container-container").style.display = "none";
+      document.getElementById("map-container-container").classList.add("map-hidden");
       document.getElementById(`article-no-${text.order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
+      document.getElementById('mo-progress').classList.remove("hidden");
     }
   });
 }
