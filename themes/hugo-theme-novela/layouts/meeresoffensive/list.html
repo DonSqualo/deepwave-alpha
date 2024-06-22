@@ -2,73 +2,63 @@
 
 <!-- Title und Content from meeresoffensive/_index.md -->
 <div id="mo-chapterbox">
-{{ range .Data.Pages.ByParam "order" }}
-<p><a href="#article-no-{{ .Params.order }}">{{ .Params.titlesmall }}</a></p>
-{{ end }}
+  {{ range .Data.Pages.ByParam "order" }}
+  <p><a href="#article-no-{{ .Params.order }}">{{ .Params.titlesmall }}</a></p>
+  {{ end }}
 </div>
 
 <div id="mo-preface">
-    <h1>{{ .Title }}</h1>
-    <div class="row">
-        <div>
-            {{ .Content | safeHTML }}
-        </div>
-        <p style="margin: 0;">
-            <iframe id="yt-iframe" width="auto" height="auto"
-                src="https://www.youtube.com/embed/{{ .Params.youtube_id }}?rel=0&modestbranding" title="" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen modestbranding></iframe>
-        </p>
-        </div>
-        <div id="toc">
-            {{ range .Data.Pages.ByParam "order" }}
-            <div class="toc_row">
-                <h3><a href="#article-no-{{ .Params.order }}">{{ .Params.titlesmall }}</a></h3>
-                {{ range .Data.Pages.ByParam "order" }}
-                <a class="toc_card"
-                    style="background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' {{ .Site.Params.cloudinary_url }}/c_thumb,w_200,g_face/{{ .Params.background_image }} ')"
-                    href="#article-no-{{ .Params.order }}">
-                    <h4>{{ .Params.title | safeHTML }}</h4>
-                </a>
-    {{ end }}
+  <h1>{{ .Title }}</h1>
+  <div class="row">
+    <div>
+      {{ .Content | safeHTML }}
     </div>
-    {{ end }}
-    </div>
+    <p style="margin: 0;">
+      <iframe id="yt-iframe" width="auto" height="auto"
+        src="https://www.youtube.com/embed/{{ .Params.youtube_id }}?rel=0&modestbranding" title="" frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen modestbranding></iframe>
+    </p>
+  </div>
+  <h1>Inhaltskarte</h1>
+  <div id="map-container">
+    <canvas id="map"></canvas>
+  </div>
 </div>
 
 <div id="mo-progress" class="hidden">
-    <div id="mo-progress--count"><span>0</span><span>/22</span></div>
-    <!--<div>-->
-    <span id="mo-progress--headline">Wird geladen...</span>
-    <div id="mo-progress--circles">
-        <div class="mo-progress--circle"></div>
-    </div>
-    <!--</div>-->
+  <div id="mo-progress--count"><span>0</span><span>/22</span></div>
+  <!--<div>-->
+  <span id="mo-progress--headline">Wird geladen...</span>
+  <div id="mo-progress--circles">
+    <div class="mo-progress--circle"></div>
+  </div>
+  <!--</div>-->
 </div>
 
 <div id="mo-articles">
-    {{ range .Data.Pages.ByParam "order" }}
-    {{ if .IsSection }}
-    <!-- render meeresoffensive/subheader.html -->
-    {{ .Render "subheader" }}
-    {{ else }}
-    <!-- render meeresoffensive/listview.html -->
-    {{ .Render "listview" }}
-    {{ end }}
-    </div>
+  {{ range .Data.Pages.ByParam "order" }}
+  {{ if .IsSection }}
+  <!-- render meeresoffensive/subheader.html -->
+  {{ .Render "subheader" }}
+  {{ else }}
+  <!-- render meeresoffensive/listview.html -->
+  {{ .Render "listview" }}
+  {{ end }}
+</div>
 
-    <div class="mo-sections-wrapper">
-        {{ range .Data.Pages.ByParam "order" }}
-        {{ if .IsSection }}
-        <!-- render meeresoffensive/subheader.html -->
-        {{ .Render "subheader" }}
-        {{ else }}
-        <!-- render meeresoffensive/listview.html -->
-        {{ .Render "listview" }}
-        {{ end }}
-        {{ end }}
-    </div>
-    {{ end }}
+<div class="mo-sections-wrapper">
+  {{ range .Data.Pages.ByParam "order" }}
+  {{ if .IsSection }}
+  <!-- render meeresoffensive/subheader.html -->
+  {{ .Render "subheader" }}
+  {{ else }}
+  <!-- render meeresoffensive/listview.html -->
+  {{ .Render "listview" }}
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}
 
 
-    {{ end }}
+{{ end }}
