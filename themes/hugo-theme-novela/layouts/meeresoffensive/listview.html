@@ -1,52 +1,56 @@
-<section id="{{ .File.ContentBaseName }}" class="mo-section" data-number-of-frames="{{ .Params.animation.number_of_frames }}">
-    
-    <!-- ### REMANE section > article, class: mo-section > mo-single-claim -->
+<section id="{{ .File.ContentBaseName }}" class="mo-section"
+  data-number-of-frames="{{ .Params.animation.number_of_frames }}">
 
-    <article class="mo-single" id="article-no-{{ .Params.order }}" >
-        <div class="mo-background inactive" data-bg="" style="background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');"></div>
-        <div class="mo-original">
-            
-            <span class="order">{{ .Params.order }}</span>
-            
-            <p class="gif-explanation">
-                <span>{{ .Params.text_translation | safeHTML }}</span>
-            </p>
-            <span class="mo-main-content {{ if eq .Params.hide_links true}}mo-hide-links{{ end }}">{{ .Content }}</span>
-        </div>
-        <div class="mo-translation">
-            <div>
-                <div>
-                    <div class="mo-translation--text">
+  <!-- ### REMANE section > article, class: mo-section > mo-single-claim -->
 
-                        {{ range .Params.explanations }}
-                            <div class="mo-explanation">
-                                <h3>{{ .title }}</h3>
-                                <p>{{ .text | safeHTML }}</p>
-                            </div>
-                        {{ end }}
+  <article class="mo-single">
+    <div class="mo-background inactive" data-bg=""
+      style="background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(' {{ .Site.Params.cloudinary_url }}/{{ .Params.background_image }} ');">
+    </div>
+    <div class="mo-original">
 
-                        {{ with .Params.ctas }}
-                            <div class="mo-cta-button"><button>Was kann ich tun?</button></div>
-                        {{ end }}
-                    </div>
-                </div>
-                {{ with .Params.ctas }}
-                <div class="mo-cta-wrapper">
-                    <h3>Was kann ich tun?</h3>
-                    {{ range . }}
-                        <div class="{{ if eq .short true}}mo-cta-short icon-time_short{{ end }}{{ if eq .part true}}mo-cta-part icon-time_part{{ end }}{{ if eq .full true}}mo-cta-full icon-time_full{{ end }}">
-                            <p>{{ .text | safeHTML }}</p>
-                        </div>
-                    {{ end }}
-                    <div class="mo-close-handle"></div>
-                </div>
-                {{ end }}
+      <span class="order" id="article-no-{{ .Params.order }}">{{ .Params.order }}</span>
+
+      <p class="gif-explanation">
+        <span>{{ .Params.text_translation | safeHTML }}</span>
+      </p>
+      <span class="mo-main-content {{ if eq .Params.hide_links true}}mo-hide-links{{ end }}">{{ .Content }}</span>
+    </div>
+    <div class="mo-translation">
+      <div>
+        <div>
+          <div class="mo-translation--text">
+
+            {{ range .Params.explanations }}
+            <div class="mo-explanation">
+              <h3>{{ .title }}</h3>
+              <p>{{ .text | safeHTML }}</p>
             </div>
-            
+            {{ end }}
+
+            {{ with .Params.ctas }}
+            <div class="mo-cta-button"><button>Was kann ich tun?</button></div>
+            {{ end }}
+          </div>
         </div>
-        <div class="mo-animation">
-            
+        {{ with .Params.ctas }}
+        <div class="mo-cta-wrapper">
+          <h3>Was kann ich tun?</h3>
+          {{ range . }}
+          <div
+            class="{{ if eq .short true}}mo-cta-short icon-time_short{{ end }}{{ if eq .part true}}mo-cta-part icon-time_part{{ end }}{{ if eq .full true}}mo-cta-full icon-time_full{{ end }}">
+            <p>{{ .text | safeHTML }}</p>
+          </div>
+          {{ end }}
+          <div class="mo-close-handle"></div>
         </div>
-    </article>
+        {{ end }}
+      </div>
+
+    </div>
+    <div class="mo-animation">
+
+    </div>
+  </article>
 
 </section>

@@ -20,9 +20,28 @@
         allowFullScreen modestbranding></iframe>
     </p>
   </div>
-  <h1>Inhaltskarte</h1>
-  <div id="map-container">
-    <canvas id="map"></canvas>
+  <div class="mo-cta-button"><button id="open-map">Was kann ich tun?</button></div>
+
+  <script type="text/javascript">
+    window.smalltitles = [
+      {{range .Data.Pages.ByParam "order" }}
+      [
+        {{range .Data.Pages.ByParam "order" }}
+        {
+          title: "{{ .Params.title | safeHTML }}",
+          order: "{{ .Params.order }}"
+        },
+        {{end}}
+      ],
+      {{end}}
+    ]
+  </script>
+
+  <div id="map-container-container">
+    <div id="map-container">
+      <canvas id="map"></canvas>
+      <span id="close-map">X</span>
+    </div>
   </div>
 </div>
 
