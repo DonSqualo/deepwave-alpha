@@ -14,7 +14,7 @@
       <p class="gif-explanation">
         <span>{{ .Params.text_translation | safeHTML }}</span>
       </p>
-      <span class="mo-main-content {{ if eq .Params.hide_links true}}mo-hide-links{{ end }}">{{ .Content }}</span>
+      <span class="mo-main-content">{{ .Content }}</span>
     </div>
     <div class="mo-translation">
       <div>

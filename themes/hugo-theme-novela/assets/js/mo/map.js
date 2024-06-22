@@ -104,8 +104,6 @@ function drawMap() {
     placeHeadlines(island.x, island.y, island.places);
   });
   
-  console.log(textPositions);
-
   ctx.restore();
 }
 
@@ -258,6 +256,7 @@ function onClick(event) {
     if (mouseX >= text.x - 10 && mouseX - 10 <= text.x + text.width &&
         mouseY >= text.y - 10 && mouseY - 10 <= text.y + text.height) {
       document.getElementById("map-container-container").style.display = "none";
+      console.log(`scrolling to #article-no-${text.order}`)
       document.getElementById(`article-no-${text.order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
     }
   });

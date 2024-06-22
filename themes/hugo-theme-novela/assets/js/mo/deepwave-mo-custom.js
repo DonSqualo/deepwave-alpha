@@ -33,7 +33,6 @@ function openChapterbox() {
                 anchor.classList.remove("current")
             }
         })
-        console.log(entries)
     });
 }
 
