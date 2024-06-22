@@ -2,6 +2,7 @@
 title: KLARTEXT „Meeresoffensive“
 youtube_id: oo2r-4bZK9c
 ---
+
 Keine der globalen Herausforderungen ist ohne lebendige Weltmeere zu bewältigen. Deutschland hat nicht nur die Verantwortung für echten Meeresschutz, sondern auch die Ressourcen und Kapazitäten, diese Verantwortung zu übernehmen.
 
 Daher haben wir gemeinsam mit 16 umwelt- und entwicklungspolitischen Organisationen 2020 eine “Meeresoffensive” von der Bundesregierung gefordert. Und zwar erfolgreich: 2022 startete die Regierung die <a href="https://www.bundesregierung.de/breg-de/suche/ankuendigung-meeresoffensive-2003498" target="blank">Meeresoffensive für Artenvielfalt und Klimaschutz.</a>
