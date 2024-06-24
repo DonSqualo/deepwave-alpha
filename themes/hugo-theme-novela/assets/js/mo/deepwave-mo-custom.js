@@ -263,10 +263,11 @@ function handleMOAnimation() {
                     sectionHeadlineContainer.innerHTML = smallSectionHeadlines[index].innerHTML
 
                     // Add ProgressCircles according to number of slides
-                    mos.forEach(mo => {
+                    mos.forEach((mo, moIndex) => {
                         let node = document.createElement('div')
                         node.setAttribute('class', 'mo-progress--circle')
                         node.style.cursor = 'pointer';
+                        node.setAttribute('title', window.smalltitles[index][moIndex].title)
 
                         node.onclick = e => {
                             mo.scrollIntoView({ behavior: 'smooth', block: 'center' });
