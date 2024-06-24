@@ -6,12 +6,13 @@ const MapState = {
   offsetY: 0, // Initial offset (position of all islands on canvas)
   scale: (((window.screen.width / 1920) + 1) / 2) * 0.8, // Initial zoom
   doNotUpdateCursor: false,
+  activeMapPlace: -1,
   placePositions: [ // where each "place" (aka. the smalltitles) are placed relative to their islands.
     [{ x: 50, y: 50 }, { x: 0, y: -80 }, { x: 60, y: -20 }, { x: 0, y: 10 }],
     [{ x: 120, y: -180 }, { x: 0, y: -40 }, { x: -40, y: 30 }, { x: 20, y: -110 }],
     [{ x: 100, y: 100 }, { x: 110, y: 30 }, { x: -140, y: 200 }, { x: -160, y: 120 }, { x: -200, y: -46 }, { x: -150, y: -120 }, { x: -80, y: -200 }, { x: 40, y: -80 }, { x: 50, y: -130 }, { x: 70, y: -180 }],
-    [{ x: 0, y: 0 }, { x: -145, y: 110 }, { x: 30, y: -150 }, { x: -100, y: 0 }, { x: 0, y: -45 }],
-    [{ x: -50, y: -50 }, { x: 20, y: -240 }, { x: -70, y: -180 }, { x: 100, y: -140 }, { x: 90, y: -20 }, { x: 0, y: 20 }],
+    [{ x: -8, y: 22 }, { x: -145, y: 110 }, { x: 30, y: -150 }, { x: -100, y: 0 }, { x: 0, y: -45 }],
+    [{ x: -50, y: -50 }, { x: 20, y: -240 }, { x: -70, y: -180 }, { x: 100, y: -140 }, { x: 65, y: -20 }, { x: 0, y: 20 }],
   ],
   islands: [ // The islands where path is the svg path.
     {
@@ -60,6 +61,7 @@ const MAX_ZOOM = 8;
 const MIN_ZOOM = 0.3;
 const SCROLL_SENSITIVITY = -0.011;
 const CLICK_MARGIN = 3;
+const DEBOUNCE_TIME = 400;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -79,6 +81,8 @@ function generatePlaces(islandNumber) {
       y: MapState.placePositions[islandNumber][i].y,
       order: window.smalltitles[islandNumber][i].order
     });
+
+    console.log(window.smalltitles[islandNumber][i].order)
   }
   return places;
 }
@@ -120,12 +124,34 @@ function placeHeadlines(x, y, places) {
   places.forEach(place => {
     ctx.fillStyle = 'black'; // Ensure the text is visible
     ctx.font = "16px 'Arial'";
-    const text = place.name.replace("&shy;", "");
+
+    let text = place.name.replace("&shy;", "");
     const textWidth = ctx.measureText(text).width;
     const textX = x + 15 + place.x - textWidth;
     const textY = y + place.y - CLICK_MARGIN;
 
     ctx.fillText(text, textX, textY);
+
+    // render red dot next to the text facing origin
+    if (MapState.activeMapPlace === place.order) {
+      ctx.beginPath();
+
+      let dotX;
+      let dotY;
+
+      if (place.x > 0) {
+        dotX = x + 15 + place.x - textWidth - 10;
+        dotY = y + place.y - 10;
+      } else {
+        dotX = x + 15 + place.x + 10;
+        dotY = y + place.y - 10;
+      }
+
+
+      ctx.arc(dotX, dotY, 5, 0, 2 * Math.PI);
+      ctx.fillStyle = 'red';
+      ctx.fill();
+    }
 
     // if text is hovered, underline
     if (MapState.mouseX >= textX - CLICK_MARGIN && MapState.mouseX - CLICK_MARGIN <= textX + textWidth &&
@@ -209,12 +235,12 @@ function handleMouseDown() {
   canvas.addEventListener('mousemove', onDrag);
 }
 
-function handleMouseUp() {
+function handleMouseUp(event) {
   isDragging = false;
   timeBetweenMouseUpAndDown = new Date().getTime() - timestamp;
 
-  if (timeBetweenMouseUpAndDown < 200) {
-    onClick(e);
+  if (timeBetweenMouseUpAndDown < DEBOUNCE_TIME) {
+    handleClick(event);
   }
 
   canvas.removeEventListener('mousemove', onDrag);
@@ -281,12 +307,12 @@ function handleTouchEnd(event) {
   timeBetweenTouchEndAndStart = new Date().getTime() - timestampTouch;
 
   if (timeBetweenTouchEndAndStart < 200) {
-    onClickTouch(event);
+    handleTouchClick(event);
   }
 
 }
 
-function onClick(event) {
+function handleClick(event) {
   MapState.mouseX = (event.clientX - MapState.offsetX) / MapState.scale;
   MapState.mouseY = (event.clientY - MapState.offsetY) / MapState.scale;
 
@@ -294,13 +320,13 @@ function onClick(event) {
     if (MapState.mouseX >= text.x - CLICK_MARGIN && MapState.mouseX - CLICK_MARGIN <= text.x + text.width &&
       MapState.mouseY >= text.y - CLICK_MARGIN && MapState.mouseY - CLICK_MARGIN <= text.y + text.height) {
       window.closeNavigationMap();
-      document.getElementById(`article-no-${text.order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
+      window.scrollToMo(text.order, true);
       document.getElementById('mo-progress').classList.remove("hidden");
     }
   });
 }
 
-function onClickTouch(event) {
+function handleTouchClick(event) {
   const touchX = (event.changedTouches[0].clientX - MapState.offsetX) / MapState.scale;
   const touchY = (event.changedTouches[0].clientY - MapState.offsetY) / MapState.scale;
 
@@ -308,7 +334,7 @@ function onClickTouch(event) {
     if (touchX >= text.x - CLICK_MARGIN && touchX - CLICK_MARGIN <= text.x + text.width &&
       touchY >= text.y - CLICK_MARGIN && touchY - CLICK_MARGIN <= text.y + text.height) {
       document.getElementById("map-container-container").classList.add("map-hidden");
-      document.getElementById(`article-no-${text.order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
+      window.scrollToMo(text.order, true);
       document.getElementById('mo-progress').classList.remove("hidden");
     }
   });
@@ -325,11 +351,16 @@ window.openNavigationMap = () => {
     initializeMap();
     MapState.mapInitialized = true;
   }
+  drawMap();
   document.getElementById("map-container-container").classList.remove("map-hidden");
 }
 
 window.closeNavigationMap = () => {
   document.getElementById("map-container-container").classList.add("map-hidden");
+}
+
+window.setActiveMapPlace = (order) => {
+  MapState.activeMapPlace = order;
 }
 
 document.getElementById("open-map").addEventListener("click", window.openNavigationMap);
