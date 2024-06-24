@@ -212,6 +212,8 @@ function handleMOAnimation() {
     let moSections = document.querySelectorAll('.mo-sections-wrapper')
     if (moSections.length > 0) {
 
+        window.controllers = [];
+
         moSections.forEach(function (entry, index) {
 
             ///console.log('SECTION START ' + index)
@@ -234,6 +236,7 @@ function handleMOAnimation() {
                 }
             });
 
+            window.controllers.push(slideController);
 
             let mos = entry.querySelectorAll('.mo-section')
             // SECTION
@@ -251,7 +254,7 @@ function handleMOAnimation() {
                 let sectionHeadlineContainer = progressElement.querySelector('#mo-progress--headline')
 
                 sectionHeadlineContainer.addEventListener("click", () => {
-                  window.openNavigationMap()
+                    window.openNavigationMap()
                 })
 
                 circlesContainer.innerHTML = ''
@@ -338,7 +341,12 @@ function handleMOAnimation() {
                     // CALLBACK SLIDE: PRELOAD NEXT ANIMATION
                     function slideCallback(e) {
                         if (e.type == "enter") {
-                            console.log("Slide entered: " + sceneID)
+                            console.log("Slide entered: " + sceneID);
+
+                            document.getElementById('mo-progress').classList.remove("hidden");
+
+                            // Set Active Map Place but remove leading "MO"
+                            window.setActiveMapPlace(sceneID.slice(2));
 
                             /* DEACTIVATED
                             // Set SlideCounter for Progress
@@ -746,4 +754,16 @@ function handleCTAs() {
             })
         })
     }
+}
+
+window.scrollToMo = order => {
+    window.scrollTo(0, 0);
+    document.getElementById(`article-no-${order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
+    window.scrollBy({
+        top: 1400,
+        left: 0,
+        behavior: 'smooth'
+    });
+    window.setActiveMapPlace(order);
+    setTimeout(() => document.getElementById('mo-progress').classList.remove("hidden"), 200);
 }
