@@ -320,7 +320,7 @@ function handleClick(event) {
     if (MapState.mouseX >= text.x - CLICK_MARGIN && MapState.mouseX - CLICK_MARGIN <= text.x + text.width &&
       MapState.mouseY >= text.y - CLICK_MARGIN && MapState.mouseY - CLICK_MARGIN <= text.y + text.height) {
       window.closeNavigationMap();
-      window.scrollToMo(text.order);
+      window.scrollToMo(text.order, true);
       document.getElementById('mo-progress').classList.remove("hidden");
     }
   });
@@ -334,7 +334,7 @@ function handleTouchClick(event) {
     if (touchX >= text.x - CLICK_MARGIN && touchX - CLICK_MARGIN <= text.x + text.width &&
       touchY >= text.y - CLICK_MARGIN && touchY - CLICK_MARGIN <= text.y + text.height) {
       document.getElementById("map-container-container").classList.add("map-hidden");
-      window.scrollToMo(text.order);
+      window.scrollToMo(text.order, true);
       document.getElementById('mo-progress').classList.remove("hidden");
     }
   });

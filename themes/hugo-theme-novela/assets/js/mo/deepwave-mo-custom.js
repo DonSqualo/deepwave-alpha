@@ -274,7 +274,7 @@ function handleMOAnimation() {
 
             node.onclick = e => {
               // mo.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              window.scrollToMo(window.smalltitles[index][moIndex].order)
+              window.scrollToMo(window.smalltitles[index][moIndex].order, false);
               setTimeout(() => progressElement.classList.remove("hidden"), 300);
             }
 
@@ -758,8 +758,10 @@ function handleCTAs() {
   }
 }
 
-window.scrollToMo = order => {
-  window.scrollTo(0, 0);
+window.scrollToMo = (order, scrollToStart) => {
+  if (scrollToStart) {
+    window.scrollTo(0, 0);
+  }
   setTimeout(() => {
     document.getElementById(`article-no-${order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
   }, 10);
