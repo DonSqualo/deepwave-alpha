@@ -251,7 +251,7 @@ function handleMOAnimation() {
                 let sectionHeadlineContainer = progressElement.querySelector('#mo-progress--headline')
 
                 sectionHeadlineContainer.addEventListener("click", () => {
-                  document.getElementById("map-container-container").classList.remove("map-hidden");
+                  window.openNavigationMap()
                 })
 
                 circlesContainer.innerHTML = ''
