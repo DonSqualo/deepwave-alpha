@@ -63,8 +63,12 @@ const SCROLL_SENSITIVITY = -0.011;
 const CLICK_MARGIN = 3;
 const DEBOUNCE_TIME = 400;
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const ratio = window.devicePixelRatio;
+
+canvas.width = window.innerWidth * ratio;
+canvas.height = window.innerHeight * ratio;
+
+ctx.scale(ratio, ratio);
 
 if (window.screen.width < window.screen.height) {
   MapState.offsetX = -250;
@@ -211,8 +215,10 @@ function handleMouseMove(event) {
 }
 
 function handleResize() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  const ratio = window.devicePixelRatio;
+  canvas.width = window.innerWidth * ratio;
+  canvas.height = window.innerHeight * ratio;
+  ctx.scale(ratio, ratio);
   drawMap();
 }
 
