@@ -762,16 +762,14 @@ window.scrollToMo = (order, scrollToStart) => {
   if (scrollToStart) {
     window.scrollTo(0, 0);
   }
-  setTimeout(() => {
-    document.getElementById(`article-no-${order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
-  }, 10);
+  document.getElementById(`article-no-${order}`).scrollIntoView({ behavior: 'instant', block: 'start' });
   setTimeout(() => {
     window.scrollBy({
-      top: 1400,
+      top: 1300,
       left: 0,
       behavior: 'smooth'
     });
-  }, 25)
+  }, 50);
   window.setActiveMapPlace(order);
   setTimeout(() => document.getElementById('mo-progress').classList.remove("hidden"), 200);
 }
