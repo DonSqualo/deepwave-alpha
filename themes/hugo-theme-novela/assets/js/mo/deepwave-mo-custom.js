@@ -196,8 +196,8 @@ function handleMOAnimation() {
   console.log('INIT handleMOAnimation!')
 
   /// TIMING VARS
-  let pauseBefore = 2500              // Pause before first text appears
-  let animationAppearDuration = 1200 // Pause between text and hand-drawn animation
+  let pauseBefore = 800              // Pause before first text appears
+  let animationAppearDuration = 100 // Pause between text and hand-drawn animation
   let animationDuration = 4000    // Animation Duration
   let pauseBetween = 600          // Pause after animation
   let translationDuration = 1000   // Translation visibility
@@ -594,7 +594,7 @@ function handleMOClicks() {
   var observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting === true) {
       const id = entries[0].target.id;
-      window.history.replaceState(null, null, '#' + id);
+      // window.history.replaceState(null, null, '#' + id);
     }
   }, { threshold: [0] });
 
