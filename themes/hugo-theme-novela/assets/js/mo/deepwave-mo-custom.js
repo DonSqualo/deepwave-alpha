@@ -594,7 +594,7 @@ function handleMOClicks() {
   var observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting === true) {
       const id = entries[0].target.id;
-      window.history.replaceState(null, null, '#' + id);
+      // window.history.replaceState(null, null, '#' + id);
     }
   }, { threshold: [0] });
 
