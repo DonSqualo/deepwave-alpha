@@ -196,8 +196,8 @@ function handleMOAnimation() {
   console.log('INIT handleMOAnimation!')
 
   /// TIMING VARS
-  let pauseBefore = 1000              // Pause before first text appears
-  let animationAppearDuration = 1200 // Pause between text and hand-drawn animation
+  let pauseBefore = 600              // Pause before first text appears
+  let animationAppearDuration = 100 // Pause between text and hand-drawn animation
   let animationDuration = 4000    // Animation Duration
   let pauseBetween = 600          // Pause after animation
   let translationDuration = 1000   // Translation visibility
