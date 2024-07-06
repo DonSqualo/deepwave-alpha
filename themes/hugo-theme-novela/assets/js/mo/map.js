@@ -231,12 +231,18 @@ function handleWheel(event) {
   MapState.offsetX -= MapState.mouseX * (newScale - MapState.scale);
   MapState.offsetY -= MapState.mouseY * (newScale - MapState.scale);
 
+  if (document.getElementById("scroll-hint")) {
+    document.getElementById("scroll-hint").remove();
+  }
+
   MapState.scale = newScale;
   drawMap();
 }
 
 function handleMouseDown() {
   isDragging = true;
+
+
   timestamp = new Date().getTime();
   canvas.addEventListener('mousemove', onDrag);
 }
@@ -244,6 +250,10 @@ function handleMouseDown() {
 function handleMouseUp(event) {
   isDragging = false;
   timeBetweenMouseUpAndDown = new Date().getTime() - timestamp;
+
+  if (document.getElementById("scroll-hint")) {
+    document.getElementById("scroll-hint").remove();
+  }
 
   if (timeBetweenMouseUpAndDown < DEBOUNCE_TIME) {
     handleClick(event);
@@ -276,6 +286,11 @@ function handleTouchStart(event) {
 
 function handleTouchMove(event) {
   event.preventDefault()
+
+  if (document.getElementById("scroll-hint")) {
+    document.getElementById("scroll-hint").remove();
+  }
+
   if (event.touches.length === 1 && isDragging) {
     const touchX = event.touches[0].clientX;
     const touchY = event.touches[0].clientY;
@@ -347,6 +362,20 @@ function handleTouchClick(event) {
 }
 
 function initializeMap() {
+
+  if (!localStorage.getItem("mapHasOpened")) {
+    const scrollHint = document.createElement("div");
+    scrollHint.id = "scroll-hint";
+
+    const scrollHintText = document.createElement("p");
+    scrollHintText.textContent = "Zoome hinein zum entdecken";
+    scrollHint.appendChild(scrollHintText);
+
+    document.body.appendChild(scrollHint);
+
+    localStorage.setItem("mapHasOpened", "true");
+  }
+
   generateAllPlaces();
   drawMap();
   addEventListeners();
@@ -362,6 +391,11 @@ window.openNavigationMap = () => {
 }
 
 window.closeNavigationMap = () => {
+
+  if (document.getElementById("scroll-hint")) {
+    document.getElementById("scroll-hint").remove();
+  }
+
   document.getElementById("map-container-container").classList.add("map-hidden");
 }
 
