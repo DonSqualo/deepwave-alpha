@@ -957,12 +957,10 @@ body.is-dark #logo-mobile {
 #scroll-hint {
   position: fixed;
   top: 0;
-  padding-top: 0.8em;
-  height: 3.2em;
+  padding-top: 1em;
   left: 0;
   width: 100vw;
   color: white;
-  font-size: 1.2em;
   font-weight: 700;
   text-align: center;
   opacity: 1;
@@ -971,7 +969,13 @@ body.is-dark #logo-mobile {
   
   p {
     color: white !important;
-    font-size: 1.2em;
+    font-size: 1.8em;
+
+    @media screen and (orientation: portrait) and (max-width: 900px) {
+      & {
+          font-size: 1.4em;
+      }
+    }
   }
 }
 

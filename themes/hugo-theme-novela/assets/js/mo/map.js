@@ -368,7 +368,7 @@ function initializeMap() {
     scrollHint.id = "scroll-hint";
 
     const scrollHintText = document.createElement("p");
-    scrollHintText.textContent = "Zoome hinein zum entdecken";
+    scrollHintText.textContent = "Zoome hinein zum Entdecken";
     scrollHint.appendChild(scrollHintText);
 
     document.body.appendChild(scrollHint);
