@@ -413,9 +413,15 @@ function handleMOAnimation() {
             presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
           })
 
-          scenePauseBefore.on('progress', function(e) {
-            entry.querySelector('.gif-explanation').style.opacity = (-0.5 + e.progress * 2)
-            entry.querySelector('.mo-video').style.opacity = (e.progress)
+          scenePauseBefore.on('progress', function (e) {
+            if (e.progress > 0.5) {
+              entry.querySelector('.gif-explanation').style.opacity = (e.progress - 0.5) * 2
+              entry.querySelector('.mo-video').style.opacity = (e.progress - 0.5) * 2
+            }
+            else {
+              entry.querySelector('.gif-explanation').style.opacity = 0
+              entry.querySelector('.mo-video').style.opacity = 0
+            }
             updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
 
           })
