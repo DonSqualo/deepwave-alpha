@@ -71,78 +71,78 @@ if (browserCheckWebp()) {
 // #################################################################################
 // PRELOADING IMAGES
 
-let loadStatus = []
+// let loadStatus = []
 
-function preloadAnimationImages(archiveID) {
+// function preloadAnimationImages(archiveID) {
 
-  if (loadStatus.includes(archiveID)) {
-    return
-  }
+//   if (loadStatus.includes(archiveID)) {
+//     return
+//   }
 
-  let archiveIDLowerCase = archiveID.toLowerCase()
-  let archivePath
-  let fileExtension
-  let imgPaths = []
+//   let archiveIDLowerCase = archiveID.toLowerCase()
+//   let archivePath
+//   let fileExtension
+//   let imgPaths = []
 
-  if (browserCheckWebp()) {
-    archivePath = '/animations/' + archiveIDLowerCase + '_webp.zip'
-    fileExtension = '.webp'
-  } else {
-    return // ### !!! ### FIND ALTERNATIVE (MP4?)
-    archivePath = '/animations/' + archiveIDLowerCase + '_png.zip'
-    fileExtension = '.png'
-  }
+//   if (browserCheckWebp()) {
+//     archivePath = '/animations/' + archiveIDLowerCase + '_webp.zip'
+//     fileExtension = '.webp'
+//   } else {
+//     return // ### !!! ### FIND ALTERNATIVE (MP4?)
+//     archivePath = '/animations/' + archiveIDLowerCase + '_png.zip'
+//     fileExtension = '.png'
+//   }
 
-  // via: https://stuk.github.io/jszip/
-  let promise = new JSZip.external.Promise(function(resolve, reject) {
-    JSZipUtils.getBinaryContent(archivePath, function(err, data) {
-      if (err) {
-        console.log(err)
-      } else {
-        resolve(data);
-      }
-    })
-  })
+//   // via: https://stuk.github.io/jszip/
+//   let promise = new JSZip.external.Promise(function(resolve, reject) {
+//     JSZipUtils.getBinaryContent(archivePath, function(err, data) {
+//       if (err) {
+//         console.log(err)
+//       } else {
+//         resolve(data);
+//       }
+//     })
+//   })
 
-  promise.then(JSZip.loadAsync)
-    .then(function(zip) {
-      console.log('Loaded: ' + archivePath)
-      loadStatus.push(archiveID)
+//   promise.then(JSZip.loadAsync)
+//     .then(function(zip) {
+//       console.log('Loaded: ' + archivePath)
+//       loadStatus.push(archiveID)
 
-      /// via: https://github.com/Stuk/jszip/issues/399 // customized for MO
-      var isImg = /(.png|.webp)$/ // /(.jpg|.png|.gif|.jpeg|.webp)$/
-      var isSys = /^[_.]/
-      var promises = Object.keys(zip.files).filter(function(fileName) {
-        // don't consider non image files
-        if (!isSys.test(fileName)) {
-          return isImg.test(fileName.toLowerCase())
-        }
-      }).map(function(fileName) {
-        var file = zip.files[fileName]
-        return file.async("blob").then(function(blob) {
-          return [
-            fileName,  // keep the link between the file name and the content
-            URL.createObjectURL(blob) // create an url. img.src = URL.createObjectURL(...) will work
-          ]
-        })
-      })
-      // `promises` is an array of promises, `Promise.all` transforms it into a promise of arrays
-      return Promise.all(promises)
-    }).then(function(result) {
-      result.sort()
-      return result
-    }).then(function(result) {
-      result.forEach(function(entry, index) {
-        // Append DOM element
-        let node = document.createElement('div')
-        node.setAttribute('style', 'background-image:url("' + entry[1] + '")')
-        document.querySelector('#' + archiveID + ' .mo-animation').appendChild(node)
-      })
-    }).catch(error => console.log(error.message))
-}
+//       /// via: https://github.com/Stuk/jszip/issues/399 // customized for MO
+//       var isImg = /(.png|.webp)$/ // /(.jpg|.png|.gif|.jpeg|.webp)$/
+//       var isSys = /^[_.]/
+//       var promises = Object.keys(zip.files).filter(function(fileName) {
+//         // don't consider non image files
+//         if (!isSys.test(fileName)) {
+//           return isImg.test(fileName.toLowerCase())
+//         }
+//       }).map(function(fileName) {
+//         var file = zip.files[fileName]
+//         return file.async("blob").then(function(blob) {
+//           return [
+//             fileName,  // keep the link between the file name and the content
+//             URL.createObjectURL(blob) // create an url. img.src = URL.createObjectURL(...) will work
+//           ]
+//         })
+//       })
+//       // `promises` is an array of promises, `Promise.all` transforms it into a promise of arrays
+//       return Promise.all(promises)
+//     }).then(function(result) {
+//       result.sort()
+//       return result
+//     }).then(function(result) {
+//       result.forEach(function(entry, index) {
+//         // Append DOM element
+//         let node = document.createElement('div')
+//         node.setAttribute('style', 'background-image:url("' + entry[1] + '")')
+//         document.querySelector('#' + archiveID + ' .mo-animation').appendChild(node)
+//       })
+//     }).catch(error => console.log(error.message))
+// }
 
 // Load first animation immediately
-preloadAnimationImages('MO11')
+// preloadAnimationImages('MO11')
 
 
 
@@ -373,7 +373,7 @@ function handleMOAnimation() {
               }
               if (nextSceneObject) {
                 let nextSceneID = nextSceneObject.getAttribute('id')
-                preloadAnimationImages(nextSceneID)
+                // preloadAnimationImages(nextSceneID)
               }
             }
           }
@@ -409,13 +409,13 @@ function handleMOAnimation() {
 
           scenePauseBefore.on('enter', function(e) {
             entry.querySelector('.gif-explanation').style.opacity = 0
-            entry.querySelector('.mo-animation').style.opacity = 0
+            entry.querySelector('.mo-video').style.opacity = 0
             presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
           })
 
           scenePauseBefore.on('progress', function(e) {
             entry.querySelector('.gif-explanation').style.opacity = (-0.5 + e.progress * 2)
-            entry.querySelector('.mo-animation').style.opacity = (e.progress)
+            entry.querySelector('.mo-video').style.opacity = (e.progress)
             updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
 
           })
@@ -431,7 +431,7 @@ function handleMOAnimation() {
           /// PUT THIS TO THE BEGINNING OF 
 
           sceneAnimationAppear.on('progress', function(e) {
-            entry.querySelector('.mo-animation').style.opacity = (e.progress)
+            entry.querySelector('.mo-video').style.opacity = (e.progress)
 
 
             //updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
@@ -453,34 +453,27 @@ function handleMOAnimation() {
           //# Check if images have been loaded
 
           let currentFrame = 0
-          sceneAnimation.on('enter', function(e) {
-            let frameElements = entry.querySelectorAll('.mo-animation > div')
-            numberOfFrames = frameElements.length
-
+          sceneAnimation.on('enter', function (e) {
             presetSceneProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
           })
 
-          sceneAnimation.on('progress', function(e) {
-            let indexNext = (numberOfFrames * e.progress).toFixed(0)
-            let activeFrame = entry.querySelector('.mo-animation > div.active')
-            if (indexNext < 1) {
-              if (activeFrame) {
-                activeFrame.classList.remove('active') /// REMOVE THIS ??
+          const video = entry.querySelector(".mo-video--content");
+          const handleScrollPlay = (e) => {
+            if (video.readyState >= 2) { // Ensure video is ready
+              if (video.duration) {
+                video.currentTime = video.duration * e.progress;
               }
-              currentFrame = 0
-            } else if (indexNext > 0 && indexNext != currentFrame) {
-              if (activeFrame) {
-                activeFrame.classList.remove('active')
-              }
-              let nextFrame = entry.querySelector('.mo-animation > div:nth-child(' + indexNext + ')')
-              if (nextFrame) {
-                nextFrame.classList.add('active')
-              }
-              currentFrame = indexNext
+            } else {
+              video.addEventListener('loadedmetadata', () => {
+                video.currentTime = video.duration * e.progress;
+              }, { once: true });
             }
+          };
 
-            updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
-          })
+          sceneAnimation.on('progress', function (e) {
+            handleScrollPlay(e);
+            updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal);
+          });
 
 
           // Pause between
@@ -538,7 +531,7 @@ function handleMOAnimation() {
           scenePauseAfter.on('progress', function(e) {
             // Fade out original text and animation
             entry.querySelector('.mo-original').style.opacity = (1.5 - e.progress * 2)
-            entry.querySelector('.mo-animation').style.opacity = (1 - e.progress * 2.4)
+            entry.querySelector('.mo-video').style.opacity = (1 - e.progress * 2.4)
 
             updateProgress(e, index, mosIndex, progressBase, this.duration(), slideTotal)
           })

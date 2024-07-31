@@ -1066,7 +1066,8 @@ body.is-dark #logo-mobile {
 }
 
 /* Animation */
-.mo-animation {
+.mo-animation,
+.mo-video {
   z-index: 100;
   position: absolute;
   right: 5vw;
@@ -1075,7 +1076,10 @@ body.is-dark #logo-mobile {
   height: 40vw;
   transition: all 0.4s ease-in-out;
 }
-
+.mo-video--content {
+  width: 100%;
+  height: 100%;
+}
 .transition {
   transition: all 0.4s ease-in-out;
 }
@@ -1085,7 +1089,9 @@ body.is-dark #logo-mobile {
 }
 
 .mo-section:nth-child(odd).translation-active .mo-animation,
-.mo-section:nth-child(odd).pause-out .mo-animation {
+.mo-section:nth-child(odd).pause-out .mo-animation,
+.mo-section:nth-child(odd).translation-active .mo-video,
+.mo-section:nth-child(odd).pause-out .mo-video {
   transform: scale(0.6) translate(-85vw, -35vh);
 
   @media screen and (orientation: portrait) and (max-width: 900px) {
@@ -1096,7 +1102,9 @@ body.is-dark #logo-mobile {
 }
 
 .mo-section:nth-child(even).translation-active .mo-animation,
-.mo-section:nth-child(even).pause-out .mo-animation {
+.mo-section:nth-child(even).pause-out .mo-animation,
+.mo-section:nth-child(even).translation-active .mo-video,
+.mo-section:nth-child(even).pause-out .mo-video {
   transform: scale(0.6) translate(85vw, -35vh);
 
   @media screen and (orientation: portrait) and (max-width: 900px) {
@@ -1125,7 +1133,8 @@ body.is-dark #logo-mobile {
   opacity: 1;
 }
 
-.mo-section:nth-child(even) .mo-animation {
+.mo-section:nth-child(even) .mo-animation,
+.mo-section:nth-child(even) .mo-video {
   right: auto;
   left: 5vw;
 }

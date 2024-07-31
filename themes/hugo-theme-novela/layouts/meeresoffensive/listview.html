@@ -48,8 +48,12 @@
       </div>
 
     </div>
-    <div class="mo-animation">
-
+    <div id="mo-video-{{ .File.ContentBaseName }}" class="mo-video">
+      <video class="mo-video--content" preload="auto" muted>
+        <source src="{{ .Params.animation_webm }}" type="video/webm" />
+        <source src="{{ .Params.animation_mp4 }}" type="video/mp4" />
+        Your browser does not support the video tag
+      </video>
     </div>
   </article>
 
