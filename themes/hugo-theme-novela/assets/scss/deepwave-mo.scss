@@ -1292,18 +1292,13 @@ body.is-dark #logo-mobile {
     max-height: unset;
   }
 
-  .mo-animation {
+    .mo-video {
     top: auto;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100vw;
-  }
-
-  .mo-animation > div {
-    top: auto;
-    width: 100vw;
-    height: calc(44 * var(--vh));
+    margin: auto;
+      bottom: 5%;
+      right: 0 !important;
+      left: 0 !important;
+      width: 80vw;
   }
 
   .mo-section:nth-child(2n) .mo-animation {
