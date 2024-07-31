@@ -669,7 +669,7 @@ body.is-dark #logo-mobile {
 
 // TYPO MAYBE????
 .mo-translation > div {
-  max-height: 100%;
+  height: 100vh;
   padding: 2em;
   overflow-y: auto;
 }
@@ -1197,8 +1197,7 @@ body.is-dark #logo-mobile {
 
   .mo-translation > div {
     padding: 1em;
-    max-height: calc(50 * var(--vh));
-    /*50vh;*/
+    height: calc(50vh - 4em);
   }
 
   .mo-translation h3 {
