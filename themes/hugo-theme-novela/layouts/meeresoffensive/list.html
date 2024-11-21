@@ -59,27 +59,22 @@
 
 <div id="mo-articles">
   {{ range .Data.Pages.ByParam "order" }}
-  {{ if .IsSection }}
-  <!-- render meeresoffensive/subheader.html -->
-  {{ .Render "subheader" }}
-  {{ else }}
-  <!-- render meeresoffensive/listview.html -->
-  {{ .Render "listview" }}
-  {{ end }}
-</div>
+      {{ if .IsSection }}
+        {{ .Render "subheader" }}
+        {{ else }}
+        {{ .Render "listview" }}
+        {{ end }}
 
-<div class="mo-sections-wrapper">
-  {{ range .Data.Pages.ByParam "order" }}
-  {{ if .IsSection }}
-  <!-- render meeresoffensive/subheader.html -->
-  {{ .Render "subheader" }}
-  {{ else }}
-  <!-- render meeresoffensive/listview.html -->
-  {{ .Render "listview" }}
-  {{ end }}
-  {{ end }}
+    <div class="mo-sections-wrapper">
+      {{ range .Data.Pages.ByParam "order" }}
+      {{ if .IsSection }}
+          {{ .Render "subheader" }}
+          {{ else }}
+          {{ .Render "listview" }}
+          {{ end }}
+          {{ end }}
+          </div>
+          {{ end }}
 </div>
-{{ end }}
-
 
 {{ end }}
