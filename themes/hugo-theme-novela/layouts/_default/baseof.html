@@ -1,26 +1,64 @@
+<!DOCTYPE html>
 <html>
 
 {{ partial "head/head.html" . }}
 
 <body class="line-numbers">
 
-    {{ $script := resources.Get "js/initColors.js" }}
-    <script src="{{ $script.RelPermalink }}"></script>
+  {{ $script := resources.Get "js/initColors.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
 
-    <div class="layout-styled">
+  <!-- Greensocket/GSAP -->
+  {{ $script := resources.Get "js/scrollmagic/gsap.min.js" }}
+  <!--<script src="{{ $script.RelPermalink }}"></script>-->
+  
+  <!-- ScrollMagic -->
+  {{ $script := resources.Get "js/scrollmagic/uncompressed/ScrollMagic.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ $script := resources.Get "js/scrollmagic/minified/plugins/animation.gsap.min.js" }}
+  <!--<script src="{{ $script.RelPermalink }}"></script>-->
+  {{ $script := resources.Get "js/scrollmagic/uncompressed/plugins/debug.addIndicators.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  
+  <!-- JSZip -->
+  {{ $script := resources.Get "js/jszip/jszip.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ $script := resources.Get "js/jszip/jszip-utils.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  
+  <!-- basicLightbox -->
+  {{ $script := resources.Get "js/basicLightbox/basicLightbox.min.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  
+  <!-- progress -->
+  {{ $script := resources.Get "js/progress/circle-progress.min.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  
+  <!-- Deepwave Custom -->
+  {{ $script := resources.Get "js/mo/deepwave-mo-custom.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
 
-        {{ partial "header.html" . }}
+  <div class="layout-styled">
 
-        {{ block "main" . }}
-        
-        {{ end }}
-        
-        {{ partial "footer.html" . }}
-
+    <div id="mo-header">
+      {{ partial "header.html" . }}
     </div>
 
-    {{ $script := resources.Get "js/prism.js" }}
-    <script src="{{ $script.RelPermalink }}"></script>
+    <div>
+      {{ block "mo-main" . }}
+      {{ end }} </div>
+
+    {{ partial "mo-footer.html" . }}
+    {{ partial "footer.html" . }}
+
+  </div>
+
+  {{ $script := resources.Get "js/prism.js" }}
+  <!--<script src="{{ $script.RelPermalink }}"></script>-->
+  
+  <!-- Deepwave Custom -->
+  {{ $script := resources.Get "js/mo/map.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
 </body>
 
 </html>
